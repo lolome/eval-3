@@ -10,7 +10,7 @@
   // align-items: center;
 
   background-color: var(--WHITE);
-  border-bottom: 1px solid var(--BDR-LIGHT);
+  border-bottom: 1px solid var(--BORDER-LIGHT);
 
   @include media-breakpoint-up(lg) {
 
@@ -42,7 +42,7 @@
     margin-right: 1rem;
 
     background-color: var(--GRAY-3);
-    // border: 1px solid var(--TXT-DIMED);
+    // border: 1px solid var(--TEXT-DIMED);
 
     @include media-breakpoint-up(lg) {
 
@@ -84,7 +84,7 @@
 
       text-decoration: none;
 
-      color: var(--TXT-DIMED);
+      color: var(--TEXT-DIMED);
 
       transition: color .2s;
 
@@ -113,7 +113,7 @@
       overflow: hidden;
       margin: 0 .25rem 0 .5rem;
 
-      border: 1px solid var(--TXT-DIMED);
+      border: 1px solid var(--TEXT-DIMED);
       border-radius: 50%;
 
       transition: border-color .2s;
@@ -142,7 +142,7 @@
 
       text-decoration: none;
 
-      color: var(--TXT-DIMED);
+      color: var(--TEXT-DIMED);
 
       transition: color .2s;
 
@@ -179,7 +179,7 @@
   //
   //     text-decoration: none;
   //
-  //     color: var(--TXT-DIMED);
+  //     color: var(--TEXT-DIMED);
   //
   //     transition: color .2s;
   //

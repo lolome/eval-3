@@ -8,9 +8,9 @@
   flex: 0 0 40px;
   display: flex;
 
-  color: var(--TXT-DIMED);
+  color: var(--TEXT-DIMED);
   background-color: var(--WHITE);
-  border-top: 1px solid var(--BDR-LIGHT);
+  border-top: 1px solid var(--BORDER-LIGHT);
 
   @include media-breakpoint-up(lg) {
 
