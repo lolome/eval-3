@@ -1,0 +1,23 @@
+:root {
+
+  --WHITE:  #fff;
+  --GRAY-1: #f4f7f9;
+  --GRAY-2: #e2e8ee;
+  --GRAY-3: #dee6ed;
+  --GRAY-4: #ced4da;
+  --GRAY-5: #adb5bd;
+  --GRAY-6: #6c757d;
+  --GRAY-7: #495057;
+  --GRAY-8: #343a40;
+  --GRAY-9: #212529;
+  --BLACK:  #000;
+
+  --TXT: var(--GRAY-9);
+  --TXT-DIMED: var(--GRAY-6);
+  --TXT-MUTED: var(--GRAY-3);
+
+  --BDR-LIGHT: var(--GRAY-2);
+  --BDR-MEDIUM: var(--GRAY-5);
+  --BDR-STRONG: var(--GRAY-8);
+
+}

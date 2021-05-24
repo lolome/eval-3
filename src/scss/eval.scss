@@ -1,0 +1,206 @@
+/*
+ * -----------------------------------------
+ *  MIXINS
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+@import '_mixins/index';
+
+/*
+ * -----------------------------------------
+ *  EVAL
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+.eval,
+.postit {
+
+  &-header {
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-top: .5rem;
+
+    a {
+
+      text-decoration: none;
+
+    }
+
+  }
+
+  &-nav {
+
+    display: flex;
+    align-items: flex-start;
+    padding: .5rem 0;
+    margin-bottom: 2rem;
+
+    border-top: 1px solid var(--CUSTOM-PRIMARY);
+    border-bottom: 1px solid var(--CUSTOM-PRIMARY);
+
+    .dropdown-toggle {
+
+      display: block;
+      width: 32px;
+      height: 32px;
+      margin-right: .875rem;
+      margin-top: 3px;
+
+      background-color: var(--CUSTOM-PRIMARY);
+      color: #FFF;
+
+      &::after {
+        display: none;
+      }
+
+    }
+
+    h1 {
+
+      margin: 0 !important;
+      // margin-top: -.25rem;
+
+    }
+
+  }
+
+  &-content {
+
+    padding-bottom: 1rem;
+
+  }
+
+  &-section {
+
+    // outline: 1px dotted rgba(#f00, .5);
+
+    margin-bottom: 2rem;
+
+    &:last-child {
+
+      margin-bottom: 0;
+
+    }
+
+  }
+
+  &-footer {
+
+    // display: flex;
+    // align-items: center;
+    margin: 1rem 0;
+    margin-top: 1.5rem;
+
+    .eval-pagination {
+
+      text-align: center;
+
+    }
+
+    .eval-validation {
+
+      text-align: right;
+
+    }
+
+  }
+
+  h1 {
+
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+
+    color: var(--CUSTOM-PRIMARY);
+
+  }
+
+  h2 {
+
+    font-size: 1.425rem;
+    font-weight: 600;
+    // margin-bottom: .75rem;
+    margin-bottom: 0;
+
+    color: var(--CUSTOM-PRIMARY);
+
+    &::before {
+
+      content: '';
+      display: inline-block;
+      width: .75em;
+      height: .75em;
+      margin-right: .5em;
+
+      background-color: var(--CUSTOM-PRIMARY);
+
+    }
+
+    .feather {
+
+      margin-left: .25rem;
+      margin-top: -2px;
+
+      color: var(--TXT-DIMED);
+      stroke-width: 1.5;
+
+      transition: color .2s;
+
+      &:hover {
+
+        color: var(--TXT);
+
+      }
+
+    }
+
+  }
+
+  h3 {
+
+    //
+
+  }
+
+  h4 {
+
+    //
+
+  }
+
+  h5 {
+
+    //
+
+  }
+
+  h6 {
+
+    //
+
+  }
+
+  .form-help {
+
+    display: flex;
+    align-items: baseline;
+
+  }
+
+  .count-text {
+
+    margin-left: auto;
+    padding-left: 1rem;
+
+    white-space: nowrap;
+    font-style: italic;
+
+  }
+
+  .alert {
+
+    margin-bottom: 2rem;
+
+  }
+
+}

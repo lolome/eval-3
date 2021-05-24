@@ -1,0 +1,11 @@
+:root {
+
+  --CUSTOM-BACK:  var(--GRAY-1);
+  --CUSTOM-PRIMARY:  #3d6294;
+  --CUSTOM-SECONDARY:  #000;
+
+}
+
+.custom-color-primary {
+  color: var(--CUSTOM-PRIMARY);
+}

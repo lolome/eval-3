@@ -1,0 +1,83 @@
+/*
+ * -----------------------------------------
+ *  MIXINS
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+@import '_mixins/index';
+
+/*
+ * -----------------------------------------
+ *  COMMONS
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+.dropdown-menu {
+
+  //
+
+  // a {
+  //
+  //   // max-width: 280px;
+  //   // white-space: normal;
+  //
+  // }
+
+  .valid:not(.active) {
+
+    color: var(--bs-success);
+
+  }
+
+  .feather {
+
+    width: 20px;
+    height: 20px;
+    margin-left: -.2rem;
+    margin-right: .25rem;
+    margin-top: -2px;
+
+    stroke-width: 1.5;
+
+  }
+
+  ul {
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    a {
+
+      padding-left: 2.25rem;
+
+    }
+
+  }
+
+}
+
+.form-label {
+
+  //
+
+  .feather {
+
+    width: 20px;
+    height: 20px;
+    margin-left: .25rem;
+    margin-top: -2px;
+
+    color: var(--TXT-DIMED);
+    stroke-width: 1.5;
+
+    transition: color .2s;
+
+    &:hover {
+
+      color: var(--TXT);
+
+    }
+
+  }
+
+}

@@ -1,0 +1,125 @@
+@@include('_partials/app-header.html', {
+  "title": "ENTRETIEN : EV@L 3",
+  "bodyClass": "eval"
+})
+
+<main class="app-main">
+  <div class="app-content">
+
+    @@include('_partials/eval-header.html')
+
+    @@include('_partials/eval-nav.html')
+
+    @@include('_partials/alert.html', {
+      "txt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    })
+
+    <div class="eval-content">
+
+      <div class="eval-section">
+        <div class="row">
+          <div class="col-12">
+            <h2>Les faits marquants de l’année</h2>
+            <div class="row mt-3">
+              <div class="col-12 col-md-6">
+                <label for="x1-1" class="form-label">
+                  Point de vue collaborateur.trice
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
+                    <i data-feather="help-circle"></i>
+                  </a>
+                </label>
+                <textarea class="form-control" id="x1-1" rows="5"></textarea>
+                <div class="form-help">
+                  <div class="form-text">
+                    Bus quaspe mosam, quam aut ditium imi, officium explabo remque core quo ditat eos aut explaborecae peruptat.
+                  </div>
+                  <div class="form-text count-text">
+                    <small>0/300 signes max</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12  col-md-6">
+                <label for="x1-2" class="form-label" disabled>Point de vue évaluateur.trice</label>
+                <textarea class="form-control" id="x1-2" rows="5" readonly disabled>Non renseigné</textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="eval-section">
+        <div class="row">
+          <div class="col-12">
+            <h2>
+              Les actions et résultats qui ont apportés le plus de satisfaction
+              <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
+                <i data-feather="help-circle"></i>
+              </a>
+            </h2>
+            <p class="mt-2 custom-color-primary">
+              Ribus eiumquo volori bernatiaepel in conecte mporem accae magnis sim expe volecti onsent, con eiunt aut fuga. Endis imil inimus eos et am net desed quia dunt peliquam dollat ipsam, que vitatiae. Tene dolest, ommoluptis volluptae voloriorio.
+            </p>
+
+            <div class="row mt-3">
+              <div class="col-12">
+                <textarea class="form-control" id="x2-1" rows="5"></textarea>
+                <div class="form-help">
+                  <div class="form-text">
+                    Bus quaspe mosam, quam aut ditium imi, officium explabo remque core quo ditat eos aut explaborecae peruptat.
+                  </div>
+                  <div class="form-text count-text">
+                    <small>0/300 signes max</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-12">
+                <label for="x2-2" class="form-label">
+                  Les activités nouvelles
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
+                    <i data-feather="help-circle"></i>
+                  </a>
+                </label>
+                <textarea class="form-control" id="x2-2" rows="5"></textarea>
+                <div class="form-help">
+                  <div class="form-text count-text">
+                    <small>0/300 signes max</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-12">
+                <label for="x2-3" class="form-label">
+                  Les tâches amenées à disparaître ou à évoluer
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
+                    <i data-feather="help-circle"></i>
+                  </a>
+                </label>
+                <textarea class="form-control" id="x2-3" rows="5"></textarea>
+                <div class="form-help">
+                  <div class="form-text">
+                    Bus quaspe mosam, quam aut ditium imi, officium explabo remque core quo ditat eos aut explaborecae peruptat.
+                  </div>
+                  <div class="form-text count-text">
+                    <small>0/300 signes max</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    @@include('_partials/eval-footer.html')
+
+  </div>
+</main>
+
+@@include('_partials/app-footer.html')

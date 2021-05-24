@@ -1,0 +1,51 @@
+/*
+ * -----------------------------------------
+ *  UTILS
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+
+.html-hidden {
+  display: none;
+}
+
+.print-hidden,
+.pdf-hidden {
+  display: none;
+}
+
+.txt-dimed {
+  color: var(--TXT-DIMED);
+}
+
+.txt-muted {
+  color: var(--TXT-MUTED);
+}
+
+.txt-upper {
+  text-transform: uppercase;
+}
+
+.action-link {
+
+  margin: .25rem .5rem .25rem 0;
+
+  color: var(--bs-primary);
+  // border: 1px solid var(--GRAY-6);
+  border-color: var(--GRAY-6);
+
+  transition: border-color .2s;
+
+  &:hover {
+    border-color: var(--TXT);
+  }
+
+  svg {
+
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    margin-left: -4px;
+
+  }
+
+}

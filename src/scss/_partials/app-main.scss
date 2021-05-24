@@ -1,0 +1,39 @@
+/*
+ * -----------------------------------------
+ *  APP MAIN
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+.app-main {
+
+  flex: 1 0 auto;
+
+  @include media-breakpoint-up(lg) {
+
+    background: linear-gradient(0deg, rgba(#fff, 1) 0%, rgba(#fff, .2) 100%);
+
+  }
+
+}
+
+.app-content {
+
+  padding: 1.5rem 2rem;
+
+  @include media-breakpoint-up(lg) {
+
+    max-width: 960px;
+    margin: 3rem auto;
+
+    background-color: var(--WHITE);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem .75rem rgba(#000, .05);
+
+  }
+
+  @include media-breakpoint-up(xl) {
+
+    max-width: 1160px;
+
+  }
+
+}

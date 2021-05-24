@@ -1,0 +1,93 @@
+/*
+ * -----------------------------------------
+ *  MIXINS
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+@import '_mixins/index';
+
+/*
+ * -----------------------------------------
+ *  LOGIN
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+.login {
+
+  background-image: url('/wallpapers/default@1024.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  @include media-breakpoint-up(md) {
+    background-image: url('/wallpapers/default@1536.jpg');
+  }
+
+  @include media-breakpoint-up(lg) {
+    background-image: none;
+  }
+
+  @include media-breakpoint-up(xl) {
+    background-image: none;
+  }
+
+  .app-header {
+
+    display: none;
+
+  }
+
+  .app-main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(0deg, rgba(#fff, 1) 0%, transparent 100%);
+
+  }
+
+  // .app-footer {
+  //
+  //   background-color: var(--WHITE);
+  //
+  // }
+
+  .login-box {
+
+    width: 280px;
+    padding: 1rem;
+    transform: translateY(-10%);
+
+    @include media-breakpoint-up(sm) {
+      width: 360px;
+    }
+
+  }
+
+  h1 {
+
+    text-align: center;
+
+    color: var(--WHITE);
+
+  }
+
+  .form-label {
+
+    display: block;
+    // margin-bottom: .25rem;
+
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    color: var(--WHITE);
+
+  }
+
+  a {
+
+    text-decoration: none;
+
+  }
+
+}

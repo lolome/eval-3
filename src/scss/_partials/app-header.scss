@@ -1,0 +1,211 @@
+/*
+ * -----------------------------------------
+ *  APP HEADER
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+.app-header {
+
+  flex: 0 0 64px;
+  display: flex;
+  // align-items: center;
+
+  background-color: var(--WHITE);
+  border-bottom: 1px solid var(--BDR-LIGHT);
+
+  @include media-breakpoint-up(lg) {
+
+    flex: 0 0 100px;
+
+  }
+
+  .container-lg {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+  }
+
+  .app-infos {
+
+    display: flex;
+    align-items: center;
+
+  }
+
+  .app-logo {
+
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+
+    background-color: var(--GRAY-3);
+    // border: 1px solid var(--TXT-DIMED);
+
+    @include media-breakpoint-up(lg) {
+
+      width: 160px;
+      height: 64px;
+      margin-right: 1.5rem;
+
+    }
+
+  }
+
+  .app-name {
+
+    font-size: 1.25rem;
+
+    @include media-breakpoint-up(md) {
+
+      font-size: 1.5rem;
+
+    }
+
+    @include media-breakpoint-up(lg) {
+
+      font-size: 1.75rem;
+
+    }
+
+  }
+
+  .user-nav {
+
+    display: flex;
+    align-items: center;
+
+    .dropdown-toggle {
+
+      display: flex;
+      align-items: center;
+
+      text-decoration: none;
+
+      color: var(--TXT-DIMED);
+
+      transition: color .2s;
+
+      &:hover,
+      &:focus {
+
+        color: var(--TXT);
+
+        .user-avatar {
+
+          border-color: var(--TXT);
+
+        }
+
+      }
+
+    }
+
+    .user-avatar {
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      overflow: hidden;
+      margin: 0 .25rem 0 .5rem;
+
+      border: 1px solid var(--TXT-DIMED);
+      border-radius: 50%;
+
+      transition: border-color .2s;
+
+      svg {
+
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-top: 2px;
+
+        stroke-width: 1px;
+
+      }
+
+    }
+
+  }
+
+  .help-dropdown,
+  .dev-dropdown {
+
+    //
+
+    .dropdown-toggle {
+
+      text-decoration: none;
+
+      color: var(--TXT-DIMED);
+
+      transition: color .2s;
+
+      &:hover,
+      &:focus {
+
+        color: var(--TXT);
+
+      }
+
+      &::after {
+        display: none;
+      }
+
+      svg {
+
+        // display: block;
+        // width: 32px;
+        // height: 32px;
+
+        stroke-width: 1.5px;
+
+      }
+
+    }
+
+  }
+
+  // .dev-dropdown {
+  //
+  //   //
+  //
+  //   .dropdown-toggle {
+  //
+  //     text-decoration: none;
+  //
+  //     color: var(--TXT-DIMED);
+  //
+  //     transition: color .2s;
+  //
+  //     &:hover,
+  //     &:focus {
+  //
+  //       color: var(--TXT);
+  //
+  //     }
+  //
+  //     &::after {
+  //       display: none;
+  //     }
+  //
+  //     svg {
+  //
+  //       // display: block;
+  //       // width: 32px;
+  //       // height: 32px;
+  //
+  //       stroke-width: 1.5px;
+  //
+  //     }
+  //
+  //   }
+  //
+  // }
+
+}

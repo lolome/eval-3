@@ -1,0 +1,60 @@
+<div class="user-nav">
+
+  <div class="dropdown">
+    <a class="dropdown-toggle" href="#" role="button" id="user-nav" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,10">
+      <span class="user-name d-none d-md-block">Jean-Christophe Stevenson</span>
+      <span class="user-avatar">
+        <i data-feather="user"></i>
+      </span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="user-nav">
+      <li class="d-md-none">
+        <span class="dropdown-item-text">
+          Jean-Christophe Stevenson
+        </span>
+      </li>
+      <li class="d-md-none">
+        <hr class="dropdown-divider">
+      </li>
+      <li>
+        <a class="dropdown-item" href="home.html">
+          <i data-feather="home"></i>
+          Accueil
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item" href="#">
+          ...
+        </a>
+      </li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#search-modal">
+        <i data-feather="search"></i>
+        Chercher une personne
+      </a>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#password-modal">
+        <i data-feather="lock"></i>
+        Modifier mot de passe
+      </a>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li>
+        <a class="dropdown-item" href="login.html">
+          <i data-feather="log-out"></i>
+          Déconnexion
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  @@include('help-dropdown.html')
+
+  @@include('dev-dropdown.html')
+
+</div>

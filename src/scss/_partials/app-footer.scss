@@ -1,0 +1,70 @@
+/*
+ * -----------------------------------------
+ *  APP FOOTER
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+.app-footer {
+
+  flex: 0 0 40px;
+  display: flex;
+
+  color: var(--TXT-DIMED);
+  background-color: var(--WHITE);
+  border-top: 1px solid var(--BDR-LIGHT);
+
+  @include media-breakpoint-up(lg) {
+
+    flex: 0 0 48px;
+
+    font-size: 0.875rem;
+
+  }
+
+  .container-lg {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+  }
+
+  a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: color .2s;
+
+    &:hover {
+      color: var(--TXT);
+    }
+
+  }
+
+  .dev-nav {
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    li {
+
+      //
+
+    }
+
+    a {
+
+      display: inline-block;
+      padding: 0 .5em;
+
+    }
+
+  }
+
+}

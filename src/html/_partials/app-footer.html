@@ -1,0 +1,43 @@
+      <footer class="app-footer">
+        <div class="container-lg">
+
+          <span>Powered by <a href="https://synacom.fr/" target="_blank">synacom.fr</a></span>
+
+          <ul class="dev-nav">
+            <li>
+              <a href="login.html">Identification</a>
+            </li>
+            <li>
+              <a href="home.html">Accueil</a>
+            </li>
+            <li>
+              <a href="eval.html">Entretien</a>
+            </li>
+            <li>
+              <a href="/">index</a>
+            </li>
+          </ul>
+
+        </div>
+      </footer>
+
+    </div>
+
+    @@if (userModal === true) {
+      @@include('user-modal.html')
+    }
+
+    @@include('help-modals.html')
+
+    @@include('search-modal.html')
+
+    @@include('password-modal.html')
+
+    @@include('help-modal-ex.html')
+
+    <!-- APP SCRIPTS -->
+    <script src="/assets/js/app.js"></script>
+
+  </body>
+
+</html>

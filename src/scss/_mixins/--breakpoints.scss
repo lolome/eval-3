@@ -1,0 +1,34 @@
+@mixin SCREEN-SM-UP () {
+	@media only screen
+	and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin SCREEN-MD-UP () {
+	@media only screen
+	and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin SCREEN-LG-UP () {
+	@media only screen
+	and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin SCREEN-XL-UP () {
+	@media only screen
+	and (min-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin SCREEN-XXL-UP () {
+	@media only screen
+	and (min-width: 1400px) {
+		@content;
+	}
+}

@@ -1,0 +1,80 @@
+@@include('_partials/app-header.html', {
+  "title": "HOME : EV@L 3",
+  "bodyClass": "home"
+})
+
+<main class="app-main">
+  <div class="app-content">
+
+    <div class="row">
+
+      <div class="col-md-6">
+
+        <h2 class="mb-4">Mon espace responsable</h2>
+
+        <h3>Fiche de poste</h3>
+        <p>
+          <span class="txt-dimed">Actuellement ouvert uniquement aux utilisateurs de test</span><br>
+          Actions en attente pour 3 fiches de poste
+        </p>
+        <p class="btn-toolbar actions-links">
+          <a href="#" class="btn action-link">
+            <i data-feather="chevron-right"></i>
+            Saisir/valider
+          </a>
+          <a href="#" class="btn action-link">
+            <i data-feather="chevron-right"></i>
+            Consulter
+          </a>
+        </p>
+
+        <h3>Entretiens 2020 PATS</h3>
+        <p>
+          <span class="txt-dimed">Actuellement ouvert uniquement aux utilisateurs de test</span><br>
+          Actions en attente pour 2 entretiens professionnels<br>
+          Actions en attente pour 2 entretiens CAP
+        </p>
+        <p class="btn-toolbar actions-links">
+          <a href="#" class="btn action-link">
+            <i data-feather="chevron-right"></i>
+            Gérer mes convocations
+          </a>
+          <a href="#" class="btn action-link">
+            <i data-feather="chevron-right"></i>
+            Saisir/valider
+          </a>
+          <a href="#" class="btn action-link">
+            <i data-feather="chevron-right"></i>
+            Consulter
+          </a>
+        </p>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <h2 class="mb-4">Mon compte</h2>
+
+        <div class="user-summary mb-4">
+          <strong>Jean-Christophe Stevenson</strong><br>
+          <span class="txt-dimed">Matricule&nbsp;: </span>SYNACOM22<br>
+          <span class="txt-dimed">Direction&nbsp;: </span>OUI<br>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#password-modal">
+            Modifier mot de passe
+          </a>
+        </div>
+
+        @@include('_partials/user-tabs.html')
+
+      </div>
+
+    </div>
+
+
+    <p>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#user-modal">User modal</a>
+    </p>
+  </div>
+</main>
+
+@@include('_partials/app-footer.html')
