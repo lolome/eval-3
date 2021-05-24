@@ -14,13 +14,6 @@
 
   //
 
-  // a {
-  //
-  //   // max-width: 280px;
-  //   // white-space: normal;
-  //
-  // }
-
   .valid:not(.active) {
 
     color: var(--bs-success);
@@ -86,15 +79,15 @@
 
   margin: .25rem .5rem .25rem 0;
 
-  // color: var(--bs-primary);
   color: var(--TEXT-DIMED);
   border-color: var(--TEXT-DIMED);
 
   transition: border-color .2s, color .2s;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: var(--bs-primary);
-    // border-color: var(--TXT);
     border-color: var(--bs-primary);
   }
 

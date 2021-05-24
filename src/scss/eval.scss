@@ -58,7 +58,6 @@
     h1 {
 
       margin: 0 !important;
-      // margin-top: -.25rem;
 
     }
 
@@ -72,8 +71,6 @@
 
   &-section {
 
-    // outline: 1px dotted rgba(#f00, .5);
-
     margin-bottom: 2rem;
 
     &:last-child {
@@ -86,14 +83,14 @@
 
   &-footer {
 
-    // display: flex;
-    // align-items: center;
     margin: 1rem 0;
     margin-top: 1.5rem;
 
     .eval-pagination {
 
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
     }
 
@@ -119,7 +116,6 @@
 
     font-size: 1.425rem;
     font-weight: 600;
-    // margin-bottom: .75rem;
     margin-bottom: 0;
 
     color: var(--CUSTOM-PRIMARY);
