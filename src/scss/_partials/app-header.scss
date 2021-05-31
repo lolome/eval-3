@@ -116,7 +116,7 @@
 
       transition: border-color .2s;
 
-      svg {
+      .feather {
 
         display: block;
         width: 30px;
@@ -124,6 +124,24 @@
         margin-top: 2px;
 
         stroke-width: 1px;
+
+      }
+
+      @include media-breakpoint-up(lg) {
+
+        width: 48px;
+        height: 48px;
+
+        .feather {
+
+          // display: block;
+          width: 48px;
+          height: 48px;
+          // margin-top: 2px;
+
+          stroke-width: .75px;
+
+        }
 
       }
 

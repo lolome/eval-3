@@ -55,7 +55,7 @@ body {
 
   @include media-breakpoint-up(lg) {
 
-    background-image: url('/wallpapers/default@2048.jpg');
+    background-image: url('../../wallpapers/default@2048.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -64,7 +64,7 @@ body {
 
   @include media-breakpoint-up(xl) {
 
-    background-image: url('/wallpapers/default@2048.jpg');
+    background-image: url('../../wallpapers/default@2048.jpg');
 
   }
 

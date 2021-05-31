@@ -12,13 +12,13 @@
  */
 .login {
 
-  background-image: url('/wallpapers/default@1024.jpg');
+  background-image: url('../../wallpapers/default@1024.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 
   @include media-breakpoint-up(md) {
-    background-image: url('/wallpapers/default@1536.jpg');
+    background-image: url('../../wallpapers/default@1536.jpg');
   }
 
   @include media-breakpoint-up(lg) {
@@ -49,15 +49,28 @@
 
     width: 280px;
     padding: 1rem;
-    transform: translateY(-10%);
+    transform: translateY(-5%);
 
     @include media-breakpoint-up(sm) {
       width: 360px;
     }
 
+    @include media-breakpoint-up(lg) {
+      transform: translateY(0);
+    }
+
   }
 
   h1 {
+
+    text-align: center;
+
+    color: var(--WHITE);
+    border: 1px solid var(--WHITE);
+
+  }
+
+  .presentation {
 
     text-align: center;
 
@@ -80,6 +93,12 @@
   a {
 
     text-decoration: none;
+
+  }
+
+  .login-custom {
+
+    display: none;
 
   }
 
