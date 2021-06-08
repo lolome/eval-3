@@ -14,9 +14,15 @@
 
   //
 
-  .valid:not(.active) {
+  .valid:not(:active) {
 
     color: var(--bs-success);
+
+  }
+
+  .valid.active {
+
+    color: #fff;
 
   }
 
