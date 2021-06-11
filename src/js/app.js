@@ -5,6 +5,7 @@
  */
 import './modules/bootstrap';
 import './modules/feather-icons';
+import './modules/dropzone';
 
 /*
  * -----------------------------------------

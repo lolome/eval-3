@@ -91,8 +91,8 @@ function processScss () {
  *  BOOTSTRAP
  * - - - - - - - - - - - - - - - - - - - - -
  */
-function processBootstrap () {
-  return processStyles('./src/_vendors/bootstrap.scss');
+function processVendorsScss () {
+  return processStyles('./src/_vendors/*.scss');
 }
 
 /*
@@ -142,6 +142,16 @@ function clean() {
 
 /*
  * -----------------------------------------
+ *  COPY DROPZONE CSS
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+function copyDropzoneCSS() {
+  return gulp.src('./node_modules/dropzone/dist/dropzone.css')
+    .pipe(gulp.dest('./dist/assets/css'));
+}
+
+/*
+ * -----------------------------------------
  *  COPY ICONS
  * - - - - - - - - - - - - - - - - - - - - -
  */
@@ -170,8 +180,8 @@ function copyWallpapers() {
  *  TASKS
  * - - - - - - - - - - - - - - - - - - - - -
  */
-const serve = gulp.series(clean, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, processHtml, processBootstrap, processScss, processScripts, watchFiles, browserSync));
-const build = gulp.series(clean, setProd, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, processHtml, processBootstrap, processScss, processScripts));
+const serve = gulp.series(clean, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts, watchFiles, browserSync));
+const build = gulp.series(clean, setProd, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts));
 
 /*
  * -----------------------------------------
@@ -180,9 +190,10 @@ const build = gulp.series(clean, setProd, gulp.parallel(copyIcons, copyFavicon, 
  */
 exports.processHtml = processHtml;
 exports.processStyles = processStyles;
-exports.processBootstrap = processBootstrap;
+exports.processVendorsScss = processVendorsScss;
 exports.processScripts = processScripts;
 exports.clean = clean;
+exports.copyDropzoneCSS = copyDropzoneCSS;
 exports.copyIcons = copyIcons;
 exports.copyFavicon = copyFavicon;
 exports.serve = serve;
