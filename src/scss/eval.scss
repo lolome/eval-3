@@ -215,53 +215,36 @@
 
   }
 
-  .form-help {
-
-    display: flex;
-    align-items: baseline;
-
-  }
-
-  .count-text {
-
-    margin-left: auto;
-    padding-left: 1rem;
-
-    white-space: nowrap;
-    font-style: italic;
-
-  }
-
   .alert {
 
     margin-bottom: 2rem;
 
   }
 
-  .grid {
-
-    //
-
-    .row {
-
-      padding: .5rem 0;
-
-      // border-top: 1px solid var(--BORDER-LIGHT);
-
-      &:last-child {
-
-        // border-bottom: 1px solid var(--BORDER-LIGHT);
-
-      }
-
-    }
-
-    .col {
-
-      border-top: 1px solid var(--BORDER-LIGHT);
-
-    }
-
-  }
+  // .grid {
+  //
+  //   //
+  //
+  //   .row {
+  //
+  //     padding: .5rem 0;
+  //
+  //     // border-top: 1px solid var(--BORDER-LIGHT);
+  //
+  //     &:last-child {
+  //
+  //       // border-bottom: 1px solid var(--BORDER-LIGHT);
+  //
+  //     }
+  //
+  //   }
+  //
+  //   .col {
+  //
+  //     border-top: 1px solid var(--BORDER-LIGHT);
+  //
+  //   }
+  //
+  // }
 
 }

@@ -12,13 +12,13 @@
  */
 .login {
 
-  background-image: url('../../wallpapers/default@1024.jpg');
+  background-image: var(--CUSTOM-IMAGE-SM);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 
   @include media-breakpoint-up(md) {
-    background-image: url('../../wallpapers/default@1536.jpg');
+    background-image: var(--CUSTOM-IMAGE-MD);
   }
 
   @include media-breakpoint-up(lg) {

@@ -1,0 +1,157 @@
+@@include('_partials/app-header.html', {
+  "title": "HOME : EV@L 3",
+  "bodyClass": "home"
+})
+
+<main class="app-main">
+  <div class="app-content">
+
+    <div class="row">
+
+      <div class="col-12">
+
+        <div class="page-title mb-4">
+          <h1>Évalués</h1>
+          <p>Les agents dont je suis le responsable direct</p>
+        </div>
+
+        <div class="mb-4">
+
+          <table class="table table-hover">
+
+            <thead>
+              <tr>
+                <th>
+                  Agent (Prénom NOM)
+                </th>
+                <th>
+                  Etat de l'entretien
+                </th>
+                <th>
+                  Action
+                </th>
+                <th>
+                  &nbsp;
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr class="align-middle">
+                <td>
+                  <a href="#">
+                    Pascal SYNA1
+                  </a>
+                </td>
+                <td>
+                  <span class="badge bg-warning text-dark">
+                    Entretien en cours
+                  </span>
+                </td>
+                <td>
+                  <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" width="14" height="14"></i>
+                    Saisir
+                  </a>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" width="14" height="14"></i>
+                    imprimer
+                  </a>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider</a>
+                        </li>
+                      </ul>
+                    </div>
+                </td>
+              </tr>
+
+              <tr class="align-middle">
+                <td>
+                  <a href="#" class="">
+                    Emmanuelle SYNA2
+                  </a>
+                </td>
+                <td>
+                  <span class="badge bg-warning text-dark">
+                    Entretien en cours
+                  </span>
+                </td>
+                <td>
+                  <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" width="14" height="14"></i>
+                    Saisir
+                  </a>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" width="14" height="14"></i>
+                    imprimer
+                  </a>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton2">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider</a>
+                        </li>
+                      </ul>
+                    </div>
+                </td>
+              </tr>
+
+              <tr class="align-middle">
+                <td>
+                  <a href="#">
+                    Solène SYNA3
+                  </a>
+                </td>
+                <td>
+                  <span class="badge bg-danger">
+                    Pas commencé
+                  </span>
+                </td>
+                <td>
+                  <a href="#" class="btn btn-sm btn-outline-success">
+                    <i data-feather="plus" width="14" height="14"></i>
+                    Créer
+                  </a>
+                </td>
+                <td>
+                  &nbsp;
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+        <div class="mb-4">
+          <a href="/home.html" class="btn action-link">
+            <i data-feather="chevron-left"></i>
+            Espace personnel
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+@@include('_partials/app-footer.html')
