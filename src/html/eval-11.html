@@ -1,0 +1,78 @@
+@@include('_partials/app-header.html', {
+  "title": "ENTRETIEN : EV@L 3",
+  "bodyClass": "eval"
+})
+
+<main class="app-main">
+  <div class="app-content">
+    <forn>
+
+      @@include('_partials/eval-header.html')
+
+      @@include('_partials/eval-nav.html', {
+        "title": "7 - Conclusions de l'entretien",
+        "active": "11"
+      })
+
+      <div class="eval-content">
+
+        <div class="row">
+          <div class="col-12">
+            <label for="X11-1" class="form-label">
+              Observations et remarques complémentaires concernant le déroulement de l’entretien de l’agent évaluateur
+            </label>
+            <textarea class="form-control" id="X11-1" rows="5"></textarea>
+            <div class="form-help">
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="X11-2">
+              Date de la convocation à l'entretien
+            </label>
+            <input type="date" id="X11-2" class="form-control">
+          </div>
+
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="X11-3">
+              Date d’élaboration du compte-rendu
+            </label>
+            <input type="date" id="X11-3" class="form-control">
+          </div>
+
+          <div class="col-12 col-md-4">
+            <label class="form-label" for="X11-4">
+              Durée de l’entretien (En minutes)
+            </label>
+            <select class="form-select" id="X11-4">
+              <option value=""></option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="60" selected="selected">60</option>
+              <option value="90">90</option>
+            </select>
+          </div>
+
+        </div>
+
+      </div>
+
+      @@include('_partials/eval-footer.html', {
+        "page": "11/12"
+      })
+
+    </forn>
+  </div>
+</main>
+
+@@include('_partials/app-footer.html')

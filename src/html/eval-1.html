@@ -1,0 +1,79 @@
+@@include('_partials/app-header.html', {
+  "title": "ENTRETIEN : EV@L 3",
+  "bodyClass": "eval"
+})
+
+<main class="app-main">
+  <div class="app-content">
+    <forn>
+
+      @@include('_partials/eval-header.html')
+
+      @@include('_partials/eval-nav.html', {
+        "title": "Informations agent et responsable hiérarchique",
+        "active": "1"
+      })
+
+      <div class="eval-content">
+
+        @@include('_partials/alert.html', {
+          "type": "warning",
+          "dismissible": false,
+          "text": "La fiche de poste de l'agent doit être jointe à la convocation à l'entretien (Article 6 du Décret)."
+        })
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Informations agent</h3>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>Nom</th>
+                  <td>SYNA1</td>
+                  <th>Prénom</th>
+                  <td>Pascal</td>
+                </tr>
+                <tr>
+                  <th>Direction</th>
+                  <td>Direction 99</td>
+                  <th>Service</th>
+                  <td>Service 99</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <h3>Informations responsable direct</h3>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>Nom</th>
+                  <td>SYNA1</td>
+                  <th>Prénom</th>
+                  <td>Pascal</td>
+                </tr>
+                <tr>
+                  <th>Direction</th>
+                  <td>Direction 99</td>
+                  <th>Service</th>
+                  <td>Service 99</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      @@include('_partials/eval-footer.html', {
+        "page": "1/12"
+      })
+
+    </forn>
+  </div>
+</main>
+
+@@include('_partials/app-footer.html')

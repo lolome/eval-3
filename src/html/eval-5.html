@@ -1,0 +1,74 @@
+@@include('_partials/app-header.html', {
+  "title": "ENTRETIEN : EV@L 3",
+  "bodyClass": "eval"
+})
+
+<main class="app-main">
+  <div class="app-content">
+    <forn>
+
+      @@include('_partials/eval-header.html')
+
+      @@include('_partials/eval-nav.html', {
+        "title": "3 - Appréciation générale de la valeur professionnelle",
+        "active": "5"
+      })
+
+      <div class="eval-content">
+
+        <div class="row">
+          <div class="col-12">
+            <p>A partir du bilan et résultats obtenus, en identifiant les points forts et les marges de progrès au regard de ce qui est requis dans ses fonctions (se référer à l’outil d’évaluation joint au compte-rendu), Il s’agit d’apprécier la valeur professionnelle de l’agent au regard des résultats professionnels obtenus par celui-ci et la réalisation des objectifs, ainsi que les compétences acquises ou à développer par l’agent au jour de l’entretien.</p>
+            <button class="btn btn-primary">
+              <i data-feather="download" class="float-start"></i>
+              Télécharger le formulaire vierge au format Excel
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <p>Pour chaque critère, l’encadrant doit indiquer le niveau de maîtrise estimé de son collaborateur, en prenant en compte sa réalité professionnelle, ses acquis, ses difficultés et les conditions dans lesquelles il exerce ses fonctions. Cet exercice doit permettre d’échanger avec l’agent au cours de l’entretien. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.
+Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.</p>
+
+            @@include('_partials/alert.html', {
+              "type": "warning",
+              "dismissible": false,
+              "text": "Aucun fichier chargé !"
+            })
+
+            @@include('_partials/eval-dropzone.html', {
+              "label": ""
+            })
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <label for="X5-4" class="form-label">
+              Appréciation générale de la valeur professionnelle
+              <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
+                <i data-feather="help-circle"></i>
+              </a>
+            </label>
+            <textarea class="form-control" id="X5-4" rows="5"></textarea>
+            <div class="form-help">
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      @@include('_partials/eval-footer.html', {
+        "page": "5/12"
+      })
+
+    </forn>
+  </div>
+</main>
+
+@@include('_partials/app-footer.html')
