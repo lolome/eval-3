@@ -1,0 +1,72 @@
+/*
+ * -----------------------------------------
+ *  APP MENU (OFFCANVAS)
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+
+.app-menu {
+
+  //
+
+  .offcanvas-header {
+
+    // outline: 1px dotted rgba(#f00, .5);
+
+  }
+
+  .offcanvas-body {
+
+    // outline: 1px dotted rgba(#f00, .5);
+
+    padding: 0;
+
+  }
+
+  .offcanvas-section {
+
+    // outline: 1px dotted rgba(#f00, .5);
+
+    padding: 1rem;
+
+    border-top: 1px solid var(--BORDER-MEDIUM);
+
+  }
+
+  .section-title {
+
+    margin-bottom: .5rem;
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .875rem;
+
+    color: var(--TEXT-MUTED);
+
+  }
+
+  .section-menu {
+
+    margin: 0;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 0;
+
+    list-style-type: none;
+
+  }
+
+  .dropdown-divider {
+
+    background-color: transparent;
+    border-top: 1px dotted var(--BORDER-MEDIUM);
+    opacity: 1;
+
+  }
+
+  .user-search {
+
+    // padding: 1rem;
+
+  }
+
+}

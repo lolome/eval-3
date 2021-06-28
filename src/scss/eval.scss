@@ -3,6 +3,7 @@
  *  MIXINS
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 @import '_mixins/index';
 
 /*
@@ -10,10 +11,12 @@
  *  EVAL
  * - - - - - - - - - - - - - - - - - - - - -
  */
-.eval,
-.postit {
 
-  &-header {
+.eval .app-content,
+.postit .app-content {
+
+  .eval-header,
+  .postit-header {
 
     display: flex;
     flex-direction: column;
@@ -55,7 +58,8 @@
 
   }
 
-  &-nav {
+  .eval-nav,
+  .postit-nav {
 
     display: flex;
     // align-items: flex-start;
@@ -98,13 +102,15 @@
 
   }
 
-  &-content {
+  .eval-content,
+  .postit-content {
 
     padding-bottom: 1rem;
 
   }
 
-  &-section {
+  .eval-section,
+  .postit-section {
 
     margin-bottom: 2rem;
 
@@ -116,7 +122,8 @@
 
   }
 
-  &-footer {
+  .eval-footer,
+  .postit-footer {
 
     margin: 1rem 0;
     margin-top: 1.5rem;

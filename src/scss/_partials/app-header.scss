@@ -3,6 +3,7 @@
  *  APP HEADER
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 .app-header {
 
   flex: 0 0 64px;
@@ -21,7 +22,7 @@
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 
@@ -29,8 +30,10 @@
 
   .app-infos {
 
+    flex: 0 1 auto;
     display: flex;
     align-items: center;
+    margin-right: auto;
 
   }
 
@@ -70,78 +73,30 @@
 
   }
 
-  .user-nav {
+  .app-user {
 
-    display: flex;
-    align-items: center;
+    flex: 0 0 auto;
+    margin-left: auto;
 
-    .dropdown-toggle {
+  }
 
-      display: flex;
-      align-items: center;
+  .app-menu-toggler {
 
-      text-decoration: none;
+    flex: 0 0 auto;
+    margin-left: .5rem;
+    padding-left: .375rem;
+    padding-right: .375rem;
 
-      color: var(--TEXT-DIMED);
+    @include media-breakpoint-up(md) {
 
-      transition: color .2s;
-
-      &:hover,
-      &:focus {
-
-        color: var(--TXT);
-
-        .user-avatar {
-
-          border-color: var(--TXT);
-
-        }
-
-      }
-
-    }
-
-    .user-avatar {
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 30px;
-      height: 30px;
-      overflow: hidden;
-      margin: 0 .25rem 0 .5rem;
-
-      border: 1px solid var(--TEXT-DIMED);
-      border-radius: 50%;
-
-      transition: border-color .2s;
+      margin-left: 1rem;
 
       .feather {
 
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin-top: 2px;
+        width: 28px;
+        height: 28px;
 
-        stroke-width: 1px;
-
-      }
-
-      @include media-breakpoint-up(lg) {
-
-        width: 48px;
-        height: 48px;
-
-        .feather {
-
-          // display: block;
-          width: 48px;
-          height: 48px;
-          // margin-top: 2px;
-
-          stroke-width: .75px;
-
-        }
+        stroke-width: 1.5;
 
       }
 
@@ -149,38 +104,117 @@
 
   }
 
-  .help-dropdown,
-  .dev-dropdown {
+  // .user-nav {
+  //
+  //   display: flex;
+  //   align-items: center;
+  //
+  //   .dropdown-toggle {
+  //
+  //     display: flex;
+  //     align-items: center;
+  //
+  //     text-decoration: none;
+  //
+  //     color: var(--TEXT-DIMED);
+  //
+  //     transition: color .2s;
+  //
+  //     &:hover,
+  //     &:focus {
+  //
+  //       color: var(--TXT);
+  //
+  //       .user-avatar {
+  //
+  //         border-color: var(--TXT);
+  //
+  //       }
+  //
+  //     }
+  //
+  //   }
+  //
+  //   .user-avatar {
+  //
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     width: 30px;
+  //     height: 30px;
+  //     overflow: hidden;
+  //     margin: 0 .25rem 0 .5rem;
+  //
+  //     border: 1px solid var(--TEXT-DIMED);
+  //     border-radius: 50%;
+  //
+  //     transition: border-color .2s;
+  //
+  //     .feather {
+  //
+  //       display: block;
+  //       width: 30px;
+  //       height: 30px;
+  //       margin-top: 2px;
+  //
+  //       stroke-width: 1px;
+  //
+  //     }
+  //
+  //     @include media-breakpoint-up(lg) {
+  //
+  //       width: 48px;
+  //       height: 48px;
+  //
+  //       .feather {
+  //
+  //         // display: block;
+  //         width: 48px;
+  //         height: 48px;
+  //         // margin-top: 2px;
+  //
+  //         stroke-width: .75px;
+  //
+  //       }
+  //
+  //     }
+  //
+  //   }
+  //
+  // }
 
-    //
-
-    .dropdown-toggle {
-
-      text-decoration: none;
-
-      color: var(--TEXT-DIMED);
-
-      transition: color .2s;
-
-      &:hover,
-      &:focus {
-
-        color: var(--TXT);
-
-      }
-
-      &::after {
-        display: none;
-      }
-
-      svg {
-
-        stroke-width: 1.5px;
-
-      }
-
-    }
-
-  }
+  // .help-dropdown,
+  // .dev-dropdown {
+  //
+  //   //
+  //
+  //   .dropdown-toggle {
+  //
+  //     text-decoration: none;
+  //
+  //     color: var(--TEXT-DIMED);
+  //
+  //     transition: color .2s;
+  //
+  //     &:hover,
+  //     &:focus {
+  //
+  //       color: var(--TXT);
+  //
+  //     }
+  //
+  //     &::after {
+  //       display: none;
+  //     }
+  //
+  //     svg {
+  //
+  //       stroke-width: 1.5px;
+  //
+  //     }
+  //
+  //   }
+  //
+  // }
 
 }

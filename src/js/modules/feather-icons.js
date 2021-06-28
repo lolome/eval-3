@@ -12,5 +12,6 @@ window.feather = feather;
  * - - - - - - - - - - - - - - - - - - - - -
  */
 document.addEventListener('DOMContentLoaded', () => {
+  console.log(feather);
   feather.replace();
 });

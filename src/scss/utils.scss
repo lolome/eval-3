@@ -13,6 +13,14 @@
   display: none;
 }
 
+.custom-color-primary {
+  color: var(--CUSTOM-PRIMARY, #3d6294);
+}
+
+.custom-color-secondary {
+  color: var(--CUSTOM-SECONDARY, #3d6294);
+}
+
 .text-dimed {
   color: var(--TEXT-DIMED);
 }
@@ -32,3 +40,13 @@
 .table-fixed {
   table-layout: fixed;
 }
+
+// .ellipsis {
+//
+//   display: block;
+//   max-width: 100%;
+//   overflow: hidden;
+//
+//   text-overflow: ellipsis;
+//
+// }

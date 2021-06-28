@@ -3,6 +3,7 @@
  *  MIXINS
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 @import '_mixins/index';
 
 /*
@@ -10,15 +11,16 @@
  *  LOGIN
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 .login {
 
-  background-image: var(--CUSTOM-IMAGE-SM);
+  background-image: var(--CUSTOM-IMAGE-SM, var(--CUSTOM-BACK));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 
   @include media-breakpoint-up(md) {
-    background-image: var(--CUSTOM-IMAGE-MD);
+    background-image: var(--CUSTOM-IMAGE-MD, var(--CUSTOM-IMAGE-SM, var(--CUSTOM-BACK)));
   }
 
   @include media-breakpoint-up(lg) {

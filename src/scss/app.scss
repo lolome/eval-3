@@ -3,6 +3,7 @@
  *  MIXINS
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 @import '_mixins/index';
 
 /*
@@ -10,6 +11,7 @@
  *  GLOBAL
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 html {
 
   height: 100%;
@@ -53,6 +55,7 @@ body {
  *  APP
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 .app {
 
   min-height: 100%;
@@ -61,7 +64,7 @@ body {
 
   @include media-breakpoint-up(lg) {
 
-    background-image: var(--CUSTOM-IMAGE-LG);
+    background-image: var(--CUSTOM-IMAGE-LG, var(--CUSTOM-IMAGE-MD, var(--CUSTOM-IMAGE-SM, var(--CUSTOM-BACK))));
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -70,7 +73,7 @@ body {
 
   @include media-breakpoint-up(xl) {
 
-    background-image: var(--CUSTOM-IMAGE-XL);
+    background-image: var(--CUSTOM-IMAGE-XL, var(--CUSTOM-IMAGE-LG, var(--CUSTOM-IMAGE-MD, var(--CUSTOM-IMAGE-SM, var(--CUSTOM-BACK)))));
 
   }
 
@@ -81,7 +84,9 @@ body {
  *  IMPORTS
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 @import '_partials/app-header.scss';
+@import '_partials/app-menu.scss';
 @import '_partials/app-main.scss';
 @import '_partials/app-footer.scss';
 
@@ -90,6 +95,7 @@ body {
  *  FOR DEV
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 .outlined {
 
   outline: 1px dotted rgba(#f00, .5);

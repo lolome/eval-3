@@ -1,1 +1,1 @@
-.html-hidden,.pdf-hidden,.print-hidden{display:none}.text-dimed{color:var(--TEXT-DIMED)}.text-muted{color:var(--TEXT-MUTED)}.text-upper{text-transform:uppercase}.text-sm{font-size:.875rem}.table-fixed{table-layout:fixed}
+.html-hidden,.pdf-hidden,.print-hidden{display:none}.custom-color-primary{color:var(--CUSTOM-PRIMARY,#3d6294)}.custom-color-secondary{color:var(--CUSTOM-SECONDARY,#3d6294)}.text-dimed{color:var(--TEXT-DIMED)}.text-muted{color:var(--TEXT-MUTED)}.text-upper{text-transform:uppercase}.text-sm{font-size:.875rem}.table-fixed{table-layout:fixed}
