@@ -1,4 +1,4 @@
-@@include('_partials/app-header.html', {
+@@include('--app-partials/header.html', {
   "title": "ENTRETIEN : EV@L 3",
   "bodyClass": "eval"
 })
@@ -7,41 +7,22 @@
   <div class="app-content">
     <forn>
 
-      @@include('_partials/eval-header.html')
+      @@include('--eval-partials/commons/header.html')
 
-      @@include('_partials/eval-nav.html', {
+      @@include('--eval-partials/commons/nav.html', {
         "title": "4 - Objectifs professionnels pour l'année à venir (##n##)",
         "active": "6"
       })
 
       <div class="eval-content">
 
-        <div class="row">
-          <div class="col-12">
-            <label for="X6-1" class="form-label">
-              Objectifs collectifs du service
-            </label>
-            <textarea class="form-control" id="X6-1" rows="5"></textarea>
-            <div class="form-help">
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
-              </div>
-            </div>
-          </div>
-        </div>
+        @@include('--eval-partials/page-6/row-1.html')
 
-        <div class="row">
-          <div class="col-12">
-            <h2>
-              Objectifs individuels liés à l’activité et aux compétences
-            </h2>
-            <p>Un objectif individuel est une action prioritaire que l’agent va mener pour faire évoluer et progresser son fonctionnement ou celui de son service. Le nombre d’objectifs n’est proposé qu’à titre indicatif, et doit être adapté au cas par cas. Un seul objectif peut être défini pour l’année. Il doit être formulé en termes précis et définir un résultat à atteindre, des moyens et des indicateurs.</p>
-          </div>
-        </div>
+        @@include('--eval-partials/page-6/row-2.html')
 
       </div>
 
-      @@include('_partials/eval-footer.html', {
+      @@include('--eval-partials/commons/footer.html', {
         "page": "6/12"
       })
 
@@ -49,4 +30,4 @@
   </div>
 </main>
 
-@@include('_partials/app-footer.html')
+@@include('--app-partials/footer.html')

@@ -34,6 +34,7 @@
     display: flex;
     align-items: center;
     margin-right: auto;
+    height: 100%;
 
   }
 
@@ -45,11 +46,15 @@
 
     background-color: var(--GRAY-3);
 
+    @include media-breakpoint-up(md) {
+      margin-right: 1.5rem;
+    }
+
     @include media-breakpoint-up(lg) {
 
       width: 160px;
       height: 64px;
-      margin-right: 1.5rem;
+      margin-right: 2rem;
 
     }
 
@@ -57,18 +62,26 @@
 
   .app-name {
 
-    font-size: 1.25rem;
+    width: 180px;
+    height: 100%;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+
+    border-left: 1px solid #ccc;
 
     @include media-breakpoint-up(md) {
-
-      font-size: 1.5rem;
-
+      width: 200px;
     }
 
     @include media-breakpoint-up(lg) {
+      width: 240px;
+      padding-left: 1.5rem;
+    }
 
-      font-size: 1.75rem;
-
+    img {
+      width: 100%;
+      max-width: 100%;
     }
 
   }
@@ -80,21 +93,43 @@
 
   }
 
+  .app-home {
+
+    flex: 0 0 auto;
+    margin-left: 1.25rem;
+
+    color: var(--TXT);
+
+    .feather {
+
+      stroke-width: 1.5;
+
+    }
+
+  }
+
   .app-menu-toggler {
 
     flex: 0 0 auto;
-    margin-left: .5rem;
+    margin-left: 1rem;
     padding-left: .375rem;
     padding-right: .375rem;
+    display: flex;
+    align-items: center;
+
+    .feather {
+
+      margin-right: .5rem;
+
+    }
 
     @include media-breakpoint-up(md) {
-
-      margin-left: 1rem;
 
       .feather {
 
         width: 28px;
         height: 28px;
+        // margin-right: .5rem;
 
         stroke-width: 1.5;
 
@@ -103,118 +138,5 @@
     }
 
   }
-
-  // .user-nav {
-  //
-  //   display: flex;
-  //   align-items: center;
-  //
-  //   .dropdown-toggle {
-  //
-  //     display: flex;
-  //     align-items: center;
-  //
-  //     text-decoration: none;
-  //
-  //     color: var(--TEXT-DIMED);
-  //
-  //     transition: color .2s;
-  //
-  //     &:hover,
-  //     &:focus {
-  //
-  //       color: var(--TXT);
-  //
-  //       .user-avatar {
-  //
-  //         border-color: var(--TXT);
-  //
-  //       }
-  //
-  //     }
-  //
-  //   }
-  //
-  //   .user-avatar {
-  //
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     width: 30px;
-  //     height: 30px;
-  //     overflow: hidden;
-  //     margin: 0 .25rem 0 .5rem;
-  //
-  //     border: 1px solid var(--TEXT-DIMED);
-  //     border-radius: 50%;
-  //
-  //     transition: border-color .2s;
-  //
-  //     .feather {
-  //
-  //       display: block;
-  //       width: 30px;
-  //       height: 30px;
-  //       margin-top: 2px;
-  //
-  //       stroke-width: 1px;
-  //
-  //     }
-  //
-  //     @include media-breakpoint-up(lg) {
-  //
-  //       width: 48px;
-  //       height: 48px;
-  //
-  //       .feather {
-  //
-  //         // display: block;
-  //         width: 48px;
-  //         height: 48px;
-  //         // margin-top: 2px;
-  //
-  //         stroke-width: .75px;
-  //
-  //       }
-  //
-  //     }
-  //
-  //   }
-  //
-  // }
-
-  // .help-dropdown,
-  // .dev-dropdown {
-  //
-  //   //
-  //
-  //   .dropdown-toggle {
-  //
-  //     text-decoration: none;
-  //
-  //     color: var(--TEXT-DIMED);
-  //
-  //     transition: color .2s;
-  //
-  //     &:hover,
-  //     &:focus {
-  //
-  //       color: var(--TXT);
-  //
-  //     }
-  //
-  //     &::after {
-  //       display: none;
-  //     }
-  //
-  //     svg {
-  //
-  //       stroke-width: 1.5px;
-  //
-  //     }
-  //
-  //   }
-  //
-  // }
 
 }

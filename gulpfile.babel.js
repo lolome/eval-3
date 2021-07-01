@@ -140,6 +140,17 @@ const copyFavicon = () => {
 
 /*
  * -----------------------------------------
+ *  COPY LOGOS
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+
+const copyLogos = () => {
+  return gulp.src('./src/images/logos/*')
+    .pipe(gulp.dest('./dist/assets/logos'));
+};
+
+/*
+ * -----------------------------------------
  *  COPY WALLPAPERS
  * - - - - - - - - - - - - - - - - - - - - -
  */
@@ -192,6 +203,6 @@ const setProd = done => {
  * - - - - - - - - - - - - - - - - - - - - -
  */
 
-export default gulp.series(cleanDist, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts), watchForChanges);
+export default gulp.series(cleanDist, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts), watchForChanges);
 
-export const prod = gulp.series(cleanDist, setProd, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyDropzoneCSS, processHtml, processVendorsScss, processScripts, processScss));
+export const prod = gulp.series(cleanDist, setProd, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScripts, processScss));

@@ -1,4 +1,4 @@
-@@include('_partials/app-header.html', {
+@@include('--app-partials/header.html', {
   "title": "ENTRETIEN : EV@L 3",
   "bodyClass": "eval"
 })
@@ -7,100 +7,22 @@
   <div class="app-content">
     <forn>
 
-      @@include('_partials/eval-header.html')
+      @@include('--eval-partials/commons/header.html')
 
-      @@include('_partials/eval-nav.html', {
+      @@include('--eval-partials/commons/nav.html', {
         "title": "2 - Explications et analyse des écarts (objectifs ##n-1##)",
         "active": "4"
       })
 
       <div class="eval-content">
 
-        <div class="row">
-          <div class="col-12">
-            <p>Explications ou analyse d’éventuels écarts entre les objectifs fixés et leur réalisation :</p>
-            <ul>
-              <li>Définir si l’objectif fixé en 2020 est : complètement, partiellement, pas du tout atteint ou pas du tout atteint (pas du fait de l'agent).</li>
-              <li>Analyser l’écart entre les résultats obtenus et les résultats attendus en réfléchissant à ce qui a influencé (positivement ou négativement) les résultats obtenus.</li>
-            </ul>
+        @@include('--eval-partials/page-4/row-1.html')
 
-            <div class="solid-box">
-
-              <div class="solid-box--header">
-                <strong>Rappel objectifs fixés pour l’année ##N-1## (1 mini, 3 maxi)</strong>
-              </div>
-
-              <div class="solid-box--body">
-
-                <table class="table table-borderless mb-0">
-                	<tbody>
-                    <tr class="align-baseline">
-                  		<th>Intitulé de l'objectif</th>
-                  		<td>defsc edsq qsd sqdqs</td>
-                  	</tr>
-                    <tr class="align-baseline">
-                  		<th>Type Objectif</th>
-                  		<td>individuel</td>
-                  	</tr>
-                    <tr class="align-baseline">
-                  		<th>Etat</th>
-                  		<td>partiellement atteint</td>
-                  	</tr>
-                    <tr class="align-baseline">
-                  		<th>Observations</th>
-                  		<td>sqd d qsd sqd</td>
-                  	</tr>
-                    <tr class="align-baseline">
-                  		<th>Analyse des écarts</th>
-                  		<td>sqdsqdqs dsqd qsdsq d</td>
-                  	</tr>
-                    <tr class="align-baseline">
-                  		<th>Indicateurs et échéances : (conditions de réussite, délais de réalisation...)</th>
-                  		<td>sqd sqdsqd sq</td>
-                  	</tr>
-                    <tr class="align-baseline">
-                  		<th>Moyens et conditions de mise en œuvre : (moyens humains, matériel, formation …)</th>
-                  		<td>d qsdqsd qsd qsdqsdqs</td>
-                  	</tr>
-                  </tbody>
-                </table>
-
-              </div>
-
-              <div class="solid-box--footer">
-
-                <button class="btn btn-danger">
-                  Supprimer
-                </button>
-
-                <button class="btn btn-primary">
-                  Modifier
-                </button>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <label for="X3-4" class="form-label">
-              Observations agents
-            </label>
-            <textarea class="form-control" id="X3-4" rows="5"></textarea>
-            <div class="form-help">
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
-              </div>
-            </div>
-          </div>
-        </div>
+        @@include('--eval-partials/page-4/row-2.html')
 
       </div>
 
-      @@include('_partials/eval-footer.html', {
+      @@include('--eval-partials/commons/footer.html', {
         "page": "4/12"
       })
 
@@ -108,4 +30,4 @@
   </div>
 </main>
 
-@@include('_partials/app-footer.html')
+@@include('--app-partials/footer.html')

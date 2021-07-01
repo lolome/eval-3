@@ -37,23 +37,25 @@
 
     </div>
 
-    @@if (userModal === true) {
-      @@include('user-modal.html')
-    }
+    @@include('../--common-partials/user-modal.html')
 
-    @@include('help-modals.html')
+    @@include('../--common-partials/help-modals.html')
 
-    @@include('search-modal.html')
+    @@include('../--common-partials/search-modal.html')
 
-    @@include('password-modal.html')
+    @@include('../--common-partials/password-modal.html')
 
-    @@include('help-modal-ex.html')
+    @@include('../--common-partials/help-modal-ex.html')
 
-    @@include('modal-tester.html')
+    @@include('../--common-partials/modal-tester.html')
 
-    @@include('clipboard-modal.html')
+    @@include('../--common-partials/clipboard-modal.html')
 
     <!-- APP SCRIPTS -->
+
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/dropzone.js"></script>
+    <script src="/assets/js/feather-icons.js"></script>
     <script src="/assets/js/app.js"></script>
 
   </body>

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/dropzone.css">
     <link rel="stylesheet" href="assets/css/vars.css">
-    <link rel="stylesheet" href="assets/css/custom-1.css">
+    <link rel="stylesheet" href="assets/css/custom-2.css">
     <link rel="stylesheet" href="assets/css/utils.css">
     <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -44,7 +44,7 @@
           <div class="app-infos">
             <a href="home.html" class="app-logo"></a>
             <div class="app-name">
-              Ev@l / Poste-it
+              <img src="assets/logos/eval-post-it-logo.svg">
             </div>
           </div>
 
@@ -52,11 +52,16 @@
             Jean-Christophe Stevenson
           </div>
 
+          <a href="home.html" class="app-home">
+            <i data-feather="home"></i>
+          </a>
+
           <a class="btn app-menu-toggler" data-bs-toggle="offcanvas" href="#app-menu" role="button" aria-controls="app-menu">
             <i data-feather="menu"></i>
+            <span>Menu</span>
           </a>
 
         </div>
       </header>
 
-      @@include('app-menu.html')
+      @@include('menu.html')

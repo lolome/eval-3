@@ -1,4 +1,4 @@
-@@include('_partials/app-header.html', {
+@@include('--app-partials/header.html', {
   "title": "ENTRETIEN : EV@L 3",
   "bodyClass": "eval"
 })
@@ -6,14 +6,14 @@
 <main class="app-main">
   <div class="app-content">
 
-    @@include('_partials/eval-header.html')
+    @@include('--eval-partials/commons/header.html')
 
-    @@include('_partials/eval-nav.html', {
+    @@include('--eval-partials/commons/nav.html', {
       "title": "Informations agent et responsable hiérarchique",
       "active": "1"
     })
 
-    @@include('_partials/alert.html', {
+    @@include('--common-partials/alert.html', {
       "type": "warning",
       "dismissible": true,
       "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -182,10 +182,10 @@
         </div>
       </div>
 
-      @@include('_partials/eval-table-1.html')
+      @@include('_partials/eval/XX-table-1.html')
 
       <div class="row mt-4">
-        @@include('_partials/alert.html', {
+        @@include('--common-partials/alert.html', {
           "type": "success",
           "dismissible": false,
           "txt": "Pour favoriser le “responsif”, préférer des systèmes de “grid”"
@@ -194,13 +194,16 @@
 
       ... à venir ...
 
-      @@include('_partials/eval-dropzone.html')
+      @@include('--common-partials/dropzone.html', {
+        "id": "dropzone-1",
+        "label": "Lorem ipsum dolor sit amet"
+      })
 
     </div>
 
-    @@include('_partials/eval-footer.html')
+    @@include('--eval-partials/commons/footer.html')
 
   </div>
 </main>
 
-@@include('_partials/app-footer.html')
+@@include('--app-partials/footer.html')

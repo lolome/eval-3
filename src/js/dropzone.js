@@ -17,7 +17,8 @@ Dropzone.autoDiscover = false;
  * - - - - - - - - - - - - - - - - - - - - -
  */
 document.addEventListener('DOMContentLoaded', () => {
-  const dropzoneForm1 = document.getElementById('dropzone-1');
-  if (!dropzoneForm1) return;
-  const dropzone1 = new Dropzone(dropzoneForm1, { url: '/file/post' });
+  const dropzones = [ ... document.querySelectorAll('.dropzone')];
+  dropzones.forEach(dropzone => {
+    new Dropzone(dropzone);
+  });
 });

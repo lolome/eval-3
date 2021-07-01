@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/dropzone.css">
     <link rel="stylesheet" href="assets/css/vars.css">
-    <link rel="stylesheet" href="assets/css/custom-1.css">
+    <link rel="stylesheet" href="assets/css/custom-2.css">
     <link rel="stylesheet" href="assets/css/utils.css">
     <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -44,7 +44,7 @@
           <div class="app-infos">
             <a href="home.html" class="app-logo"></a>
             <div class="app-name">
-              Ev@l / Poste-it
+              <img src="assets/logos/eval-post-it-logo.svg">
             </div>
           </div>
 
@@ -52,8 +52,13 @@
             Jean-Christophe Stevenson
           </div>
 
+          <a href="home.html" class="app-home">
+            <i data-feather="home"></i>
+          </a>
+
           <a class="btn app-menu-toggler" data-bs-toggle="offcanvas" href="#app-menu" role="button" aria-controls="app-menu">
             <i data-feather="menu"></i>
+            <span>Menu</span>
           </a>
 
         </div>
@@ -88,10 +93,10 @@
       </div>
     </section>
 
-    <section class="offcanvas-section nav-section">
-      <!-- <div class="section-title">
+    <!-- <section class="offcanvas-section nav-section">
+      <div class="section-title">
         Navigation
-      </div> -->
+      </div>
       <ul class="section-menu">
         <li>
           <a class="dropdown-item text-truncate active" href="home.html">
@@ -99,26 +104,26 @@
             Accueil
           </a>
         </li>
-        <!-- <li>
+        <li>
           <a class="dropdown-item text-truncate" href="home.html">
             <i data-feather="chevron-right"></i>
             Page 2
           </a>
-        </li> -->
-        <!-- <li>
+        </li>
+        <li>
           <a class="dropdown-item text-truncate" href="home.html">
             <i data-feather="chevron-right"></i>
             Page 3
           </a>
-        </li> -->
-        <!-- <li>
+        </li>
+        <li>
           <a class="dropdown-item text-truncate" href="home.html">
             <i data-feather="chevron-right"></i>
             Page 4
           </a>
-        </li> -->
+        </li>
       </ul>
-    </section>
+    </section> -->
 
     <section class="offcanvas-section help-section">
       <div class="section-title">
@@ -597,6 +602,421 @@
   </div>
 </main>
 
+<main class="app-main">
+  <div class="app-content">
+
+    <div class="row">
+
+      <div class="col-12">
+
+        <div class="page-title mb-4">
+          <h1>Les agents dont je suis le responsable direct</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+        <div class="mb-4">
+
+          <table class="table table-hover">
+
+            <thead>
+              <tr>
+                <th>
+                  Agent
+                </th>
+                <th>
+                  Direction
+                </th>
+                <th>
+                  Convocation
+                </th>
+                <th>
+                  Entretien annuel
+                </th>
+                <th>
+                  &nbsp;
+                </th>
+                <th>
+                  &nbsp;
+                </th>
+                <th>
+                  Entretien CAP
+                </th>
+                <th>
+                  &nbsp;
+                </th>
+                <th>
+                  &nbsp;
+                </th>
+                <th>
+                  &nbsp;
+                </th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <tr class="align-baseline">
+                <td>
+                  <a href="#" class="d-block text-truncate" data-bs-toggle="modal" data-bs-target="#user-modal">
+                    Prénom 67 Nom 67
+                  </a>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">Direction 67</span>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">28/06 09:00</span>
+                </td>
+                <td>
+                  <span class="badge bg-success">
+                    cloturé
+                  </span>
+                </td>
+                <th>
+                  <a href="#" class="btn btn-sm btn-outline-secondary">
+                    <i data-feather="chevron-right" class="float-start"></i>
+                    Voir
+                  </a>
+                </th>
+                <th>
+                  <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a>
+                </th>
+                <td class="text-nowrap">
+                  <!-- <a href="/eval.html" class="btn btn-sm btn-outline-success">
+                    <i data-feather="plus" class="float-end"></i>
+                    Créer
+                  </a> -->
+                  <!-- <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" class="float-end"></i>
+                    Saisir
+                  </a> -->
+                  <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a>
+                </td>
+                <td>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="align-baseline">
+                <td>
+                  <a href="#" class="d-block text-truncate" data-bs-toggle="modal" data-bs-target="#user-modal">
+                    Prénom 70 Nom 70
+                  </a>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">Direction de l'équipement</span>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">28/06 09:00</span>
+                </td>
+                <td>
+                  <span class="badge bg-danger">
+                    pas commencé
+                  </span>
+                </td>
+                <td class="text-nowrap">
+                  <a href="/eval.html" class="btn btn-sm btn-outline-success">
+                    <i data-feather="plus" class="float-end"></i>
+                    Créer
+                  </a>
+                  <!-- <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" class="float-end"></i>
+                    Saisir
+                  </a> -->
+                  <!-- <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a> -->
+                </td>
+                <td>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="align-baseline">
+                <td>
+                  <a href="#" class="d-block text-truncate" data-bs-toggle="modal" data-bs-target="#user-modal">
+                    Prénom 72 Nom 72
+                  </a>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">Direction générale des affaires sociales</span>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">28/06 09:00</span>
+                </td>
+                <td>
+                  <span class="badge bg-danger">
+                    pas commencé
+                  </span>
+                </td>
+                <td class="text-nowrap">
+                  <a href="/eval.html" class="btn btn-sm btn-outline-success">
+                    <i data-feather="plus" class="float-end"></i>
+                    Créer
+                  </a>
+                  <!-- <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" class="float-end"></i>
+                    Saisir
+                  </a> -->
+                  <!-- <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a> -->
+                </td>
+                <td>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="align-baseline">
+                <td>
+                  <a href="#" class="d-block text-truncate" data-bs-toggle="modal" data-bs-target="#user-modal">
+                    Prénom 73 Nom 73
+                  </a>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">Direction 73</span>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">28/06 09:00</span>
+                </td>
+                <td>
+                  <span class="badge bg-danger">
+                    pas commencé
+                  </span>
+                </td>
+                <td class="text-nowrap">
+                  <a href="/eval.html" class="btn btn-sm btn-outline-success">
+                    <i data-feather="plus" class="float-end"></i>
+                    Créer
+                  </a>
+                  <!-- <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" class="float-end"></i>
+                    Saisir
+                  </a> -->
+                  <!-- <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a> -->
+                </td>
+                <td>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="align-baseline">
+                <td>
+                  <a href="#" class="d-block text-truncate" data-bs-toggle="modal" data-bs-target="#user-modal">
+                    Pascal SYNA1
+                  </a>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">Direction 99</span>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">28/06 09:00</span>
+                </td>
+                <td>
+                  <span class="badge bg-warning text-dark">
+                    Entretien en cours
+                  </span>
+                </td>
+                <td class="text-nowrap">
+                  <!-- <a href="/eval.html" class="btn btn-sm btn-outline-success">
+                    <i data-feather="plus" class="float-end"></i>
+                    Créer
+                  </a> -->
+                  <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" class="float-end"></i>
+                    Saisir
+                  </a>
+                  <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a>
+                </td>
+                <td>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="align-baseline">
+                <td>
+                  <a href="#" class="d-block text-truncate" data-bs-toggle="modal" data-bs-target="#user-modal">
+                    Emmanuelle SYNA2
+                  </a>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">Direction 98</span>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">28/06 09:00</span>
+                </td>
+                <td>
+                  <span class="badge bg-warning text-dark">
+                    Entretien en cours
+                  </span>
+                </td>
+                <td class="text-nowrap">
+                  <!-- <a href="/eval.html" class="btn btn-sm btn-outline-success">
+                    <i data-feather="plus" class="float-end"></i>
+                    Créer
+                  </a> -->
+                  <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" class="float-end"></i>
+                    Saisir
+                  </a>
+                  <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a>
+                </td>
+                <td>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+              <tr class="align-baseline">
+                <td>
+                  <a href="#" class="d-block text-truncate" data-bs-toggle="modal" data-bs-target="#user-modal">
+                    Solène SYNA3
+                  </a>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">Direction 97</span>
+                </td>
+                <td>
+                  <span class="d-block text-truncate">28/06 09:00</span>
+                </td>
+                <td>
+                  <span class="badge bg-danger">
+                    pas commencé
+                  </span>
+                </td>
+                <td class="text-nowrap">
+                  <a href="/eval.html" class="btn btn-sm btn-outline-success">
+                    <i data-feather="plus" class="float-end"></i>
+                    Créer
+                  </a>
+                  <!-- <a href="/eval.html" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="chevron-right" class="float-end"></i>
+                    Saisir
+                  </a> -->
+                  <!-- <a href="#" class="btn btn-sm btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a> -->
+                </td>
+                <td>
+                  <div class="dropdown d-inline-block ms-2">
+                    <a href="#" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Autre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                      <li>
+                        <a href="#" class="dropdown-item lien_vide text-danger">
+                          <i data-feather="trash"></i>
+                          vider
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+
       <footer class="app-footer">
         <div class="container-lg">
 
@@ -636,8 +1056,7 @@
 
     </div>
 
-    
-      <div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="user-modal-label" aria-hidden="true">
+    <div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="user-modal-label" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -822,7 +1241,6 @@
   </div>
 </div>
 
-    
 
     <div class="modal fade" id="help-modal-1" tabindex="-1" aria-labelledby="help-modal-1-label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg">
@@ -1109,6 +1527,10 @@
 
 
     <!-- APP SCRIPTS -->
+
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/dropzone.js"></script>
+    <script src="/assets/js/feather-icons.js"></script>
     <script src="/assets/js/app.js"></script>
 
   </body>

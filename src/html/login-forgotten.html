@@ -1,0 +1,45 @@
+@@include('--app-partials/header.html', {
+  "title": "LOGIN : EV@L 3",
+  "bodyClass": "login"
+})
+
+<main class="app-main">
+
+  <form class="login-box">
+
+    <div class="login-box--header">
+      <h1>Mot de passe oublié&nbsp;?</h1>
+    </div>
+
+    @@include('--common-partials/alert.html', {
+      "type": "warning",
+      "dismissible": false,
+      "text": "<p>Pour réinitialiser votre mot de passe, vueillez saisir votre identifiant (login) ci-dessous</p><p>Vous recevrez un email, contenent un lien valable 12 heures, vous permettant de modifier votre mot de passe.</p>"
+    })
+
+    <div class="login-box--body">
+
+      <div>
+        <label for="user-login" class="form-label">
+          Votre identifiant (login)
+        </label>
+        <input type="text" class="form-control" id="user-login" name="user" placeholder="Nom d'utilisateur" required>
+      </div>
+
+    </div>
+
+    <div class="login-box--footer">
+      <a href="login.html">
+        <i data-feather="chevron-left" width="16" height="16"></i>
+        Retour
+      </a>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </div>
+
+  </form>
+
+</main>
+
+@@include('--app-partials/footer.html', {
+  "userModal": false
+})

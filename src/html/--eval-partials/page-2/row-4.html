@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-12">
+
+    <p>Le cas échéant, joindre la nouvelle fiche de poste :</p>
+
+    @@include('../../--common-partials/alert.html', {
+      "type": "warning",
+      "dismissible": false,
+      "text": "Aucune fiche de poste chargée !"
+    })
+
+    @@include('../../--common-partials/dropzone.html', {
+      "id": "dropzone-2",
+      "label": ""
+    })
+
+  </div>
+</div>

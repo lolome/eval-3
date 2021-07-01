@@ -1,4 +1,4 @@
-@@include('_partials/app-header.html', {
+@@include('--app-partials/header.html', {
   "title": "ENTRETIEN : EV@L 3",
   "bodyClass": "eval"
 })
@@ -7,78 +7,26 @@
   <div class="app-content">
     <forn>
 
-      @@include('_partials/eval-header.html')
+      @@include('--eval-partials/commons/header.html')
 
-      @@include('_partials/eval-nav.html', {
+      @@include('--eval-partials/commons/nav.html', {
         "title": "Fiche de poste",
         "active": "2"
       })
 
       <div class="eval-content">
 
-        <div class="row">
+        @@include('--eval-partials/page-2/row-1.html')
 
-          <div class="col-12">
-            <p>Evolution(s) éventuelle (s) du poste</p>
-            @@include('_partials/alert.html', {
-              "type": "warning",
-              "dismissible": false,
-              "text": "La fiche de poste de l'agent n'est pas disponible"
-            })
-          </div>
+        @@include('--eval-partials/page-2/row-2.html')
 
-        </div>
+        @@include('--eval-partials/page-2/row-3.html')
 
-        <div class="row">
-
-          <div class="col-12 col-md-6">
-            L’agent a-t-il eu connaissance de sa fiche de poste ?
-          </div>
-
-          <div class="col-12 col-md-6">
-            <select class="form-select w-25">
-              <option value="Oui">Oui</option>
-              <option value="Non" selected="selected">Non</option>
-            </select>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-12 col-md-6">
-            Modification de la fiche de poste de l’agent
-          </div>
-
-          <div class="col-12 col-md-6">
-            <select class="form-select w-25">
-              <option value=""></option>
-              <option value="Oui" selected="selected">Oui</option>
-              <option value="Non">Non</option>
-            </select>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-12">
-            <p>Le cas échéant, joindre la nouvelle fiche de poste :</p>
-            @@include('_partials/alert.html', {
-              "type": "warning",
-              "dismissible": false,
-              "text": "Aucune fiche de poste chargée !"
-            })
-            @@include('_partials/eval-dropzone.html', {
-              "label": ""
-            })
-          </div>
-
-        </div>
+        @@include('--eval-partials/page-2/row-4.html')
 
       </div>
 
-      @@include('_partials/eval-footer.html', {
+      @@include('--eval-partials/commons/footer.html', {
         "page": "2/12"
       })
 
@@ -86,4 +34,4 @@
   </div>
 </main>
 
-@@include('_partials/app-footer.html')
+@@include('--app-partials/footer.html')

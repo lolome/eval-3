@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/dropzone.css">
     <link rel="stylesheet" href="assets/css/vars.css">
-    <link rel="stylesheet" href="assets/css/custom-1.css">
+    <link rel="stylesheet" href="assets/css/custom-2.css">
     <link rel="stylesheet" href="assets/css/utils.css">
     <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -44,7 +44,7 @@
           <div class="app-infos">
             <a href="home.html" class="app-logo"></a>
             <div class="app-name">
-              Ev@l / Poste-it
+              <img src="assets/logos/eval-post-it-logo.svg">
             </div>
           </div>
 
@@ -52,8 +52,13 @@
             Jean-Christophe Stevenson
           </div>
 
+          <a href="home.html" class="app-home">
+            <i data-feather="home"></i>
+          </a>
+
           <a class="btn app-menu-toggler" data-bs-toggle="offcanvas" href="#app-menu" role="button" aria-controls="app-menu">
             <i data-feather="menu"></i>
+            <span>Menu</span>
           </a>
 
         </div>
@@ -88,10 +93,10 @@
       </div>
     </section>
 
-    <section class="offcanvas-section nav-section">
-      <!-- <div class="section-title">
+    <!-- <section class="offcanvas-section nav-section">
+      <div class="section-title">
         Navigation
-      </div> -->
+      </div>
       <ul class="section-menu">
         <li>
           <a class="dropdown-item text-truncate active" href="home.html">
@@ -99,26 +104,26 @@
             Accueil
           </a>
         </li>
-        <!-- <li>
+        <li>
           <a class="dropdown-item text-truncate" href="home.html">
             <i data-feather="chevron-right"></i>
             Page 2
           </a>
-        </li> -->
-        <!-- <li>
+        </li>
+        <li>
           <a class="dropdown-item text-truncate" href="home.html">
             <i data-feather="chevron-right"></i>
             Page 3
           </a>
-        </li> -->
-        <!-- <li>
+        </li>
+        <li>
           <a class="dropdown-item text-truncate" href="home.html">
             <i data-feather="chevron-right"></i>
             Page 4
           </a>
-        </li> -->
+        </li>
       </ul>
-    </section>
+    </section> -->
 
     <section class="offcanvas-section help-section">
       <div class="section-title">
@@ -211,46 +216,62 @@
 
   <form class="login-box">
 
-    <h1 class="mb-3">
-      &nbsp;
-    </h1>
-
-    <div class="mb-4 presentation">
-      <big>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</big>
+    <div class="login-box--header">
+      <h1>Identification</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
     </div>
 
     <div class="alert alert-danger  fade show" role="alert">
-  @@text
+  <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
   
 </div>
 
 
-    <div class="mb-3">
+    <div class="login-box--body">
+
+      <div>
+        <label for="user-login" class="form-label">
+          Identifiant
+        </label>
+        <input type="text" class="form-control is-invalid" id="user-login" name="user" placeholder="Nom d'utilisateur" required>
+        <div class="invalid-feedback">
+          Excepteur sint occaecat cupidatat non proident
+        </div>
+      </div>
+
+      <div class="mt-2">
+        <label for="user-password" class="form-label">Mot de passe</label>
+        <input type="password" class="form-control is-invalid" id="user-password" name="password" placeholder="Mot de passe" required>
+        <div class="invalid-feedback">
+          Excepteur sint occaecat cupidatat non proident
+        </div>
+      </div>
+
+    </div>
+
+    <div class="login-box--footer">
+      <a href="login-forgotten.html">Mot de passe oublié&nbsp;?</a>
+      <button type="submit" class="btn btn-primary">Entrer</button>
+    </div>
+
+    <!-- <div class="mt-3 mb-4 presentation">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div> -->
+
+    <!-- <div class="mb-3">
       <label for="user-login" class="form-label">Identifiant</label>
       <input type="text" class="form-control is-invalid" id="user-login" name="user" placeholder="Nom d'utilisateur" required>
       <div class="invalid-feedback">
         Excepteur sint occaecat cupidatat non proident
       </div>
-    </div>
+    </div> -->
 
-    <div class="mb-4">
-      <label for="user-password" class="form-label">Mot de passe</label>
-      <input type="password" class="form-control is-invalid" id="user-password" name="password" placeholder="Mot de passe" required>
-      <div class="invalid-feedback">
-        Excepteur sint occaecat cupidatat non proident
-      </div>
-    </div>
 
-    <div class="d-flex justify-content-between align-items-center">
-      <small><a href="#">Mot de passe oublié&nbsp;?</a></small>
-      <button type="submit" class="btn btn-primary">Entrer</button>
-    </div>
+    
 
   </form>
-
-  <div class="login-custom">
-    //
-  </div>
 
 </main>
 
@@ -293,7 +314,191 @@
 
     </div>
 
-    
+    <div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="user-modal-label" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i data-feather="user"></i>
+        <h4 class="modal-title ms-2" id="user-modal-label">
+          Jean-Christophe Stevenson
+        </h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- <ul class="nav nav-tabs mb-4" id="user-tabs" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="historique-tab" data-bs-toggle="tab" data-bs-target="#historique" type="button" role="tab" aria-controls="historique" aria-selected="false">Historique</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="informations-tab" data-bs-toggle="tab" data-bs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">Informations</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
+  </li>
+</ul>
+<div class="tab-content" id="user-tabs-contents">
+  <div class="tab-pane fade show active" id="campagnes" role="tabpanel" aria-labelledby="campagnes-tab">
+    <p>
+      <a href="#">Entretien CAP</a><br>
+      <small class="text-dimed">Cap en cours</small>
+    </p>
+    <p>
+      <a href="#">Entretien professionnel</a><br>
+      <small class="text-dimed">Entretien en cours</small>
+    </p>
+    <p>
+      <a href="#">Fiche de poste</a><br>
+      <small class="text-dimed">En cours</small>
+    </p>
+  </div>
+  <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
+
+    <h5>Fiche de poste</h5>
+    <small class="text-dimed">N/A</small>
+
+    <h5 class="mt-3">Entretiens 2020 PATS</h5>
+    <div>
+      <h6>EVAL-PATS-2019-PATS</h6>
+      <ul>
+        <li>
+          <a href="#">Entretien professionnel (version validée)</a>
+        </li>
+        <li>
+          <a href="#">Entretien CAP (version validée)</a>
+        </li>
+        <li>
+          <a href="#">Entretien CAP (version téléchargée)</a>
+        </li>
+      </ul>
+      <h6>EVAL-PATS-2018-PATS</h6>
+      <ul>
+        <li>
+          <a href="#">Entretien professionnel (version validée)</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="tab-pane fade" id="informations" role="tabpanel" aria-labelledby="informations-tab">
+    Informations
+  </div>
+  <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+    ...
+  </div>
+</div> -->
+
+<div class="accordion" id="user-accordion">
+
+  <div class="accordion-item">
+    <h2 id="campagnes-heading" class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#campagnes" aria-expanded="true" aria-controls="campagnes">
+      Campagnes en cours
+      </button>
+    </h2>
+    <div id="campagnes" class="accordion-collapse collapse show" data-bs-parent="#user-accordion" aria-labelledby="campagnes-heading">
+      <div class="accordion-body">
+
+        <p>
+          <a href="#">Entretien CAP</a><br>
+          <small class="text-dimed">Cap en cours</small>
+        </p>
+        <p>
+          <a href="#">Entretien professionnel</a><br>
+          <small class="text-dimed">Entretien en cours</small>
+        </p>
+        <p>
+          <a href="#">Fiche de poste</a><br>
+          <small class="text-dimed">En cours</small>
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 id="historique-heading" class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#historique" aria-expanded="false" aria-controls="historique">
+        Historique
+      </button>
+    </h2>
+    <div id="historique" class="accordion-collapse collapse" data-bs-parent="#user-accordion" aria-labelledby="historique-heading">
+      <div class="accordion-body">
+
+        <h5>Fiche de poste</h5>
+        <small class="text-dimed">N/A</small>
+
+        <h5 class="mt-3">Entretiens 2020 PATS</h5>
+        <div>
+          <h6>EVAL-PATS-2019-PATS</h6>
+          <ul>
+            <li>
+              <a href="#">Entretien professionnel (version validée)</a>
+            </li>
+            <li>
+              <a href="#">Entretien CAP (version validée)</a>
+            </li>
+            <li>
+              <a href="#">Entretien CAP (version téléchargée)</a>
+            </li>
+          </ul>
+          <h6>EVAL-PATS-2018-PATS</h6>
+          <ul>
+            <li>
+              <a href="#">Entretien professionnel (version validée)</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 id="informations-heading" class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#informations" aria-expanded="false" aria-controls="informations">
+        Informations
+      </button>
+    </h2>
+    <div id="informations" class="accordion-collapse collapse" data-bs-parent="#user-accordion" aria-labelledby="informations-heading">
+      <div class="accordion-body">
+
+        <p>
+          Informations
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 id="documents-heading" class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#documents" aria-expanded="false" aria-controls="documents">
+        Documents
+      </button>
+    </h2>
+    <div id="documents" class="accordion-collapse collapse" data-bs-parent="#user-accordion" aria-labelledby="documents-heading">
+      <div class="accordion-body">
+
+        <p>
+          Documents
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <div class="modal fade" id="help-modal-1" tabindex="-1" aria-labelledby="help-modal-1-label" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable modal-lg">
@@ -580,6 +785,10 @@
 
 
     <!-- APP SCRIPTS -->
+
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/dropzone.js"></script>
+    <script src="/assets/js/feather-icons.js"></script>
     <script src="/assets/js/app.js"></script>
 
   </body>

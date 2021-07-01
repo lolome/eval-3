@@ -3,9 +3,9 @@
  *  REQUIREDS
  * - - - - - - - - - - - - - - - - - - - - -
  */
-import './modules/bootstrap';
-import './modules/feather-icons';
-import './modules/dropzone';
+// import './modules/bootstrap';
+// import './modules/feather-icons';
+// import './modules/dropzone';
 
 /*
  * -----------------------------------------

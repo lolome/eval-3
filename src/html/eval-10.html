@@ -1,4 +1,4 @@
-@@include('_partials/app-header.html', {
+@@include('--app-partials/header.html', {
   "title": "ENTRETIEN : EV@L 3",
   "bodyClass": "eval"
 })
@@ -7,35 +7,20 @@
   <div class="app-content">
     <forn>
 
-      @@include('_partials/eval-header.html')
+      @@include('--eval-partials/commons/header.html')
 
-      @@include('_partials/eval-nav.html', {
+      @@include('--eval-partials/commons/nav.html', {
         "title": "Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles cpf)",
         "active": "10"
       })
 
       <div class="eval-content">
 
-        <div class="row">
-          <div class="col-12">
-            <h2>
-              Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
-            </h2>
-            <label for="X10-1" class="form-label">
-              Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
-            </label>
-            <textarea class="form-control" id="X10-1" rows="5"></textarea>
-            <div class="form-help">
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
-              </div>
-            </div>
-          </div>
-        </div>
+        @@include('--eval-partials/page-10/row-1.html')
 
       </div>
 
-      @@include('_partials/eval-footer.html', {
+      @@include('--eval-partials/commons/footer.html', {
         "page": "10/12"
       })
 
@@ -43,4 +28,4 @@
   </div>
 </main>
 
-@@include('_partials/app-footer.html')
+@@include('--app-partials/footer.html')
