@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/dropzone.css">
     <link rel="stylesheet" href="assets/css/vars.css">
-    <link rel="stylesheet" href="assets/css/custom-2.css">
+    <link rel="stylesheet" href="assets/css/custom-1.css">
     <link rel="stylesheet" href="assets/css/utils.css">
     <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -214,9 +214,8 @@
 
 <main class="app-main">
   <div class="app-content">
-    <forn>
 
-      <div class="eval-header">
+    <div class="eval-header">
   <a href="/evalues.html" class="btn action-link">
     <i data-feather="chevron-left"></i>
     Retour évalués
@@ -226,7 +225,7 @@
 </div>
 
 
-      <div class="eval-nav">
+    <div class="eval-nav">
 
   <div class="eval-nav-dropdown dropdown">
     <a class="dropdown-toggle" href="#" id="eval-nav-dropdown-label" data-bs-toggle="dropdown" aria-expanded="false">
@@ -320,40 +319,533 @@
 </div>
 
 
-      <div class="eval-content">
+    <div class="eval-content">
+
+      <section class="eval-section">
+        <h1>Informations agent et responsable hiérarchique</h1>
+        <div class="row">
+  <div class="col-12">
+    <h3>Informations agent</h3>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>Nom</th>
+          <td>SYNA1</td>
+          <th>Prénom</th>
+          <td>Pascal</td>
+        </tr>
+        <tr>
+          <th>Direction</th>
+          <td>Direction 99</td>
+          <th>Service</th>
+          <td>Service 99</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
         <div class="row">
-          <div class="col-12">
-            //
-          </div>
-        </div>
+  <div class="col-12">
+    <h3>Informations responsable direct</h3>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>Nom</th>
+          <td>SYNA1</td>
+          <th>Prénom</th>
+          <td>Pascal</td>
+        </tr>
+        <tr>
+          <th>Direction</th>
+          <td>Direction 99</td>
+          <th>Service</th>
+          <td>Service 99</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1>Fiche de poste</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <p>Evolution(s) éventuelle (s) du poste</p>
+
+    <div class="alert alert-warning  fade show" role="alert">
+  La fiche de poste de l'agent n'est pas disponible
+  
+</div>
+
+
+  </div>
+</div>
+
+        <div class="row">
+
+  <div class="col-12 col-md-6">
+    L’agent a-t-il eu connaissance de sa fiche de poste ?
+  </div>
+
+  <div class="col-12 col-md-6">
+    <select class="form-select w-25">
+      <option value="Oui">Oui</option>
+      <option value="Non" selected="selected">Non</option>
+    </select>
+  </div>
+
+</div>
+
+        <div class="row">
+
+  <div class="col-12 col-md-6">
+    Modification de la fiche de poste de l’agent
+  </div>
+
+  <div class="col-12 col-md-6">
+    <select class="form-select w-25">
+      <option value=""></option>
+      <option value="Oui" selected="selected">Oui</option>
+      <option value="Non">Non</option>
+    </select>
+  </div>
+
+</div>
+
+        <div class="row">
+  <div class="col-12">
+
+    <p>Le cas échéant, joindre la nouvelle fiche de poste :</p>
+
+    <div class="alert alert-warning  fade show" role="alert">
+  Aucune fiche de poste chargée !
+  
+</div>
+
+
+    <div class="dropzone-block">
+  <label for="dropzone-2" class="form-label">
+    
+  </label>
+  <form action="#" class="dropzone" id="dropzone-2"></form>
+</div>
+
+
+  </div>
+</div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1>1 - Bilan de l'année écoulée</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <label for="X3-1" class="form-label">
+      Expression libre de l’agent sur son vécu professionnel au cours de la période écoulée
+    </label>
+
+    <textarea class="form-control" id="X3-1" rows="5"></textarea>
+
+    <div class="form-help">
+      <div class="form-text">
+        Faits marquants concernant son activité, principales réalisations, formations suivies...
+      </div>
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <div class="row">
+  <div class="col-12">
+
+    <label for="X3-2" class="form-label">
+      Bilan de l’activité par rapport à l’ensemble des tâches du poste au sein du service et par rapport aux objectifs du service
+    </label>
+
+    <textarea class="form-control" id="X3-2" rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+
+    <div class="form-help">
+      <div class="form-text">
+        Dresser avec l’agent un bilan des réalisations et des résultats professionnels obtenus.
+      </div>
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1>2 - Explications et analyse des écarts (objectifs ##n-1##)</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <p>Explications ou analyse d’éventuels écarts entre les objectifs fixés et leur réalisation :</p>
+
+    <ul>
+      <li>Définir si l’objectif fixé en 2020 est : complètement, partiellement, pas du tout atteint ou pas du tout atteint (pas du fait de l'agent).</li>
+      <li>Analyser l’écart entre les résultats obtenus et les résultats attendus en réfléchissant à ce qui a influencé (positivement ou négativement) les résultats obtenus.</li>
+    </ul>
+
+    <ul class="list-group">
+  <li class="list-group-item">
+    <strong>Rappel objectifs fixés pour l’année ##N-1## (1 mini, 3 maxi)</strong>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        Intitulé de l'objectif
+      </div>
+      <div class="col-12 col-md-6">
+        defsc edsq qsd sqdqs
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        Type Objectif
+      </div>
+      <div class="col-12 col-md-6">
+        individuel
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        Etat
+      </div>
+      <div class="col-12 col-md-6">
+        partiellement atteint
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        Observations
+      </div>
+      <div class="col-12 col-md-6">
+        sqd d qsd sqd
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        Analyse des écarts
+      </div>
+      <div class="col-12 col-md-6">
+        sqdsqdqs dsqd qsdsq d
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        Indicateurs et échéances : (conditions de réussite, délais de réalisation...)
+      </div>
+      <div class="col-12 col-md-6">
+        sqd sqdsqd sq
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        Moyens et conditions de mise en œuvre : (moyens humains, matériel, formation …)
+      </div>
+      <div class="col-12 col-md-6">
+        d qsdqsd qsd qsdqsdqs
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-12">
+
+        <button class="btn btn-danger">
+          Supprimer
+        </button>
+
+        <button class="btn btn-primary">
+          Modifier
+        </button>
 
       </div>
+    </div>
+  </li>
+</ul>
 
-      <div class="eval-footer">
-  <hr>
-  <div class="row">
-    <div class="col">
-      <a href="#" class="btn action-link">
-        <i data-feather="chevron-left"></i>
-        Étape précédente
+
+  </div>
+</div>
+
+        <div class="row">
+  <div class="col-12">
+
+    <label for="X3-4" class="form-label">
+      Observations agents
+    </label>
+
+    <textarea class="form-control" id="X3-4" rows="5"></textarea>
+
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1>3 - Appréciation générale de la valeur professionnelle</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <p>A partir du bilan et résultats obtenus, en identifiant les points forts et les marges de progrès au regard de ce qui est requis dans ses fonctions (se référer à l’outil d’évaluation joint au compte-rendu), Il s’agit d’apprécier la valeur professionnelle de l’agent au regard des résultats professionnels obtenus par celui-ci et la réalisation des objectifs, ainsi que les compétences acquises ou à développer par l’agent au jour de l’entretien.</p>
+
+    <button class="btn btn-primary">
+      <i data-feather="download" class="float-start"></i>
+      Télécharger le formulaire vierge au format Excel
+    </button>
+
+  </div>
+</div>
+
+        <div class="row">
+  <div class="col-12">
+
+    <p>Pour chaque critère, l’encadrant doit indiquer le niveau de maîtrise estimé de son collaborateur, en prenant en compte sa réalité professionnelle, ses acquis, ses difficultés et les conditions dans lesquelles il exerce ses fonctions. Cet exercice doit permettre d’échanger avec l’agent au cours de l’entretien. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.
+Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.</p>
+
+    <div class="alert alert-warning  fade show" role="alert">
+  Aucun fichier chargé !
+  
+</div>
+
+
+    <div class="dropzone-block">
+  <label for="dropzone-3" class="form-label">
+    
+  </label>
+  <form action="#" class="dropzone" id="dropzone-3"></form>
+</div>
+
+
+  </div>
+</div>
+
+        <div class="row">
+  <div class="col-12">
+    <label for="X5-4" class="form-label">
+      Appréciation générale de la valeur professionnelle
+      <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
+        <i data-feather="help-circle"></i>
       </a>
-    </div>
-    <div class="col eval-pagination">
-      <small class="text-dimed">
-        12/12
-      </small>
-    </div>
-    <div class="col eval-validation">
-      <button type="button" class="btn btn-primary">
-        Enregistrer et continuer
-      </button>
+    </label>
+    <textarea class="form-control" id="X5-4" rows="5"></textarea>
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
     </div>
   </div>
 </div>
 
+      </section>
 
-    </forn>
+      <section class="eval-section">
+        <h1>4 - Objectifs professionnels pour l'année à venir (##n##)</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <label for="X6-1" class="form-label">
+      Objectifs collectifs du service
+    </label>
+
+    <textarea class="form-control" id="X6-1" rows="5"></textarea>
+
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <div class="row">
+  <div class="col-12">
+
+    <h2>
+      Objectifs individuels liés à l’activité et aux compétences
+    </h2>
+
+    <p>Un objectif individuel est une action prioritaire que l’agent va mener pour faire évoluer et progresser son fonctionnement ou celui de son service. Le nombre d’objectifs n’est proposé qu’à titre indicatif, et doit être adapté au cas par cas. Un seul objectif peut être défini pour l’année. Il doit être formulé en termes précis et définir un résultat à atteindre, des moyens et des indicateurs.</p>
+
+  </div>
+</div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1>5 - Évolution professionnelle de l'agent</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <p class="text-dimed">
+      <em>TO DO …</em>
+    </p>
+
+  </div>
+</div>
+
+      </section>
+
+      <!-- <section class="eval-section section-8">
+        <h1>6 - Bilan et recensement des besoins en formation</h1>
+      </section> -->
+
+      <section class="eval-section section-9">
+        <h1>6.1 - Bilan et recensement des actions de formation (##n-1##)</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <p class="text-dimed">
+      <em>TO DO …</em>
+    </p>
+
+  </div>
+</div>
+
+      </section>
+
+      <section class="eval-section section-10">
+        <h1>6.2 - Besoins en formations de professionnalisation (##n##) en lien avec les fonctions occupées par l'agent</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <p class="text-dimed">
+      <em>TO DO …</em>
+    </p>
+
+  </div>
+</div>
+
+      </section>
+
+      <section class="eval-section section-11">
+        <h1>6.3 - Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles cpf)</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <h2>
+      Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
+    </h2>
+
+    <label for="X10-1" class="form-label">
+      Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
+    </label>
+
+    <textarea class="form-control" id="X10-1" rows="5"></textarea>
+
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      </section>
+
+      <section class="eval-section section-12">
+        <h1>7 - Conclusions de l'entretien</h1>
+        <div class="row">
+  <div class="col-12">
+
+    <label for="X11-1" class="form-label">
+      Observations et remarques complémentaires concernant le déroulement de l’entretien de l’agent évaluateur
+    </label>
+
+    <textarea class="form-control" id="X11-1" rows="5"></textarea>
+
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <div class="row">
+
+  <div class="col-12 col-md-4">
+
+    <label class="form-label" for="X11-2">
+      Date de la convocation à l'entretien
+    </label>
+
+    <input type="date" id="X11-2" class="form-control">
+
+  </div>
+
+  <div class="col-12 col-md-4">
+
+    <label class="form-label" for="X11-3">
+      Date d’élaboration du compte-rendu
+    </label>
+
+    <input type="date" id="X11-3" class="form-control">
+
+  </div>
+
+  <div class="col-12 col-md-4">
+
+    <label class="form-label" for="X11-4">
+      Durée de l’entretien (En minutes)
+    </label>
+
+    <select class="form-select" id="X11-4">
+      <option value=""></option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="15">15</option>
+      <option value="20">20</option>
+      <option value="25">25</option>
+      <option value="30">30</option>
+      <option value="60" selected="selected">60</option>
+      <option value="90">90</option>
+    </select>
+
+  </div>
+
+</div>
+
+      </section>
+
+    </div>
+
+    
+
   </div>
 </main>
 

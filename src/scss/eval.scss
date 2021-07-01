@@ -118,7 +118,7 @@
     .row {
 
       margin-top: 0;
-      
+
     }
 
   }
@@ -258,6 +258,17 @@
       text-align: right;
 
     }
+
+  }
+
+  .eval-section + .eval-section {
+
+    // background-color: rgba(#f00, .2);
+
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+
+    border-top: 1px solid var(--CUSTOM-PRIMARY);
 
   }
 
