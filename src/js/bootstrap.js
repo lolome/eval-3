@@ -3,6 +3,7 @@
  *  REQUIRED
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 import * as bootstrap from 'bootstrap';
 
 /*
@@ -12,6 +13,7 @@ import * as bootstrap from 'bootstrap';
  *  Note: If you want to make bootstrap globally available, e.g. for using `bootstrap.modal`
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 window.bootstrap = bootstrap;
 
 /*
@@ -21,6 +23,7 @@ window.bootstrap = bootstrap;
  *  Note: Disable this if you're not using Bootstrap's Popovers
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 const popoverTriggerList = []
   .slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
 popoverTriggerList.map((popoverTriggerEl) => {
@@ -34,6 +37,7 @@ popoverTriggerList.map((popoverTriggerEl) => {
  *  Note: Disable this if you're not using Bootstrap's Tooltips
  * - - - - - - - - - - - - - - - - - - - - -
  */
+
 const tooltipTriggerList = [].slice
   .call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
 tooltipTriggerList.map((tooltipTriggerEl) => {

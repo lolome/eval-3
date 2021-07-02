@@ -24,9 +24,18 @@ import del from 'del';
  * - - - - - - - - - - - - - - - - - - - - -
  */
 
+let isProd = false;
+
 const htmlSrc = './src/html/*.html';
 const htmlDest = './dist';
-const htmlWatch = './src/html/**/*.html';
+const htmlWatch = './src/html/**/*';
+const htmlContext = {
+  prod: isProd,
+  title: 'EV@L 3',
+  bodyClass: '',
+  userModal: true,
+  synthese: false
+};
 
 const scssSrc = './src/scss/*.scss';
 const scssDest = './dist/assets/css';
@@ -39,8 +48,6 @@ const scriptWatch = './src/js/**/*.js';
 const browserSync = bs.create();
 const server = './dist';
 
-let isProd = false;
-
 /*
  * -----------------------------------------
  *  PROCESS HTML
@@ -52,13 +59,8 @@ const processHtml = () => {
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file',
-      context: {
-        prod: isProd,
-        title: 'EV@L 3',
-        bodyClass: '',
-        userModal: true,
-        synthese: false
-      }
+      indent: true,
+      context: htmlContext
     }))
     .pipe(gulp.dest(htmlDest))
     .pipe(gulpif(!isProd, browserSync.stream()))

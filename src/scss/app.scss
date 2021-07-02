@@ -42,9 +42,9 @@ body {
 
   }
 
-  &.modal-open .app {
+  &.modal-open {
 
-    //
+    overflow: hidden;
 
   }
 
