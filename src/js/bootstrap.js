@@ -43,3 +43,22 @@ const tooltipTriggerList = [].slice
 tooltipTriggerList.map((tooltipTriggerEl) => {
   return new bootstrap.Tooltip(tooltipTriggerEl);
 });
+
+/*
+ * -----------------------------------------
+ *  TOASTS
+ * - - - - - - - - - - - - - - - - - - - - -
+ *  Note: Disable this if you're not using Bootstrap's Toats
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+
+// TODO
+
+// [ ... document.querySelectorAll('.toast')]
+//   .forEach(toastNode => new bootstrap.Toast(toastNode));
+
+// const tooltipTriggerList = [].slice
+//   .call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+// tooltipTriggerList.map((tooltipTriggerEl) => {
+//   return new bootstrap.Tooltip(tooltipTriggerEl);
+// });
