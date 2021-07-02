@@ -56,7 +56,8 @@ const processHtml = () => {
         prod: isProd,
         title: 'EV@L 3',
         bodyClass: '',
-        userModal: true
+        userModal: true,
+        synthese: false
       }
     }))
     .pipe(gulp.dest(htmlDest))

@@ -319,7 +319,7 @@
 </div>
 
 
-    <div class="eval-content">
+    <div class="eval-content eval-synthese">
 
       <section class="eval-section">
         <h1>Informations agent et responsable hiérarchique</h1>
@@ -371,19 +371,7 @@
 
       <section class="eval-section">
         <h1>Fiche de poste</h1>
-        <div class="row">
-  <div class="col-12">
-
-    <p>Evolution(s) éventuelle (s) du poste</p>
-
-    <div class="alert alert-warning  fade show" role="alert">
-  La fiche de poste de l'agent n'est pas disponible
-  
-</div>
-
-
-  </div>
-</div>
+        
 
         <div class="row">
 
@@ -392,7 +380,7 @@
   </div>
 
   <div class="col-12 col-md-6">
-    <select class="form-select w-25">
+    <select class="form-select w-25"  readonly >
       <option value="Oui">Oui</option>
       <option value="Non" selected="selected">Non</option>
     </select>
@@ -407,7 +395,7 @@
   </div>
 
   <div class="col-12 col-md-6">
-    <select class="form-select w-25">
+    <select class="form-select w-25"  readonly >
       <option value=""></option>
       <option value="Oui" selected="selected">Oui</option>
       <option value="Non">Non</option>
@@ -416,27 +404,7 @@
 
 </div>
 
-        <div class="row">
-  <div class="col-12">
-
-    <p>Le cas échéant, joindre la nouvelle fiche de poste :</p>
-
-    <div class="alert alert-warning  fade show" role="alert">
-  Aucune fiche de poste chargée !
-  
-</div>
-
-
-    <div class="dropzone-block">
-  <label for="dropzone-2" class="form-label">
-    
-  </label>
-  <form action="#" class="dropzone" id="dropzone-2"></form>
-</div>
-
-
-  </div>
-</div>
+        
 
       </section>
 
@@ -449,7 +417,7 @@
       Expression libre de l’agent sur son vécu professionnel au cours de la période écoulée
     </label>
 
-    <textarea class="form-control" id="X3-1" rows="5"></textarea>
+    <textarea class="form-control" id="X3-1" rows="5"  readonly ></textarea>
 
     <div class="form-help">
       <div class="form-text">
@@ -470,7 +438,46 @@
       Bilan de l’activité par rapport à l’ensemble des tâches du poste au sein du service et par rapport aux objectifs du service
     </label>
 
-    <textarea class="form-control" id="X3-2" rows="5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+    <textarea class="form-control" id="X3-2" rows="5"  readonly >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+
+    <div class="form-help">
+      <div class="form-text">
+        Dresser avec l’agent un bilan des réalisations et des résultats professionnels obtenus.
+      </div>
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+        <div class="row">
+  <div class="col-12 col-md-6">
+
+    <label for="X3-10" class="form-label">
+      Expression libre de l’agent sur son vécu professionnel au cours de la période écoulée
+    </label>
+
+    <textarea class="form-control" id="X3-10" rows="5"  readonly ></textarea>
+
+    <div class="form-help">
+      <div class="form-text">
+        Faits marquants concernant son activité, principales réalisations, formations suivies...
+      </div>
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-12 col-md-6">
+
+    <label for="X3-20" class="form-label">
+      Bilan de l’activité par rapport à l’ensemble des tâches du poste au sein du service et par rapport aux objectifs du service
+    </label>
+
+    <textarea class="form-control" id="X3-20" rows="5"  readonly >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
 
     <div class="form-help">
       <div class="form-text">
@@ -498,100 +505,134 @@
       <li>Analyser l’écart entre les résultats obtenus et les résultats attendus en réfléchissant à ce qui a influencé (positivement ou négativement) les résultats obtenus.</li>
     </ul>
 
-    <ul class="list-group">
-  <li class="list-group-item">
-    <strong>Rappel objectifs fixés pour l’année ##N-1## (1 mini, 3 maxi)</strong>
-  </li>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        Intitulé de l'objectif
-      </div>
-      <div class="col-12 col-md-6">
-        defsc edsq qsd sqdqs
-      </div>
-    </div>
-  </li>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        Type Objectif
-      </div>
-      <div class="col-12 col-md-6">
-        individuel
-      </div>
-    </div>
-  </li>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        Etat
-      </div>
-      <div class="col-12 col-md-6">
-        partiellement atteint
-      </div>
-    </div>
-  </li>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        Observations
-      </div>
-      <div class="col-12 col-md-6">
-        sqd d qsd sqd
-      </div>
-    </div>
-  </li>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        Analyse des écarts
-      </div>
-      <div class="col-12 col-md-6">
-        sqdsqdqs dsqd qsdsq d
-      </div>
-    </div>
-  </li>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        Indicateurs et échéances : (conditions de réussite, délais de réalisation...)
-      </div>
-      <div class="col-12 col-md-6">
-        sqd sqdsqd sq
-      </div>
-    </div>
-  </li>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-12 col-md-6">
-        Moyens et conditions de mise en œuvre : (moyens humains, matériel, formation …)
-      </div>
-      <div class="col-12 col-md-6">
-        d qsdqsd qsd qsdqsdqs
-      </div>
-    </div>
-  </li>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-12">
-
-        <button class="btn btn-danger">
-          Supprimer
-        </button>
-
-        <button class="btn btn-primary">
-          Modifier
-        </button>
-
-      </div>
-    </div>
-  </li>
-</ul>
-
+    
 
   </div>
 </div>
+
+
+  <div class="row">
+  <div class="col-12 col-md-6">
+
+    <label for="XBB-1" class="form-label">
+      Intitulé de l'objectif
+    </label>
+
+  </div>
+  <div class="col-12 col-md-6">
+
+    <input type="text" id="XBB-1" class="form-control" value="defsc edsq qsd sqdqs" readonly>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-6">
+
+    <label for="XBB-2" class="form-label">
+      Type Objectif
+    </label>
+
+  </div>
+  <div class="col-12 col-md-6">
+
+    <select id="XBB-2" class="form-select" readonly>
+      <option selected>individuel</option>
+    </select>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-6">
+
+    <label for="XBB-3" class="form-label">
+      Etat
+    </label>
+
+  </div>
+  <div class="col-12 col-md-6">
+
+    <select id="XBB-3" class="form-select" readonly>
+      <option selected>partiellement atteint</option>
+    </select>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+
+    <label for="XBB-4" class="form-label">
+      Observations
+    </label>
+
+    <textarea class="form-control" id="XBB-4" rows="5" readonly>sqd d qsd sqd</textarea>
+
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+
+    <label for="XBB-5" class="form-label">
+      Analyse des écarts
+    </label>
+
+    <textarea class="form-control" id="XBB-5" rows="5" readonly>sqdsqdqs dsqd qsdsq d</textarea>
+
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+
+    <label for="XBB-6" class="form-label">
+      Indicateurs et échéances : (conditions de réussite, délais de réalisation...)
+    </label>
+
+    <textarea class="form-control" id="XBB-6" rows="5" readonly>sqd sqdsqd sq</textarea>
+
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+
+    <label for="XBB-7" class="form-label">
+      Moyens et conditions de mise en œuvre : (moyens humains, matériel, formation …)
+    </label>
+
+    <textarea class="form-control" id="XBB-7" rows="5" readonly>d qsdqsd qsd qsdqsdqs</textarea>
+
+    <div class="form-help">
+      <div class="form-text count-text">
+        <small>0/12000 signes max</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
 
         <div class="row">
   <div class="col-12">
@@ -600,7 +641,7 @@
       Observations agents
     </label>
 
-    <textarea class="form-control" id="X3-4" rows="5"></textarea>
+    <textarea class="form-control" id="X3-4" rows="5"  readonly ></textarea>
 
     <div class="form-help">
       <div class="form-text count-text">
@@ -620,51 +661,39 @@
 
     <p>A partir du bilan et résultats obtenus, en identifiant les points forts et les marges de progrès au regard de ce qui est requis dans ses fonctions (se référer à l’outil d’évaluation joint au compte-rendu), Il s’agit d’apprécier la valeur professionnelle de l’agent au regard des résultats professionnels obtenus par celui-ci et la réalisation des objectifs, ainsi que les compétences acquises ou à développer par l’agent au jour de l’entretien.</p>
 
-    <button class="btn btn-primary">
-      <i data-feather="download" class="float-start"></i>
-      Télécharger le formulaire vierge au format Excel
-    </button>
-
-  </div>
-</div>
-
-        <div class="row">
-  <div class="col-12">
-
-    <p>Pour chaque critère, l’encadrant doit indiquer le niveau de maîtrise estimé de son collaborateur, en prenant en compte sa réalité professionnelle, ses acquis, ses difficultés et les conditions dans lesquelles il exerce ses fonctions. Cet exercice doit permettre d’échanger avec l’agent au cours de l’entretien. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.
-Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.</p>
-
-    <div class="alert alert-warning  fade show" role="alert">
-  Aucun fichier chargé !
-  
-</div>
-
-
-    <div class="dropzone-block">
-  <label for="dropzone-3" class="form-label">
     
-  </label>
-  <form action="#" class="dropzone" id="dropzone-3"></form>
-</div>
-
 
   </div>
 </div>
 
         <div class="row">
   <div class="col-12">
+
+    <p>Pour chaque critère, l’encadrant doit indiquer le niveau de maîtrise estimé de son collaborateur, en prenant en compte sa réalité professionnelle, ses acquis, ses difficultés et les conditions dans lesquelles il exerce ses fonctions. Cet exercice doit permettre d’échanger avec l’agent au cours de l’entretien. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.</p>
+
+    
+
+  </div>
+</div>
+
+        <div class="row">
+  <div class="col-12">
+
     <label for="X5-4" class="form-label">
       Appréciation générale de la valeur professionnelle
       <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
         <i data-feather="help-circle"></i>
       </a>
     </label>
-    <textarea class="form-control" id="X5-4" rows="5"></textarea>
+
+    <textarea class="form-control" id="X5-4" rows="5"  readonly ></textarea>
+
     <div class="form-help">
       <div class="form-text count-text">
         <small>0/12000 signes max</small>
       </div>
     </div>
+
   </div>
 </div>
 
@@ -679,7 +708,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
       Objectifs collectifs du service
     </label>
 
-    <textarea class="form-control" id="X6-1" rows="5"></textarea>
+    <textarea class="form-control" id="X6-1" rows="5"  readonly ></textarea>
 
     <div class="form-help">
       <div class="form-text count-text">
@@ -718,11 +747,11 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
 
       </section>
 
-      <!-- <section class="eval-section section-8">
+      <!-- <section class="eval-section">
         <h1>6 - Bilan et recensement des besoins en formation</h1>
       </section> -->
 
-      <section class="eval-section section-9">
+      <section class="eval-section">
         <h1>6.1 - Bilan et recensement des actions de formation (##n-1##)</h1>
         <div class="row">
   <div class="col-12">
@@ -736,7 +765,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
 
       </section>
 
-      <section class="eval-section section-10">
+      <section class="eval-section">
         <h1>6.2 - Besoins en formations de professionnalisation (##n##) en lien avec les fonctions occupées par l'agent</h1>
         <div class="row">
   <div class="col-12">
@@ -750,7 +779,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
 
       </section>
 
-      <section class="eval-section section-11">
+      <section class="eval-section">
         <h1>6.3 - Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles cpf)</h1>
         <div class="row">
   <div class="col-12">
@@ -763,7 +792,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
       Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
     </label>
 
-    <textarea class="form-control" id="X10-1" rows="5"></textarea>
+    <textarea class="form-control" id="X10-1" rows="5"  readonly ></textarea>
 
     <div class="form-help">
       <div class="form-text count-text">
@@ -776,7 +805,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
 
       </section>
 
-      <section class="eval-section section-12">
+      <section class="eval-section">
         <h1>7 - Conclusions de l'entretien</h1>
         <div class="row">
   <div class="col-12">
@@ -785,7 +814,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
       Observations et remarques complémentaires concernant le déroulement de l’entretien de l’agent évaluateur
     </label>
 
-    <textarea class="form-control" id="X11-1" rows="5"></textarea>
+    <textarea class="form-control" id="X11-1" rows="5"  readonly ></textarea>
 
     <div class="form-help">
       <div class="form-text count-text">
@@ -804,7 +833,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
       Date de la convocation à l'entretien
     </label>
 
-    <input type="date" id="X11-2" class="form-control">
+    <input type="date" id="X11-2" class="form-control"  readonly >
 
   </div>
 
@@ -814,7 +843,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
       Date d’élaboration du compte-rendu
     </label>
 
-    <input type="date" id="X11-3" class="form-control">
+    <input type="date" id="X11-3" class="form-control"  readonly >
 
   </div>
 
@@ -824,7 +853,7 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
       Durée de l’entretien (En minutes)
     </label>
 
-    <select class="form-select" id="X11-4">
+    <select class="form-select" id="X11-4"  readonly >
       <option value=""></option>
       <option value="5">5</option>
       <option value="10">10</option>
@@ -843,8 +872,6 @@ Une fois renseigné et enregistré, le fichier peut être chargé sur la platefo
       </section>
 
     </div>
-
-    
 
   </div>
 </main>

@@ -1,19 +1,22 @@
 <div class="row">
   <div class="col-12">
 
-    <p>Pour chaque critère, l’encadrant doit indiquer le niveau de maîtrise estimé de son collaborateur, en prenant en compte sa réalité professionnelle, ses acquis, ses difficultés et les conditions dans lesquelles il exerce ses fonctions. Cet exercice doit permettre d’échanger avec l’agent au cours de l’entretien. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.
-Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.</p>
+    <p>Pour chaque critère, l’encadrant doit indiquer le niveau de maîtrise estimé de son collaborateur, en prenant en compte sa réalité professionnelle, ses acquis, ses difficultés et les conditions dans lesquelles il exerce ses fonctions. Cet exercice doit permettre d’échanger avec l’agent au cours de l’entretien. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.</p>
 
-    @@include('../../--common-partials/alert.html', {
-      "type": "warning",
-      "dismissible": false,
-      "text": "Aucun fichier chargé !"
-    })
+    @@if ( !synthese ) {
 
-    @@include('../../--common-partials/dropzone.html', {
-      "id": "dropzone-3",
-      "label": ""
-    })
+      @@include('../../--common-partials/alert.html', {
+        "type": "warning",
+        "dismissible": false,
+        "text": "Aucun fichier chargé !"
+      })
+
+      @@include('../../--common-partials/dropzone.html', {
+        "id": "dropzone-3",
+        "label": ""
+      })
+
+    }
 
   </div>
 </div>

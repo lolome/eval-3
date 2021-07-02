@@ -6,7 +6,7 @@
       Date de la convocation à l'entretien
     </label>
 
-    <input type="date" id="X11-2" class="form-control">
+    <input type="date" id="X11-2" class="form-control" @@if ( synthese ) { readonly }>
 
   </div>
 
@@ -16,7 +16,7 @@
       Date d’élaboration du compte-rendu
     </label>
 
-    <input type="date" id="X11-3" class="form-control">
+    <input type="date" id="X11-3" class="form-control" @@if ( synthese ) { readonly }>
 
   </div>
 
@@ -26,7 +26,7 @@
       Durée de l’entretien (En minutes)
     </label>
 
-    <select class="form-select" id="X11-4">
+    <select class="form-select" id="X11-4" @@if ( synthese ) { readonly }>
       <option value=""></option>
       <option value="5">5</option>
       <option value="10">10</option>

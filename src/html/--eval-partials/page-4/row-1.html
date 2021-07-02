@@ -8,7 +8,13 @@
       <li>Analyser l’écart entre les résultats obtenus et les résultats attendus en réfléchissant à ce qui a influencé (positivement ou négativement) les résultats obtenus.</li>
     </ul>
 
-    @@include('row-1-group.html')
+    @@if ( !synthese ) {
+      @@include('row-1-group.html')
+    }
 
   </div>
 </div>
+
+@@if ( synthese ) {
+  @@include('row-1-rows.html')
+}

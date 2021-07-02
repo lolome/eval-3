@@ -135,41 +135,43 @@
 
   h2 {
 
-    // font-size: 1.425rem;
-    // font-weight: 600;
-    // margin-bottom: 1rem;
-    //
-    // color: var(--CUSTOM-PRIMARY);
-    //
-    // &::before {
-    //
-    //   content: '';
-    //   display: inline-block;
-    //   width: .75em;
-    //   height: .75em;
-    //   margin-right: .5em;
-    //
-    //   background-color: var(--CUSTOM-PRIMARY);
-    //
-    // }
-
-    font-size: 1.25rem;
-    font-weight: 700;
     margin-bottom: 1rem;
-    padding: .25em .75em;
 
-    color: var(--WHITE);
-    background-color: var(--CUSTOM-PRIMARY);
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    color: var(--CUSTOM-PRIMARY);
+
+    &::before {
+
+      content: '';
+      display: inline-block;
+      width: .75em;
+      height: .75em;
+      margin-right: .5em;
+
+      background-color: var(--CUSTOM-PRIMARY);
+
+    }
+
+    // font-size: 1.25rem;
+    // font-weight: 700;
+    // margin-bottom: 1rem;
+    // padding: .25em .75em;
+    //
+    // color: var(--WHITE);
+    // background-color: var(--CUSTOM-PRIMARY);
 
   }
 
   h3 {
 
-    font-size: 1.125rem;
-    font-weight: 400;
-    margin-bottom: 0;
+    margin-bottom: .5rem;
 
-    text-decoration: underline;
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    color: var(--CUSTOM-PRIMARY);
 
   }
 
@@ -269,6 +271,33 @@
     padding-top: 2rem;
 
     border-top: 1px solid var(--CUSTOM-PRIMARY);
+
+  }
+
+  .eval-synthese {
+
+    //
+
+    input[readonly],
+    textarea[readonly],
+    select[readonly] {
+
+      // display: block;
+
+      background-color: var(--GRAY-1);
+      background-image: none;
+      border-radius: 0;
+
+      resize: none;
+      pointer-events: none;
+
+    }
+
+    .form-help {
+
+      display: none;
+
+    }
 
   }
 
