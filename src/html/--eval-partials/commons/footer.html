@@ -1,21 +1,49 @@
 <div class="eval-footer">
+
   <hr>
+
+  @@if ( evalValidationdError ) {
+
+    <div class="alert alert-danger alert-validation" role="alert">
+      <p>
+        <strong>Le formulaire comporte des erreurs et n’a pas été enresitré.</strong>
+      </p>
+      <ul>
+        <li>
+          Erreur : <a href="#">{{ field }} : {{ detail }}</a>
+        </li>
+        <li>
+          Erreur : <a href="#">{{ field }} : {{ detail }}</a>
+        </li>
+        <li>
+          ...
+        </li>
+      </ul>
+    </div>
+
+  }
+
   <div class="row">
+
     <div class="col">
       <a href="#" class="btn action-link">
         <i data-feather="chevron-left"></i>
         Étape précédente
       </a>
     </div>
+
     <div class="col eval-pagination">
       <small class="text-dimed">
         @@page
       </small>
     </div>
+
     <div class="col eval-validation">
       <button type="button" class="btn btn-primary">
         Enregistrer et continuer
       </button>
     </div>
+
   </div>
+
 </div>

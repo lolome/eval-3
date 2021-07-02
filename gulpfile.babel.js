@@ -34,7 +34,8 @@ const htmlContext = {
   title: 'EV@L 3',
   bodyClass: '',
   userModal: true,
-  synthese: false
+  synthese: false,
+  evalValidationdError: false
 };
 
 const scssSrc = './src/scss/*.scss';
