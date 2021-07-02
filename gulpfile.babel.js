@@ -207,6 +207,8 @@ const setProd = done => {
  * - - - - - - - - - - - - - - - - - - - - -
  */
 
-export default gulp.series(cleanDist, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts), watchForChanges);
+// export default gulp.series(cleanDist, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts), watchForChanges);
+
+export default gulp.series(gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts), watchForChanges);
 
 export const prod = gulp.series(cleanDist, setProd, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScripts, processScss));
