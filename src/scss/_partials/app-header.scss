@@ -18,15 +18,15 @@
 
   }
 
-  .container-lg {
-
-    display: flex;
-    align-items: center;
-    // justify-content: space-between;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-
-  }
+  // .container-lg {
+  //
+  //   display: flex;
+  //   align-items: center;
+  //   // justify-content: space-between;
+  //   padding-left: 1.5rem;
+  //   padding-right: 1.5rem;
+  //
+  // }
 
   .app-infos {
 
@@ -42,12 +42,12 @@
 
     width: 32px;
     height: 32px;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 
     background-color: var(--GRAY-3);
 
     @include media-breakpoint-up(md) {
-      margin-right: 1.5rem;
+      // margin-right: 1.5rem;
     }
 
     @include media-breakpoint-up(lg) {
