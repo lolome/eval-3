@@ -52,13 +52,8 @@ tooltipTriggerList.map((tooltipTriggerEl) => {
  * - - - - - - - - - - - - - - - - - - - - -
  */
 
-// TODO
-
-// [ ... document.querySelectorAll('.toast')]
-//   .forEach(toastNode => new bootstrap.Toast(toastNode));
-
-// const tooltipTriggerList = [].slice
-//   .call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-// tooltipTriggerList.map((tooltipTriggerEl) => {
-//   return new bootstrap.Tooltip(tooltipTriggerEl);
-// });
+const toastEltList = [ ... document.querySelectorAll('.toast')];
+toastEltList.forEach(toastElt => {
+  const toast = new bootstrap.Toast(toastElt);
+  toast.show();
+});
