@@ -37,6 +37,8 @@ body {
 
   color: var(--TXT);
 
+  scroll-behavior: smooth;
+
   @include media-breakpoint-up(lg) {
 
     font-size: 16px;
@@ -91,6 +93,7 @@ body {
 @import '_partials/app-main.scss';
 @import '_partials/app-footer.scss';
 @import '_partials/containers.scss';
+@import '_partials/down-up-btns.scss';
 
 /*
  * -----------------------------------------
