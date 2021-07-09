@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M16,4h2
+			c1.105,0,2,0.895,2,2v14c0,1.105-0.895,2-2,2H6c-1.105,0-2-0.895-2-2V6c0-1.105,0.895-2,2-2h2"/>
+		<path fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9,2h6
+			c0.552,0,1,0.448,1,1v2c0,0.552-0.448,1-1,1H9C8.448,6,8,5.552,8,5V3C8,2.448,8.448,2,9,2z"/>
+	</g>
+	
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="15" y1="18" x2="15" y2="13"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="12" y1="18" x2="12" y2="10"/>
+	
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="9" y1="18" x2="9" y2="15"/>
+</g>
+</svg>

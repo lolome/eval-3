@@ -14,12 +14,12 @@
 
 html {
 
-  height: 100%;
+  // height: 100%;
 
-  overflow-x: hidden;
-  overflow-y: visible;
-  overflow-scrolling: touch;
-  scroll-behavior: smooth;
+  // overflow-x: hidden;
+  // overflow-y: visible;
+  // overflow-scrolling: touch;
+  // scroll-behavior: smooth;
 
   -webkit-tap-highlight-color: rgba(#000, 0);
 	-webkit-text-size-adjust: 100%;
@@ -28,8 +28,8 @@ html {
 
 body {
 
-  height: 100%;
-  overflow: auto;
+  // height: 100%;
+  // overflow: auto;
 
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
@@ -37,6 +37,7 @@ body {
 
   color: var(--TXT);
 
+  overflow-scrolling: touch;
   scroll-behavior: smooth;
 
   @include media-breakpoint-up(lg) {
@@ -45,11 +46,11 @@ body {
 
   }
 
-  &.modal-open {
-
-    //
-
-  }
+  // &.modal-open {
+  //
+  //   //
+  //
+  // }
 
 }
 
@@ -61,7 +62,8 @@ body {
 
 .app {
 
-  min-height: 100%;
+  // min-height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 

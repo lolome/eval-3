@@ -17,11 +17,13 @@
 
       <div class="eval-content">
 
-        @@include('--common-partials/alert.html', {
-          "type": "warning",
-          "dismissible": false,
-          "text": "La fiche de poste de l'agent doit être jointe à la convocation à l'entretien (Article 6 du Décret)."
-        })
+        <div class="mb-4">
+          @@include('--common-partials/alert.html', {
+            "type": "warning",
+            "dismissible": false,
+            "text": "La fiche de poste de l'agent doit être jointe à la convocation à l'entretien (Article 6 du Décret)."
+          })
+        </div>
 
         @@include('--eval-partials/page-1/row-1.html')
 

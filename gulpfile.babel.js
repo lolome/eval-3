@@ -166,6 +166,20 @@ const copyWallpapers = () => {
 
 /*
  * -----------------------------------------
+ *	SERVE
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+
+// const serve = done => {
+//   browserSync.init({
+//     server,
+//     port: 8080
+//   });
+//   done();
+// };
+
+/*
+ * -----------------------------------------
  *	WATCH
  * - - - - - - - - - - - - - - - - - - - - -
  */
@@ -207,7 +221,7 @@ const setProd = done => {
  * - - - - - - - - - - - - - - - - - - - - -
  */
 
-// export default gulp.series(cleanDist, gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts), watchForChanges);
+// export default gulp.series(gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts), serve, watchForChanges);
 
 export default gulp.series(gulp.parallel(copyIcons, copyFavicon, copyWallpapers, copyLogos, copyDropzoneCSS, processHtml, processVendorsScss, processScss, processScripts), watchForChanges);
 

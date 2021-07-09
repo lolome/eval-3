@@ -1,0 +1,105 @@
+@@include('--app-partials/header.html', {
+  "title": "HOME : EV@L 3",
+  "bodyClass": "home"
+})
+
+<main class="app-main">
+  <div class="app-content">
+
+    <div class="row">
+
+      <div class="col-md-6 pe-md-5">
+
+        <div class="page-title mb-4">
+          <h1>Mon espace responsable</h1>
+        </div>
+
+        <div class="mb-4">
+
+          <h2>
+            <i data-feather="poste-it"></i>
+            Fiche de poste
+          </h2>
+
+          <div class="alert alert-warning" role="alert">
+            <div>
+              <i data-feather="alert-triangle" width="20" height="20" stroke-width="1.5" class="me-1" style="margin-top: -4px;"></i>
+              Actions en attente pour 3 fiches de poste
+            </div>
+          </div>
+
+          <div>
+            <a href="evalues.html" class="btn btn-outline-primary">
+              <i data-feather="chevron-right" class="float-start"></i>
+              Saisir/valider
+            </a>
+            <a href="evalues.html" class="btn btn-outline-secondary ms-2">
+              <i data-feather="chevron-right" class="float-start"></i>
+              Consulter
+            </a>
+          </div>
+
+        </div>
+
+        <div class="mb-4">
+
+          <h2>
+            <i data-feather="eval"></i>
+            Entretiens 2020 PATS
+          </h2>
+
+          <div class="alert alert-warning" role="alert">
+            <div>
+              <i data-feather="alert-triangle" width="20" height="20" stroke-width="1.5" class="me-1" style="margin-top: -4px;"></i>
+              Actions en attente pour 2 entretiens professionnels
+            </div>
+            <div>
+              <i data-feather="alert-triangle" width="20" height="20" stroke-width="1.5" class="me-1" style="margin-top: -4px;"></i>
+              Actions en attente pour 2 entretiens CAP
+            </div>
+          </div>
+
+          <div>
+            <a href="evalues.html" class="btn btn-outline-primary">
+              <i data-feather="chevron-right" class="float-start"></i>
+              Convocations
+            </a>
+            <a href="evalues.html" class="btn btn-outline-primary ms-2">
+              <i data-feather="chevron-right" class="float-start"></i>
+              Saisir/valider
+            </a>
+            <a href="evalues.html" class="btn btn-outline-secondary ms-2">
+              <i data-feather="chevron-right" class="float-start"></i>
+              Consulter
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-6">
+
+        <div class="page-title mb-4">
+          <h1>Mon compte</h1>
+        </div>
+
+        <div class="user-summary mb-4">
+          <strong>Jean-Christophe Stevenson</strong><br>
+          <span class="text-dimed">Matricule&nbsp;: </span>SYNACOM22<br>
+          <span class="text-dimed">Direction&nbsp;: </span>OUI<br>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#password-modal">
+            Modifier mot de passe
+          </a>
+        </div>
+
+        @@include('--common-partials/user-tabs.html')
+
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+@@include('--app-partials/footer.html')

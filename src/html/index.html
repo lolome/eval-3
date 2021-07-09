@@ -1,9 +1,81 @@
-@@include('--app-partials/header.html')
+@@include('--app-partials/header.html', {
+  "title": "HOME : EV@L 3",
+  "bodyClass": "home"
+})
 
 <main class="app-main">
   <div class="app-content">
 
-    // app-content
+
+    <div class="section mb-5">
+
+      <h1 class="mb-4">
+        Mon espace personnel
+      </h1>
+
+      <div class="mb-4">
+        @@include('--common-partials/alert.html', {
+          "type": "warning",
+          "dismissible": false,
+          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        })
+      </div>
+
+      @@include('--common-partials/user-tabs.html')
+
+    </div>
+
+    <div class="section mb-2">
+
+      <h1 class="mb-4">
+        Mon espace responsable
+      </h1>
+
+      <div class="mb-4">
+        @@include('--common-partials/alert.html', {
+          "type": "warning",
+          "dismissible": false,
+          "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        })
+      </div>
+
+      <h2 class="mb-3">
+        <i data-feather="eval"></i>
+        Entretien professionnel 2021
+      </h2>
+
+      <div class="mb-4">
+        <a href="evalues.html" class="btn btn-outline-primary">
+          <i data-feather="chevron-right" class="float-start"></i>
+          Gérer mes convocations
+        </a>
+        <a href="evalues.html" class="btn btn-outline-primary ms-2">
+          <i data-feather="chevron-right" class="float-start"></i>
+          Saisir/valider
+        </a>
+        <a href="evalues.html" class="btn btn-outline-secondary ms-2">
+          <i data-feather="chevron-right" class="float-start"></i>
+          Consulter
+        </a>
+      </div>
+
+      <h2 class="mb-3">
+        <i data-feather="poste-it"></i>
+        Fiche de poste
+      </h2>
+
+      <div>
+        <a href="evalues.html" class="btn btn-outline-primary">
+          <i data-feather="chevron-right" class="float-start"></i>
+          Saisir/valider
+        </a>
+        <a href="evalues.html" class="btn btn-outline-secondary ms-2">
+          <i data-feather="chevron-right" class="float-start"></i>
+          Consulter
+        </a>
+      </div>
+
+    </div>
 
   </div>
 </main>

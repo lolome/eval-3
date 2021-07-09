@@ -42,8 +42,8 @@
         <div class="elt-container">
 
           <div class="app-infos">
-            <a href="home.html" class="app-logo"></a>
-            <a href="home.html" class="app-name">
+            <a href="/" class="app-logo"></a>
+            <a href="/" class="app-name">
               <img src="assets/logos/eval-post-it-logo.svg">
             </a>
           </div>
@@ -52,8 +52,9 @@
             Jean-Christophe Stevenson
           </div>
 
-          <a href="home.html" class="app-home">
+          <a href="/" class="app-home">
             <i data-feather="home"></i>
+            <span>Accueil</span>
           </a>
 
           <a class="btn app-menu-toggler" data-bs-toggle="offcanvas" href="#app-menu" role="button" aria-controls="app-menu">
@@ -99,25 +100,25 @@
             </div>
             <ul class="section-menu">
               <li>
-                <a class="dropdown-item text-truncate active" href="home.html">
+                <a class="dropdown-item text-truncate active" href="/">
                   <i data-feather="home"></i>
                   Accueil
                 </a>
               </li>
               <li>
-                <a class="dropdown-item text-truncate" href="home.html">
+                <a class="dropdown-item text-truncate" href="/">
                   <i data-feather="chevron-right"></i>
                   Page 2
                 </a>
               </li>
               <li>
-                <a class="dropdown-item text-truncate" href="home.html">
+                <a class="dropdown-item text-truncate" href="/">
                   <i data-feather="chevron-right"></i>
                   Page 3
                 </a>
               </li>
               <li>
-                <a class="dropdown-item text-truncate" href="home.html">
+                <a class="dropdown-item text-truncate" href="/">
                   <i data-feather="chevron-right"></i>
                   Page 4
                 </a>
@@ -291,18 +292,18 @@
             <li>
               <a href="login.html">Identification</a>
             </li>
-            <li>
-              <a href="home.html">Accueil</a>
-            </li>
+            <!-- <li>
+              <a href="/">Accueil</a>
+            </li> -->
             <li>
               <a href="eval-1.html">Entretien</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="typography.html">Typo</a>
-            </li>
-            <li>
+            </li> -->
+            <!-- <li>
               <a href="/">index</a>
-            </li>
+            </li> -->
             <li>
               <a href="email.html">email</a>
             </li>
@@ -346,9 +347,12 @@
           </div>
           <div class="modal-body">
 
-            <!-- <ul class="nav nav-tabs mb-4" id="user-tabs" role="tablist">
+            <div>
+
+            </div>
+            <ul class="nav nav-tabs" id="user-tabs" role="tablist">
               <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes</button>
+                <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes en cous</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="historique-tab" data-bs-toggle="tab" data-bs-target="#historique" type="button" role="tab" aria-controls="historique" aria-selected="false">Historique</button>
@@ -360,7 +364,7 @@
                 <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
               </li>
             </ul>
-            <div class="tab-content" id="user-tabs-contents">
+            <div class="tab-content border border-top-0 p-3 rounded-bottom" id="user-tabs-contents">
               <div class="tab-pane fade show active" id="campagnes" role="tabpanel" aria-labelledby="campagnes-tab">
                 <p>
                   <a href="#">Entretien CAP</a><br>
@@ -409,108 +413,6 @@
               <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
                 ...
               </div>
-            </div> -->
-
-            <div class="accordion" id="user-accordion">
-
-              <div class="accordion-item">
-                <h2 id="campagnes-heading" class="accordion-header">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#campagnes" aria-expanded="true" aria-controls="campagnes">
-                  Campagnes en cours
-                  </button>
-                </h2>
-                <div id="campagnes" class="accordion-collapse collapse show" data-bs-parent="#user-accordion" aria-labelledby="campagnes-heading">
-                  <div class="accordion-body">
-
-                    <p>
-                      <a href="#">Entretien CAP</a><br>
-                      <span class="badge bg-warning text-dark">En cours</span>
-                    </p>
-                    <p>
-                      <a href="#">Entretien professionnel</a><br>
-                      <span class="badge bg-warning text-dark">En cours</span>
-                    </p>
-                    <p>
-                      <a href="#">Fiche de poste</a><br>
-                      <span class="badge bg-warning text-dark">En cours</span>
-                    </p>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 id="historique-heading" class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#historique" aria-expanded="false" aria-controls="historique">
-                    Historique
-                  </button>
-                </h2>
-                <div id="historique" class="accordion-collapse collapse" data-bs-parent="#user-accordion" aria-labelledby="historique-heading">
-                  <div class="accordion-body">
-
-                    <h5>Fiche de poste</h5>
-                    <small class="text-dimed">N/A</small>
-
-                    <h5 class="mt-3">Entretiens 2020 PATS</h5>
-                    <div>
-                      <h6>EVAL-PATS-2019-PATS</h6>
-                      <ul>
-                        <li>
-                          <a href="#">Entretien professionnel (version validée)</a>
-                        </li>
-                        <li>
-                          <a href="#">Entretien CAP (version validée)</a>
-                        </li>
-                        <li>
-                          <a href="#">Entretien CAP (version téléchargée)</a>
-                        </li>
-                      </ul>
-                      <h6>EVAL-PATS-2018-PATS</h6>
-                      <ul>
-                        <li>
-                          <a href="#">Entretien professionnel (version validée)</a>
-                        </li>
-                      </ul>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 id="informations-heading" class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#informations" aria-expanded="false" aria-controls="informations">
-                    Informations
-                  </button>
-                </h2>
-                <div id="informations" class="accordion-collapse collapse" data-bs-parent="#user-accordion" aria-labelledby="informations-heading">
-                  <div class="accordion-body">
-
-                    <p>
-                      Informations
-                    </p>
-
-                  </div>
-                </div>
-              </div>
-
-              <div class="accordion-item">
-                <h2 id="documents-heading" class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#documents" aria-expanded="false" aria-controls="documents">
-                    Documents
-                  </button>
-                </h2>
-                <div id="documents" class="accordion-collapse collapse" data-bs-parent="#user-accordion" aria-labelledby="documents-heading">
-                  <div class="accordion-body">
-
-                    <p>
-                      Documents
-                    </p>
-
-                  </div>
-                </div>
-              </div>
-
             </div>
 
 
