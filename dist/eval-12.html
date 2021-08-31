@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/eval.css">
+    <link rel="stylesheet" href="assets/css/eval-show.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/print.css">
 
@@ -216,662 +217,378 @@
 <main class="app-main">
   <div class="app-content">
 
-    <div class="eval-header">
-      <a href="evalues.html" class="btn action-link">
-        <i data-feather="chevron-left"></i>
-        Retour évalués
-      </a>
-      <small class="text-upper text-dimed">Entretien professionnel 2020</small>
-      <a href="#" data-bs-toggle="modal" data-bs-target="#user-modal">Loraine Albert</a>
-    </div>
+    <div class="eval-show">
 
-
-    <div class="eval-nav">
-
-      <div class="eval-nav-dropdown dropdown">
-        <a class="dropdown-toggle" href="#" id="eval-nav-dropdown-label" data-bs-toggle="dropdown" aria-expanded="false">
-          <i data-feather="chevron-down" width="32" height="32" stroke-width="1.5"></i>
-          <h1>Synthèse et validation</h1>
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="eval-nav-dropdown-label">
-          <li>
-            <a href="eval-1.html" class="dropdown-item ">
-              Informations agent et responsable hiérarchique
-            </a>
-          </li>
-          <li>
-            <a href="eval-2.html" class="dropdown-item ">
-              Fiche de poste
-            </a>
-          </li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li>
-            <a href="eval-3.html" class="dropdown-item ">
-              1 - Bilan de l'année écoulée
-            </a>
-          </li>
-          <li>
-            <a href="eval-4.html" class="dropdown-item ">
-              2 - Explications et analyse des écarts (objectifs ##n-1##)
-            </a>
-          </li>
-          <li>
-            <a href="eval-5.html" class="dropdown-item ">
-              3 - Appréciation générale de la valeur professionnelle
-            </a>
-          </li>
-          <li>
-            <a href="eval-6.html" class="dropdown-item ">
-              4 - Objectifs professionnels pour l'année à venir (##n##)
-            </a>
-          </li>
-          <li>
-            <a href="eval-7.html" class="dropdown-item ">
-              5 - Évolution professionnelle de l'agent
-            </a>
-          </li>
-          <li>
-            <span class="dropdown-item text-muted">
-              6 - Bilan et recensement des besoins en formation
-            </span>
-            <ul>
-              <li>
-                <a href="eval-8.html" class="dropdown-item ">
-                  Bilan et recensement des actions de formation (##n-1##)
-                </a>
-              </li>
-              <li>
-                <a href="eval-9.html" class="dropdown-item ">
-                  Besoins en formations de professionnalisation (##n##) en lien avec les fonctions occupées par l'agent
-                </a>
-              </li>
-              <li>
-                <a href="eval-10.html" class="dropdown-item ">
-                  Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles cpf)
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="eval-11.html" class="dropdown-item ">
-              7 - Conclusions de l'entretien
-            </a>
-          </li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li>
-            <a href="eval-12.html" class="dropdown-item active">
-              Synthèse et validation
-            </a>
-          </li>
-        </ul>
+      <div class="eval-show-header">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <img src="assets/logos/synacom-logo.jpg">
+          </div>
+          <div class="col-12 col-md-6">
+            <div>
+              <big><strong>Entretien professionnel 2021</strong></big>
+            </div>
+            <div>
+              Rémy Albert
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- <a href="#" class="clipboard" data-bs-toggle="modal" data-bs-target="#clipboard-modal">
-        <span data-bs-toggle="tooltip" data-bs-placement="left" title="Presse papier">
-          <i data-feather="clipboard"></i>
-        </span>
-      </a> -->
+      <div class="eval-show-content">
 
-    </div>
-
-
-    <div class="eval-content eval-synthese">
-
-      <section class="eval-section">
-        <h1 class="mb-4">Informations agent et responsable hiérarchique</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-            <h3>Informations agent</h3>
-            <table class="table">
-              <tbody>
+        <section class="eval-show-section">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <h4>Responsable</h4>
+              <table class="table table-sm border-top">
                 <tr>
-                  <th>Nom</th>
+                  <th><small>Nom</small></th>
                   <td>SYNA1</td>
-                  <th>Prénom</th>
+                </tr>
+                <tr>
+                  <th><small>Prénom</small></th>
                   <td>Pascal</td>
                 </tr>
                 <tr>
-                  <th>Direction</th>
-                  <td>Direction 99</td>
-                  <th>Service</th>
-                  <td>Service 99</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-12">
-            <h3>Informations responsable direct</h3>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <th>Nom</th>
-                  <td>SYNA1</td>
-                  <th>Prénom</th>
-                  <td>Pascal</td>
+                  <th><small>Matricule</small></th>
+                  <td>SYNACOM1</td>
                 </tr>
                 <tr>
-                  <th>Direction</th>
-                  <td>Direction 99</td>
-                  <th>Service</th>
-                  <td>Service 99</td>
+                  <th><small>Email</small></th>
+                  <td>benoit.etb@gmail.com</td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">Fiche de poste</h1>
-        
-
-        <div class="row mb-4">
-
-          <div class="col-12 col-md-6">
-            L’agent a-t-il eu connaissance de sa fiche de poste ?
-          </div>
-
-          <div class="col-12 col-md-6">
-            <select class="form-select w-25"  readonly >
-              <option value="Oui">Oui</option>
-              <option value="Non" selected="selected">Non</option>
-            </select>
-          </div>
-
-        </div>
-
-        <div class="row mb-4">
-
-          <div class="col-12 col-md-6">
-            Modification de la fiche de poste de l’agent
-          </div>
-
-          <div class="col-12 col-md-6">
-            <select class="form-select w-25"  readonly >
-              <option value=""></option>
-              <option value="Oui" selected="selected">Oui</option>
-              <option value="Non">Non</option>
-            </select>
-          </div>
-
-        </div>
-
-        
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">1 - Bilan de l'année écoulée</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <label for="X3-1" class="form-label">
-              Expression libre de l’agent sur son vécu professionnel au cours de la période écoulée
-            </label>
-
-            <textarea class="form-control" id="X3-1" rows="5"  readonly ></textarea>
-
-            <div class="form-help">
-              <div class="form-text">
-                Faits marquants concernant son activité, principales réalisations, formations suivies...
-              </div>
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <label for="X3-2" class="form-label">
-              Bilan de l’activité par rapport à l’ensemble des tâches du poste au sein du service et par rapport aux objectifs du service
-            </label>
-
-            <textarea class="form-control" id="X3-2" rows="5"  readonly >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
-
-            <div class="form-help">
-              <div class="form-text">
-                Dresser avec l’agent un bilan des réalisations et des résultats professionnels obtenus.
-              </div>
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-12 col-md-6">
-
-            <label for="X3-10" class="form-label">
-              Expression libre de l’agent sur son vécu professionnel au cours de la période écoulée
-            </label>
-
-            <textarea class="form-control" id="X3-10" rows="5"  readonly ></textarea>
-
-            <div class="form-help">
-              <div class="form-text">
-                Faits marquants concernant son activité, principales réalisations, formations suivies...
-              </div>
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-12 col-md-6">
-
-            <label for="X3-20" class="form-label">
-              Bilan de l’activité par rapport à l’ensemble des tâches du poste au sein du service et par rapport aux objectifs du service
-            </label>
-
-            <textarea class="form-control" id="X3-20" rows="5"  readonly >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
-
-            <div class="form-help">
-              <div class="form-text">
-                Dresser avec l’agent un bilan des réalisations et des résultats professionnels obtenus.
-              </div>
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">2 - Explications et analyse des écarts (objectifs ##n-1##)</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <p>Explications ou analyse d’éventuels écarts entre les objectifs fixés et leur réalisation :</p>
-
-            <ul>
-              <li>Définir si l’objectif fixé en 2020 est : complètement, partiellement, pas du tout atteint ou pas du tout atteint (pas du fait de l'agent).</li>
-              <li>Analyser l’écart entre les résultats obtenus et les résultats attendus en réfléchissant à ce qui a influencé (positivement ou négativement) les résultats obtenus.</li>
-            </ul>
-
-            
-
-          </div>
-        </div>
-
-        
-          <div class="row mb-4">
-            <div class="col-12 col-md-6">
-
-              <label for="XBB-1" class="form-label">
-                Intitulé de l'objectif
-              </label>
+                <tr>
+                  <th><small>Filière</small></th>
+                  <td>Filière technique</td>
+                </tr>
+                <tr>
+                  <th><small>DGA</small></th>
+                  <td>DGVE</td>
+                </tr>
+                <tr>
+                  <th><small>Direction</small></th>
+                  <td>Direction Ecologie Urbaine</td>
+                </tr>
+                <tr>
+                  <th><small>Service</small></th>
+                  <td>Régie Collecte des déchets</td>
+                </tr>
+                <tr>
+                  <th><small>Fonction</small></th>
+                  <td>AGENTE/AGENT DE COLLECTE</td>
+                </tr>
+              </table>
 
             </div>
             <div class="col-12 col-md-6">
-
-              <input type="text" id="XBB-1" class="form-control" value="defsc edsq qsd sqdqs" readonly>
+              <h4>Évalué</h4>
+              <table class="table table-sm border-top">
+                <tr>
+                  <th><small>Nom</small></th>
+                  <td>Albert</td>
+                </tr>
+                <tr>
+                  <th><small>Prénom</small></th>
+                  <td>Rémy</td>
+                </tr>
+                <tr>
+                  <th><small>Matricule</small></th>
+                  <td>5433</td>
+                </tr>
+                <tr>
+                  <th><small>Date de naissance</small></th>
+                  <td>14/01/1975</td>
+                </tr>
+                <tr>
+                  <th><small>Filière</small></th>
+                  <td>Filière technique</td>
+                </tr>
+                <tr>
+                  <th><small>DGA</small></th>
+                  <td>DGVE</td>
+                </tr>
+                <tr>
+                  <th><small>Direction</small></th>
+                  <td>Dir. Envirron. Planif. Spatial espaces naturels</td>
+                </tr>
+                <tr>
+                  <th><small>Service</small></th>
+                  <td>Service Gestion et développement espaces naturels</td>
+                </tr>
+                <tr>
+                  <th><small>Catégorie</small></th>
+                  <td>A</td>
+                </tr>
+                <tr>
+                  <th><small>Echelon</small></th>
+                  <td>05</td>
+                </tr>
+                <tr>
+                  <th><small>Grade</small></th>
+                  <td>Ingénieur Principal</td>
+                </tr>
+                <tr>
+                  <th><small>Situation statutaire</small></th>
+                  <td>Titulaire</td>
+                </tr>
+              </table>
 
             </div>
           </div>
+        </section>
 
-          <div class="row mb-4">
+        <section class="eval-show-section">
+          <h1 class="mb-4">1 - Description du poste occupé par le collaborateur</h1>
+          <div class="row mb-3">
             <div class="col-12 col-md-6">
-
-              <label for="XBB-2" class="form-label">
-                Type Objectif
-              </label>
-
+              <small><strong>Intitulé du poste</strong></small>
             </div>
             <div class="col-12 col-md-6">
-
-              <select id="XBB-2" class="form-select" readonly>
-                <option selected>individuel</option>
-              </select>
-
+              <div class="eval-show-response">
+                CHEFFE/CHEF DE SERVICE
+              </div>
             </div>
           </div>
 
-          <div class="row mb-4">
+          <div class="row mb-3">
             <div class="col-12 col-md-6">
-
-              <label for="XBB-3" class="form-label">
-                Etat
-              </label>
-
+              <small><strong>Temps de travail (%)</strong></small>
             </div>
             <div class="col-12 col-md-6">
-
-              <select id="XBB-3" class="form-select" readonly>
-                <option selected>partiellement atteint</option>
-              </select>
-
+              <div class="eval-show-response">
+                100
+              </div>
             </div>
           </div>
 
-          <div class="row mb-4">
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <small><strong>Date d'affectation</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                <small><em class="text-dimed">Non renseigné</em></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <small><strong>Missions du poste</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                fhgfhgjf
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="eval-show-section">
+          <h1 class="mb-4">2 - Faits marquants de l’année écoulée</h1>
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <small><strong>Nature des dossiers ou travaux</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                Minus mollitia harum
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <small><strong>Résultats obtenus</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                Atteint
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <small><strong>Explication des écarts</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                <small><em class="text-dimed">Non renseigné</em></small>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <small><strong>Commentaires</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                Esse ut nobis eos ad
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="eval-show-section">
+          <h1 class="mb-4">3 - Analyse des objectifs individuels et collectifs</h1>
+          <div class="row mb-3">
+            <div class="col-12 col-md-6">
+              <small><strong>Bilan de l’année écoulée</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                Amet hic nemo quas
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
             <div class="col-12">
-
-              <label for="XBB-4" class="form-label">
-                Observations
-              </label>
-
-              <textarea class="form-control" id="XBB-4" rows="5" readonly>sqd d qsd sqd</textarea>
-
-              <div class="form-help">
-                <div class="form-text count-text">
-                  <small>0/12000 signes max</small>
-                </div>
-              </div>
-
+              <h2>Résultats professionnels obtenus, réalisation des objectifs</h2>
             </div>
-          </div>
-
-          <div class="row mb-4">
             <div class="col-12">
-
-              <label for="XBB-5" class="form-label">
-                Analyse des écarts
-              </label>
-
-              <textarea class="form-control" id="XBB-5" rows="5" readonly>sqdsqdqs dsqd qsdsq d</textarea>
-
-              <div class="form-help">
-                <div class="form-text count-text">
-                  <small>0/12000 signes max</small>
-                </div>
-              </div>
-
+              <h3>Objectifs liés à l’activité du service</h3>
             </div>
-          </div>
-
-          <div class="row mb-4">
             <div class="col-12">
-
-              <label for="XBB-6" class="form-label">
-                Indicateurs et échéances : (conditions de réussite, délais de réalisation...)
-              </label>
-
-              <textarea class="form-control" id="XBB-6" rows="5" readonly>sqd sqdsqd sq</textarea>
-
-              <div class="form-help">
-                <div class="form-text count-text">
-                  <small>0/12000 signes max</small>
-                </div>
-              </div>
-
+              <h4>Objectifs donnés lors de l'évaluation 2020 et remontés automatiquement - lien avec le projet de service</h4>
             </div>
           </div>
 
-          <div class="row mb-4">
-            <div class="col-12">
-
-              <label for="XBB-7" class="form-label">
-                Moyens et conditions de mise en œuvre : (moyens humains, matériel, formation …)
-              </label>
-
-              <textarea class="form-control" id="XBB-7" rows="5" readonly>d qsdqsd qsd qsdqsdqs</textarea>
-
-              <div class="form-help">
-                <div class="form-text count-text">
-                  <small>0/12000 signes max</small>
-                </div>
-              </div>
-
+            <!-- <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
             </div>
-          </div>
-
-        
-
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <label for="X3-4" class="form-label">
-              Observations agents
-            </label>
-
-            <textarea class="form-control" id="X3-4" rows="5"  readonly ></textarea>
-
-            <div class="form-help">
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
               </div>
             </div>
 
-          </div>
-        </div>
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">3 - Appréciation générale de la valeur professionnelle</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <p>A partir du bilan et résultats obtenus, en identifiant les points forts et les marges de progrès au regard de ce qui est requis dans ses fonctions (se référer à l’outil d’évaluation joint au compte-rendu), Il s’agit d’apprécier la valeur professionnelle de l’agent au regard des résultats professionnels obtenus par celui-ci et la réalisation des objectifs, ainsi que les compétences acquises ou à développer par l’agent au jour de l’entretien.</p>
-
-            
-
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <p>Pour chaque critère, l’encadrant doit indiquer le niveau de maîtrise estimé de son collaborateur, en prenant en compte sa réalité professionnelle, ses acquis, ses difficultés et les conditions dans lesquelles il exerce ses fonctions. Cet exercice doit permettre d’échanger avec l’agent au cours de l’entretien. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.</p>
-
-            
-
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <label for="X5-4" class="form-label">
-              Appréciation générale de la valeur professionnelle
-              <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
-                <i data-feather="help-circle"></i>
-              </a>
-            </label>
-
-            <textarea class="form-control" id="X5-4" rows="5"  readonly ></textarea>
-
-            <div class="form-help">
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
+            <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
               </div>
             </div>
 
-          </div>
-        </div>
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">4 - Objectifs professionnels pour l'année à venir (##n##)</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <label for="X6-1" class="form-label">
-              Objectifs collectifs du service
-            </label>
-
-            <textarea class="form-control" id="X6-1" rows="5"  readonly ></textarea>
-
-            <div class="form-help">
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
+            <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
               </div>
             </div>
 
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <h2>
-              Objectifs individuels liés à l’activité et aux compétences
-            </h2>
-
-            <p>Un objectif individuel est une action prioritaire que l’agent va mener pour faire évoluer et progresser son fonctionnement ou celui de son service. Le nombre d’objectifs n’est proposé qu’à titre indicatif, et doit être adapté au cas par cas. Un seul objectif peut être défini pour l’année. Il doit être formulé en termes précis et définir un résultat à atteindre, des moyens et des indicateurs.</p>
-
-          </div>
-        </div>
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">5 - Évolution professionnelle de l'agent</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <p class="text-dimed mb-0">
-              <em>TO DO …</em>
-            </p>
-
-          </div>
-        </div>
-
-      </section>
-
-      <!-- <section class="eval-section">
-        <h1>6 - Bilan et recensement des besoins en formation</h1>
-      </section> -->
-
-      <section class="eval-section">
-        <h1 class="mb-4">6.1 - Bilan et recensement des actions de formation (##n-1##)</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <p class="text-dimed mb-0">
-              <em>TO DO …</em>
-            </p>
-
-          </div>
-        </div>
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">6.2 - Besoins en formations de professionnalisation (##n##) en lien avec les fonctions occupées par l'agent</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <p class="text-dimed mb-0">
-              <em>TO DO …</em>
-            </p>
-
-          </div>
-        </div>
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">6.3 - Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles cpf)</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <h2>
-              Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
-            </h2>
-
-            <label for="X10-1" class="form-label">
-              Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
-            </label>
-
-            <textarea class="form-control" id="X10-1" rows="5"  readonly ></textarea>
-
-            <div class="form-help">
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
+            <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
               </div>
             </div>
 
-          </div>
-        </div>
-
-      </section>
-
-      <section class="eval-section">
-        <h1 class="mb-4">7 - Conclusions de l'entretien</h1>
-        <div class="row mb-4">
-          <div class="col-12">
-
-            <label for="X11-1" class="form-label">
-              Observations et remarques complémentaires concernant le déroulement de l’entretien de l’agent évaluateur
-            </label>
-
-            <textarea class="form-control" id="X11-1" rows="5"  readonly ></textarea>
-
-            <div class="form-help">
-              <div class="form-text count-text">
-                <small>0/12000 signes max</small>
+            <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
               </div>
             </div>
 
+            <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <small><strong>XXXXXXXXXXX</strong></small>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="eval-show-response">
+                XXXXXXXXXX
+              </div>
+            </div> -->
+
+          <!-- </div> -->
+
+        </section>
+
+        <section class="eval-show-section">
+          <h1 class="mb-4">4 - Appréciation générale de la valeur professionnelle</h1>
+          <div class="row mb-3">
+            <div class="col">
+              //
+            </div>
+          </div>
+
+        </section>
+
+        <section class="eval-show-section">
+          <h1 class="mb-4">8 - Perspectives d’évolution professionnelle</h1>
+          <div class="row mb-3">
+            <div class="col">
+              //
+            </div>
+          </div>
+
+        </section>
+
+        <section class="eval-show-section">
+          <h1 class="mb-4">9 - Conclusions de l’entretien</h1>
+          <div class="row mb-3">
+            <div class="col">
+              //
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+      <div class="eval-show-footer">
+        <div class="row">
+        	<div class="col-12">
+            <a href="/" class="btn btn-outline-primary">
+              <i data-feather="chevron-left" class="float-start"></i>
+              Retour
+            </a>
           </div>
         </div>
-
-        <div class="row mb-4">
-
-          <div class="col-12 col-md-4">
-
-            <label class="form-label" for="X11-2">
-              Date de la convocation à l'entretien
-            </label>
-
-            <input type="date" id="X11-2" class="form-control"  readonly >
-
-          </div>
-
-          <div class="col-12 col-md-4">
-
-            <label class="form-label" for="X11-3">
-              Date d’élaboration du compte-rendu
-            </label>
-
-            <input type="date" id="X11-3" class="form-control"  readonly >
-
-          </div>
-
-          <div class="col-12 col-md-4">
-
-            <label class="form-label" for="X11-4">
-              Durée de l’entretien (En minutes)
-            </label>
-
-            <select class="form-select" id="X11-4"  readonly >
-              <option value=""></option>
-              <option value="5">5</option>
-              <option value="10">10</option>
-              <option value="15">15</option>
-              <option value="20">20</option>
-              <option value="25">25</option>
-              <option value="30">30</option>
-              <option value="60" selected="selected">60</option>
-              <option value="90">90</option>
-            </select>
-
-          </div>
-
-        </div>
-
-      </section>
+      </div>
 
     </div>
+
 
   </div>
 </main>
@@ -940,42 +657,65 @@
           </div>
           <div class="modal-body">
 
-            <div>
-
-            </div>
             <ul class="nav nav-tabs" id="user-tabs" role="tablist">
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes en cous</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="historique-tab" data-bs-toggle="tab" data-bs-target="#historique" type="button" role="tab" aria-controls="historique" aria-selected="false">Historique</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="informations-tab" data-bs-toggle="tab" data-bs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">Informations</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
               </li>
+
             </ul>
+
             <div class="tab-content border border-top-0 p-3 rounded-bottom" id="user-tabs-contents">
+
               <div class="tab-pane fade show active" id="campagnes" role="tabpanel" aria-labelledby="campagnes-tab">
+
+                <h3 class="mt-2 mb-0">Entretien Professionnel</h3>
                 <p>
-                  <a href="#">Entretien CAP</a><br>
-                  <small class="text-dimed">Cap en cours</small>
+                  <small class="text-muted"><em>Cap en cours</em></small>
                 </p>
+
+                <h3 class="mt-2 mb-0">Fiche de Poste</h3>
+                <p class="mt-2">
+                  <a href="#" class="btn btn-outline-primary">
+                    <i data-feather="eye" class="float-start"></i>
+                    Voir
+                  </a>
+                  <a href="evalues.html" class="btn btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a>
+                </p>
+
+                <h3 class="mt-2 mb-0">Entretien CAP</h3>
                 <p>
-                  <a href="#">Entretien professionnel</a><br>
-                  <small class="text-dimed">Entretien en cours</small>
+                  <small class="text-muted"><em>Pas commencé</em></small>
                 </p>
-                <p>
-                  <a href="#">Fiche de poste</a><br>
-                  <small class="text-dimed">En cours</small>
-                </p>
+
               </div>
+
               <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
 
-                <h5>Fiche de poste</h5>
-                <small class="text-dimed">N/A</small>
+                <h3 class="mt-2 mb-0">Entretiens professionnels</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
+                <h3 class="mt-2 mb-0">Fiche de poste</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
 
                 <h5 class="mt-3">Entretiens 2020 PATS</h5>
                 <div>
@@ -1000,12 +740,25 @@
                 </div>
 
               </div>
+
               <div class="tab-pane fade" id="informations" role="tabpanel" aria-labelledby="informations-tab">
-                Informations
+
+                <h3 class="mb-0">Informations ...</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
               </div>
+
               <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
-                ...
+
+                <h3 class="mb-0">Documents ...</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
               </div>
+
             </div>
 
 

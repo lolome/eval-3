@@ -1,0 +1,38 @@
+// -----------------------------------------
+//  ALERTS
+// - - - - - - - - - - - - - - - - - - - - -
+
+.alert {
+
+  &:last-child {
+
+    margin-bottom: 0;
+
+  }
+
+}
+
+.alert.alert-validation {
+
+  margin-top: 2.5rem;
+
+  p {
+
+    margin-bottom: 0;
+
+  }
+
+  ul {
+
+    margin: 0;
+    padding-left: 1rem;
+
+  }
+
+  a {
+
+    color: inherit;
+
+  }
+
+}

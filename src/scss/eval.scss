@@ -1,8 +1,6 @@
-/*
- * -----------------------------------------
- *  MIXINS
- * - - - - - - - - - - - - - - - - - - - - -
- */
+// -----------------------------------------
+//  MIXINS
+// - - - - - - - - - - - - - - - - - - - - -
 
 @import '_mixins/index';
 
@@ -153,14 +151,6 @@
 
     }
 
-    // font-size: 1.25rem;
-    // font-weight: 700;
-    // margin-bottom: 1rem;
-    // padding: .25em .75em;
-    //
-    // color: var(--WHITE);
-    // background-color: var(--CUSTOM-PRIMARY);
-
   }
 
   h3 {
@@ -176,37 +166,18 @@
 
   h4 {
 
-    //
+    margin-bottom: .5rem;
 
-  }
+    font-size: 1.125rem;
+    font-weight: 400;
 
-  h5 {
-
-    //
-
-  }
-
-  h6 {
-
-    //
+    color: var(--CUSTOM-PRIMARY);
 
   }
 
   .alert {
 
     margin-bottom: 0;
-
-  }
-
-  .dropzone-block {
-
-    // margin-top: 1rem;
-
-    &:first-child {
-
-      // margin-top: 0;
-
-    }
 
   }
 
@@ -256,44 +227,6 @@
     .eval-validation {
 
       text-align: right;
-
-    }
-
-  }
-
-  .eval-section + .eval-section {
-
-    // background-color: rgba(#f00, .2);
-
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-
-    border-top: 1px solid var(--CUSTOM-PRIMARY);
-
-  }
-
-  .eval-synthese {
-
-    //
-
-    input[readonly],
-    textarea[readonly],
-    select[readonly] {
-
-      // display: block;
-
-      background-color: var(--GRAY-1);
-      background-image: none;
-      border-radius: 0;
-
-      resize: none;
-      pointer-events: none;
-
-    }
-
-    .form-help {
-
-      display: none;
 
     }
 

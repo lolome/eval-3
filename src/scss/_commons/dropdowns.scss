@@ -1,0 +1,52 @@
+// -----------------------------------------
+//  DROPDOWNS
+// - - - - - - - - - - - - - - - - - - - - -
+
+.dropdown-menu {
+
+  //
+
+  .valid:not(:active) {
+
+    color: var(--bs-success);
+
+  }
+
+  .valid.active {
+
+    color: #fff;
+
+  }
+
+  ul {
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    a {
+
+      padding-left: 2.25rem;
+
+    }
+
+  }
+
+}
+
+.dropdown-item {
+
+  .feather {
+
+    width: 20px;
+    height: 20px;
+    margin-left: -.2rem;
+    margin-right: .25rem;
+    margin-top: -2px;
+
+    stroke-width: 1.5;
+
+  }
+
+}

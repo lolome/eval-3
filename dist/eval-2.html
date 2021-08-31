@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/eval.css">
+    <link rel="stylesheet" href="assets/css/eval-show.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/print.css">
 
@@ -501,42 +502,65 @@
           </div>
           <div class="modal-body">
 
-            <div>
-
-            </div>
             <ul class="nav nav-tabs" id="user-tabs" role="tablist">
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes en cous</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="historique-tab" data-bs-toggle="tab" data-bs-target="#historique" type="button" role="tab" aria-controls="historique" aria-selected="false">Historique</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="informations-tab" data-bs-toggle="tab" data-bs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">Informations</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
               </li>
+
             </ul>
+
             <div class="tab-content border border-top-0 p-3 rounded-bottom" id="user-tabs-contents">
+
               <div class="tab-pane fade show active" id="campagnes" role="tabpanel" aria-labelledby="campagnes-tab">
+
+                <h3 class="mt-2 mb-0">Entretien Professionnel</h3>
                 <p>
-                  <a href="#">Entretien CAP</a><br>
-                  <small class="text-dimed">Cap en cours</small>
+                  <small class="text-muted"><em>Cap en cours</em></small>
                 </p>
+
+                <h3 class="mt-2 mb-0">Fiche de Poste</h3>
+                <p class="mt-2">
+                  <a href="#" class="btn btn-outline-primary">
+                    <i data-feather="eye" class="float-start"></i>
+                    Voir
+                  </a>
+                  <a href="evalues.html" class="btn btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a>
+                </p>
+
+                <h3 class="mt-2 mb-0">Entretien CAP</h3>
                 <p>
-                  <a href="#">Entretien professionnel</a><br>
-                  <small class="text-dimed">Entretien en cours</small>
+                  <small class="text-muted"><em>Pas commencé</em></small>
                 </p>
-                <p>
-                  <a href="#">Fiche de poste</a><br>
-                  <small class="text-dimed">En cours</small>
-                </p>
+
               </div>
+
               <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
 
-                <h5>Fiche de poste</h5>
-                <small class="text-dimed">N/A</small>
+                <h3 class="mt-2 mb-0">Entretiens professionnels</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
+                <h3 class="mt-2 mb-0">Fiche de poste</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
 
                 <h5 class="mt-3">Entretiens 2020 PATS</h5>
                 <div>
@@ -561,12 +585,25 @@
                 </div>
 
               </div>
+
               <div class="tab-pane fade" id="informations" role="tabpanel" aria-labelledby="informations-tab">
-                Informations
+
+                <h3 class="mb-0">Informations ...</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
               </div>
+
               <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
-                ...
+
+                <h3 class="mb-0">Documents ...</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
               </div>
+
             </div>
 
 

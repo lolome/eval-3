@@ -7,75 +7,65 @@
   <div class="app-content">
 
 
-    <div class="section mb-5">
+    <h1>Mon espace personnel</h1>
 
-      <h1 class="mb-4">
-        Mon espace personnel
-      </h1>
+    @@include('--common-partials/alert.html', {
+      "type": "warning",
+      "dismissible": false,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    })
 
-      <div class="mb-4">
-        @@include('--common-partials/alert.html', {
-          "type": "warning",
-          "dismissible": false,
-          "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        })
-      </div>
+    @@include('--common-partials/user-tabs.html')
 
-      @@include('--common-partials/user-tabs.html')
+    <!-- <hr> -->
 
-    </div>
+    <h1>Mon espace responsable</h1>
 
-    <div class="section mb-2">
+    <h2>
+      <i data-feather="eval"></i>
+      Entretien professionnel 2021
+    </h2>
 
-      <h1 class="mb-4">
-        Mon espace responsable
-      </h1>
+    <p>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Gérer mes convocations
+      </a>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Saisir/valider
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          81
+        </span>
+      </a>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Consulter
+      </a>
+    </p>
 
-      <div class="mb-4">
-        @@include('--common-partials/alert.html', {
-          "type": "warning",
-          "dismissible": false,
-          "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        })
-      </div>
+    <h2>
+      <i data-feather="poste-it"></i>
+      Fiche de poste
+    </h2>
 
-      <h2 class="mb-3">
-        <i data-feather="eval"></i>
-        Entretien professionnel 2021
-      </h2>
+    <p class="text-muted">
+      <small><em>Actuellement ouvert uniquement aux utilisateurs de test.</em></small>
+    </p>
 
-      <div class="mb-4">
-        <a href="evalues.html" class="btn btn-outline-primary">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Gérer mes convocations
-        </a>
-        <a href="evalues.html" class="btn btn-outline-primary ms-2">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Saisir/valider
-        </a>
-        <a href="evalues.html" class="btn btn-outline-secondary ms-2">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Consulter
-        </a>
-      </div>
-
-      <h2 class="mb-3">
-        <i data-feather="poste-it"></i>
-        Fiche de poste
-      </h2>
-
-      <div>
-        <a href="evalues.html" class="btn btn-outline-primary">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Saisir/valider
-        </a>
-        <a href="evalues.html" class="btn btn-outline-secondary ms-2">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Consulter
-        </a>
-      </div>
-
-    </div>
+    <p>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Saisir/valider
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          39
+        </span>
+      </a>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Consulter
+      </a>
+    </p>
 
   </div>
 </main>

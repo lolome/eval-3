@@ -1,0 +1,29 @@
+// -----------------------------------------
+//  TABLES
+// - - - - - - - - - - - - - - - - - - - - -
+
+.table thead th {
+
+  font-size: .875rem;
+
+  border-top: 1px solid currentColor;
+
+}
+
+.table td {
+  max-width: 250px;
+}
+
+
+.table th.border-left {
+
+  // border-left: 1px solid #f00;
+  border-left-width: 1px;
+
+}
+
+.table td.border-left {
+
+  border-left-width: 1px;
+
+}

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/commons.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/eval.css">
+    <link rel="stylesheet" href="assets/css/eval-show.css">
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/print.css">
 
@@ -217,142 +218,168 @@
   <div class="app-content">
 
 
-    <div class="section mb-5">
+    <h1>Mon espace personnel</h1>
 
-      <h1 class="mb-4">
-        Mon espace personnel
-      </h1>
+    <div class="alert alert-warning  fade show" role="alert">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      
+    </div>
 
-      <div class="mb-4">
-        <div class="alert alert-warning  fade show" role="alert">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          
+
+    <ul class="nav nav-tabs" id="user-tabs" role="tablist">
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes en cous</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="historique-tab" data-bs-toggle="tab" data-bs-target="#historique" type="button" role="tab" aria-controls="historique" aria-selected="false">Historique</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="informations-tab" data-bs-toggle="tab" data-bs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">Informations</button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
+      </li>
+
+    </ul>
+
+    <div class="tab-content border border-top-0 p-3 rounded-bottom" id="user-tabs-contents">
+
+      <div class="tab-pane fade show active" id="campagnes" role="tabpanel" aria-labelledby="campagnes-tab">
+
+        <h3 class="mt-2 mb-0">Entretien Professionnel</h3>
+        <p>
+          <small class="text-muted"><em>Cap en cours</em></small>
+        </p>
+
+        <h3 class="mt-2 mb-0">Fiche de Poste</h3>
+        <p class="mt-2">
+          <a href="#" class="btn btn-outline-primary">
+            <i data-feather="eye" class="float-start"></i>
+            Voir
+          </a>
+          <a href="evalues.html" class="btn btn-outline-primary">
+            <i data-feather="printer" class="float-start"></i>
+            Imprimer
+          </a>
+        </p>
+
+        <h3 class="mt-2 mb-0">Entretien CAP</h3>
+        <p>
+          <small class="text-muted"><em>Pas commencé</em></small>
+        </p>
+
+      </div>
+
+      <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
+
+        <h3 class="mt-2 mb-0">Entretiens professionnels</h3>
+        <p>
+          <small class="text-muted"><em>NA</em></small>
+        </p>
+
+        <h3 class="mt-2 mb-0">Fiche de poste</h3>
+        <p>
+          <small class="text-muted"><em>NA</em></small>
+        </p>
+
+        <h5 class="mt-3">Entretiens 2020 PATS</h5>
+        <div>
+          <h6>EVAL-PATS-2019-PATS</h6>
+          <ul>
+            <li>
+              <a href="#">Entretien professionnel (version validée)</a>
+            </li>
+            <li>
+              <a href="#">Entretien CAP (version validée)</a>
+            </li>
+            <li>
+              <a href="#">Entretien CAP (version téléchargée)</a>
+            </li>
+          </ul>
+          <h6>EVAL-PATS-2018-PATS</h6>
+          <ul>
+            <li>
+              <a href="#">Entretien professionnel (version validée)</a>
+            </li>
+          </ul>
         </div>
 
       </div>
 
-      <div>
+      <div class="tab-pane fade" id="informations" role="tabpanel" aria-labelledby="informations-tab">
+
+        <h3 class="mb-0">Informations ...</h3>
+        <p>
+          <small class="text-muted"><em>NA</em></small>
+        </p>
 
       </div>
-      <ul class="nav nav-tabs" id="user-tabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes en cous</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="historique-tab" data-bs-toggle="tab" data-bs-target="#historique" type="button" role="tab" aria-controls="historique" aria-selected="false">Historique</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="informations-tab" data-bs-toggle="tab" data-bs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">Informations</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
-        </li>
-      </ul>
-      <div class="tab-content border border-top-0 p-3 rounded-bottom" id="user-tabs-contents">
-        <div class="tab-pane fade show active" id="campagnes" role="tabpanel" aria-labelledby="campagnes-tab">
-          <p>
-            <a href="#">Entretien CAP</a><br>
-            <small class="text-dimed">Cap en cours</small>
-          </p>
-          <p>
-            <a href="#">Entretien professionnel</a><br>
-            <small class="text-dimed">Entretien en cours</small>
-          </p>
-          <p>
-            <a href="#">Fiche de poste</a><br>
-            <small class="text-dimed">En cours</small>
-          </p>
-        </div>
-        <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
 
-          <h5>Fiche de poste</h5>
-          <small class="text-dimed">N/A</small>
+      <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
 
-          <h5 class="mt-3">Entretiens 2020 PATS</h5>
-          <div>
-            <h6>EVAL-PATS-2019-PATS</h6>
-            <ul>
-              <li>
-                <a href="#">Entretien professionnel (version validée)</a>
-              </li>
-              <li>
-                <a href="#">Entretien CAP (version validée)</a>
-              </li>
-              <li>
-                <a href="#">Entretien CAP (version téléchargée)</a>
-              </li>
-            </ul>
-            <h6>EVAL-PATS-2018-PATS</h6>
-            <ul>
-              <li>
-                <a href="#">Entretien professionnel (version validée)</a>
-              </li>
-            </ul>
-          </div>
+        <h3 class="mb-0">Documents ...</h3>
+        <p>
+          <small class="text-muted"><em>NA</em></small>
+        </p>
 
-        </div>
-        <div class="tab-pane fade" id="informations" role="tabpanel" aria-labelledby="informations-tab">
-          Informations
-        </div>
-        <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
-          ...
-        </div>
       </div>
-
 
     </div>
 
-    <div class="section mb-2">
 
-      <h1 class="mb-4">
-        Mon espace responsable
-      </h1>
+    <!-- <hr> -->
 
-      <div class="mb-4">
-        <div class="alert alert-warning  fade show" role="alert">
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          
-        </div>
+    <h1>Mon espace responsable</h1>
 
-      </div>
+    <h2>
+      <i data-feather="eval"></i>
+      Entretien professionnel 2021
+    </h2>
 
-      <h2 class="mb-3">
-        <i data-feather="eval"></i>
-        Entretien professionnel 2021
-      </h2>
+    <p>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Gérer mes convocations
+      </a>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Saisir/valider
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          81
+        </span>
+      </a>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Consulter
+      </a>
+    </p>
 
-      <div class="mb-4">
-        <a href="evalues.html" class="btn btn-outline-primary">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Gérer mes convocations
-        </a>
-        <a href="evalues.html" class="btn btn-outline-primary ms-2">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Saisir/valider
-        </a>
-        <a href="evalues.html" class="btn btn-outline-secondary ms-2">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Consulter
-        </a>
-      </div>
+    <h2>
+      <i data-feather="poste-it"></i>
+      Fiche de poste
+    </h2>
 
-      <h2 class="mb-3">
-        <i data-feather="poste-it"></i>
-        Fiche de poste
-      </h2>
+    <p class="text-muted">
+      <small><em>Actuellement ouvert uniquement aux utilisateurs de test.</em></small>
+    </p>
 
-      <div>
-        <a href="evalues.html" class="btn btn-outline-primary">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Saisir/valider
-        </a>
-        <a href="evalues.html" class="btn btn-outline-secondary ms-2">
-          <i data-feather="chevron-right" class="float-start"></i>
-          Consulter
-        </a>
-      </div>
-
-    </div>
+    <p>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Saisir/valider
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          39
+        </span>
+      </a>
+      <a href="evalues.html" class="btn btn-outline-primary">
+        <i data-feather="chevron-right" class="float-start"></i>
+        Consulter
+      </a>
+    </p>
 
   </div>
 </main>
@@ -421,42 +448,65 @@
           </div>
           <div class="modal-body">
 
-            <div>
-
-            </div>
             <ul class="nav nav-tabs" id="user-tabs" role="tablist">
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes en cous</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="historique-tab" data-bs-toggle="tab" data-bs-target="#historique" type="button" role="tab" aria-controls="historique" aria-selected="false">Historique</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="informations-tab" data-bs-toggle="tab" data-bs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">Informations</button>
               </li>
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
               </li>
+
             </ul>
+
             <div class="tab-content border border-top-0 p-3 rounded-bottom" id="user-tabs-contents">
+
               <div class="tab-pane fade show active" id="campagnes" role="tabpanel" aria-labelledby="campagnes-tab">
+
+                <h3 class="mt-2 mb-0">Entretien Professionnel</h3>
                 <p>
-                  <a href="#">Entretien CAP</a><br>
-                  <small class="text-dimed">Cap en cours</small>
+                  <small class="text-muted"><em>Cap en cours</em></small>
                 </p>
+
+                <h3 class="mt-2 mb-0">Fiche de Poste</h3>
+                <p class="mt-2">
+                  <a href="#" class="btn btn-outline-primary">
+                    <i data-feather="eye" class="float-start"></i>
+                    Voir
+                  </a>
+                  <a href="evalues.html" class="btn btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a>
+                </p>
+
+                <h3 class="mt-2 mb-0">Entretien CAP</h3>
                 <p>
-                  <a href="#">Entretien professionnel</a><br>
-                  <small class="text-dimed">Entretien en cours</small>
+                  <small class="text-muted"><em>Pas commencé</em></small>
                 </p>
-                <p>
-                  <a href="#">Fiche de poste</a><br>
-                  <small class="text-dimed">En cours</small>
-                </p>
+
               </div>
+
               <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
 
-                <h5>Fiche de poste</h5>
-                <small class="text-dimed">N/A</small>
+                <h3 class="mt-2 mb-0">Entretiens professionnels</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
+                <h3 class="mt-2 mb-0">Fiche de poste</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
 
                 <h5 class="mt-3">Entretiens 2020 PATS</h5>
                 <div>
@@ -481,12 +531,25 @@
                 </div>
 
               </div>
+
               <div class="tab-pane fade" id="informations" role="tabpanel" aria-labelledby="informations-tab">
-                Informations
+
+                <h3 class="mb-0">Informations ...</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
               </div>
+
               <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
-                ...
+
+                <h3 class="mb-0">Documents ...</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
               </div>
+
             </div>
 
 

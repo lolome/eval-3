@@ -1,8 +1,6 @@
-/*
- * -----------------------------------------
- *  APP MAIN
- * - - - - - - - - - - - - - - - - - - - - -
- */
+// -----------------------------------------
+//  APP MAIN
+// - - - - - - - - - - - - - - - - - - - - -
 
 .app-main {
 
@@ -17,25 +15,32 @@
 
 }
 
-// .app-content {
-//
-//   padding: 1.5rem 1.75rem;
-//
-//   @include media-breakpoint-up(lg) {
-//
-//     max-width: 960px;
-//     margin: 3rem auto;
-//
-//     background-color: var(--WHITE);
-//     border-radius: .375rem;
-//     box-shadow: 0 .5rem .75rem rgba(#000, .05);
-//
-//   }
-//
-//   @include media-breakpoint-up(xl) {
-//
-//     max-width: 1160px;
-//
-//   }
-//
-// }
+.app-content {
+
+  padding: 2rem;
+  max-width: calc(1200px - 4rem);
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+
+    margin: 3rem 2rem;
+
+    background-color: var(--WHITE);
+    border-radius: .375rem;
+    box-shadow: 0 .5rem .75rem rgba(#000, .05);
+
+  }
+
+  @include media-breakpoint-up(xl) {
+
+    margin: 3rem auto;
+
+  }
+
+  &.has-down-up-btns {
+
+    padding-right: 6rem;
+
+  }
+
+}

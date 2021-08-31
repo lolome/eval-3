@@ -1,8 +1,6 @@
-/*
- * -----------------------------------------
- *  MIXINS
- * - - - - - - - - - - - - - - - - - - - - -
- */
+// -----------------------------------------
+//  MIXINS
+// - - - - - - - - - - - - - - - - - - - - -
 
 @import '_mixins/index';
 
@@ -32,6 +30,7 @@ body {
   // overflow: auto;
 
   font-size: 14px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -45,12 +44,6 @@ body {
     font-size: 16px;
 
   }
-
-  // &.modal-open {
-  //
-  //   //
-  //
-  // }
 
 }
 
@@ -84,11 +77,9 @@ body {
 
 }
 
-/*
- * -----------------------------------------
- *  IMPORTS
- * - - - - - - - - - - - - - - - - - - - - -
- */
+// -----------------------------------------
+//  IMPORTS
+// - - - - - - - - - - - - - - - - - - - - -
 
 @import '_partials/app-header.scss';
 @import '_partials/app-menu.scss';
@@ -97,11 +88,9 @@ body {
 @import '_partials/containers.scss';
 @import '_partials/down-up-btns.scss';
 
-/*
- * -----------------------------------------
- *  FOR DEV
- * - - - - - - - - - - - - - - - - - - - - -
- */
+// -----------------------------------------
+//  FOR DEV
+// - - - - - - - - - - - - - - - - - - - - -
 
 .outlined {
 

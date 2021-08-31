@@ -1,0 +1,82 @@
+// -----------------------------------------
+//  MIXINS
+// - - - - - - - - - - - - - - - - - - - - -
+
+@import '_mixins/index';
+
+/*
+ * -----------------------------------------
+ *  EVAL SHOW
+ * - - - - - - - - - - - - - - - - - - - - -
+ */
+
+.eval .app-content .eval-show,
+.postit .app-content .postit-show {
+
+  .eval-show-header,
+  .postit-show-header {
+
+    //
+
+    .row {
+      align-items: center;
+    }
+
+  }
+
+  .eval-show-content,
+  .postit-show-content {
+
+    //
+
+    h1 {
+      color: var(--CUSTOM-SHOW-PRIMARY);
+    }
+
+    h2 {
+      color: var(--CUSTOM-SHOW-PRIMARY);
+      &::before {
+        background-color: var(--CUSTOM-SHOW-PRIMARY);
+      }
+    }
+
+    h3 {
+      color: var(--CUSTOM-SHOW-PRIMARY);
+    }
+
+    h4 {
+      color: var(--CUSTOM-SHOW-PRIMARY);
+    }
+
+    .eval-show-response,
+    .postit-show-response {
+
+      padding: .125em .5em;
+
+      background-color: var(--CUSTOM-SHOW-RESPONSE-BACK);
+      border: 1px solid var(--CUSTOM-SHOW-RESPONSE-BORDER);
+
+    }
+
+  }
+
+  .eval-show-footer,
+  .postit-show-footer {
+
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+
+    border-top: 1px solid var(--CUSTOM-PRIMARY);
+
+  }
+
+  .eval-show-section {
+
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+
+    border-top: 1px solid var(--CUSTOM-SHOW-PRIMARY);
+
+  }
+
+}

@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- https://medium.com/swlh/are-you-using-svg-favicons-yet-a-guide-for-modern-browsers-836a6aace3df -->
+    <link rel="icon" href="assets/icons/favicon.svg">
+    <link rel=”mask-icon” href="assets/icons/favicon.svg" color="#000000">
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- TODO: GOOGLE FONTS ??? -->
+
+    <!-- APP STYLES -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/dropzone.css">
+    <link rel="stylesheet" href="assets/css/vars.css">
+    <link rel="stylesheet" href="assets/css/custom-1.css">
+    <link rel="stylesheet" href="assets/css/utils.css">
+    <link rel="stylesheet" href="assets/css/commons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/eval.css">
+    <link rel="stylesheet" href="assets/css/eval-show.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/print.css">
+
+    <title>ENTRETIEN : EV@L 3</title>
+
+  </head>
+
+	<body class="eval">
+
+    <div class="app">
+
+      <header class="app-header">
+        <div class="elt-container">
+
+          <div class="app-infos">
+            <a href="/" class="app-logo"></a>
+            <a href="/" class="app-name">
+              <img src="assets/logos/eval-post-it-logo.svg">
+            </a>
+          </div>
+
+          <div class="app-user d-none d-sm-block">
+            Jean-Christophe Stevenson
+          </div>
+
+          <a href="/" class="app-home">
+            <i data-feather="home"></i>
+            <span>Accueil</span>
+          </a>
+
+          <a class="btn app-menu-toggler" data-bs-toggle="offcanvas" href="#app-menu" role="button" aria-controls="app-menu">
+            <i data-feather="menu"></i>
+            <span>Menu</span>
+          </a>
+
+        </div>
+      </header>
+
+      <div id="app-menu" class="offcanvas offcanvas-end app-menu" tabindex="-1" aria-labelledby="app-menu-label">
+
+        <div class="offcanvas-header">
+          <h5 id="app-menu-label" class="offcanvas-title">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+
+          <section class="offcanvas-section user-name-section d-sm-none">
+            <i data-feather="user"></i>
+            Jean-Christophe Stevenson
+          </section>
+
+          <section class="offcanvas-section nav-section">
+            <div class="user-search">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1">
+                  <i data-feather="search"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Chercher une personne" aria-label="Chercher une personne" aria-describedby="button-search">
+                <button class="btn btn-secondary" type="button" id="button-search" data-bs-dismiss="offcanvas">
+                  <!-- <i data-feather="search"></i> -->
+                  Chercher
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- <section class="offcanvas-section nav-section">
+            <div class="section-title">
+              Navigation
+            </div>
+            <ul class="section-menu">
+              <li>
+                <a class="dropdown-item text-truncate active" href="/">
+                  <i data-feather="home"></i>
+                  Accueil
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-truncate" href="/">
+                  <i data-feather="chevron-right"></i>
+                  Page 2
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-truncate" href="/">
+                  <i data-feather="chevron-right"></i>
+                  Page 3
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-truncate" href="/">
+                  <i data-feather="chevron-right"></i>
+                  Page 4
+                </a>
+              </li>
+            </ul>
+          </section> -->
+
+          <section class="offcanvas-section help-section">
+            <div class="section-title">
+              Aide
+            </div>
+            <ul class="section-menu">
+              <li>
+                <a class="dropdown-item text-truncate" href="#" data-bs-toggle="modal" data-bs-target="#help-modal-1" data-bs-dismiss="offcanvas">
+                  <i data-feather="help-circle"></i>
+                  Questions fréquentes de l'évalué
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-truncate" href="#" data-bs-toggle="modal" data-bs-target="#help-modal-2" data-bs-dismiss="offcanvas">
+                  <i data-feather="help-circle"></i>
+                  Questions fréquentes du responsable
+                </a>
+              </li>
+              <!-- <li>
+                <hr class="dropdown-divider">
+              </li> -->
+              <li>
+                <a class="dropdown-item text-truncate" href="contact.html">
+                  <i data-feather="mail"></i>
+                  Contacter le support
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="offcanvas-section user-section">
+            <div class="section-title">
+              Utilisateur
+            </div>
+            <ul class="section-menu">
+              <li>
+                <a class="dropdown-item text-truncate" href="#" data-bs-toggle="modal" data-bs-target="#password-modal" data-bs-dismiss="offcanvas">
+                  <i data-feather="lock"></i>
+                  Modifier mot de passe
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-truncate" href="login.html">
+                  <i data-feather="log-out"></i>
+                  Déconnexion
+                </a>
+              </li>
+            </ul>
+          </section>
+
+          <section class="offcanvas-section dev-section">
+            <div class="section-title">
+              Developpement
+            </div>
+            <ul class="section-menu">
+              <li>
+                <a class="dropdown-item text-truncate" href="#" data-bs-toggle="modal" data-bs-target="#tester-modal" data-bs-dismiss="offcanvas">
+                  <i data-feather="user"></i>
+                  Changer le testeur
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-truncate" href="typography.html">
+                  <i data-feather="type"></i>
+                  Typographie
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-truncate" href="buttons.html">
+                  <i data-feather="toggle-right"></i>
+                  Boutons, labels …
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item text-truncate" href="#" data-bs-dismiss="offcanvas">
+                  <i data-feather="code"></i>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </a>
+              </li>
+            </ul>
+          </section>
+
+        </div>
+
+      </div>
+
+
+
+<main class="app-main">
+  <div class="app-content">
+
+    <div class="eval-header">
+      <a href="evalues.html" class="btn action-link">
+        <i data-feather="chevron-left"></i>
+        Retour évalués
+      </a>
+      <small class="text-upper text-dimed">Entretien professionnel 2020</small>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#user-modal">Loraine Albert</a>
+    </div>
+
+
+    <div class="eval-nav">
+
+      <div class="eval-nav-dropdown dropdown">
+        <a class="dropdown-toggle" href="#" id="eval-nav-dropdown-label" data-bs-toggle="dropdown" aria-expanded="false">
+          <i data-feather="chevron-down" width="32" height="32" stroke-width="1.5"></i>
+          <h1>Synthèse et validation</h1>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="eval-nav-dropdown-label">
+          <li>
+            <a href="eval-1.html" class="dropdown-item ">
+              Informations agent et responsable hiérarchique
+            </a>
+          </li>
+          <li>
+            <a href="eval-2.html" class="dropdown-item ">
+              Fiche de poste
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a href="eval-3.html" class="dropdown-item ">
+              1 - Bilan de l'année écoulée
+            </a>
+          </li>
+          <li>
+            <a href="eval-4.html" class="dropdown-item ">
+              2 - Explications et analyse des écarts (objectifs ##n-1##)
+            </a>
+          </li>
+          <li>
+            <a href="eval-5.html" class="dropdown-item ">
+              3 - Appréciation générale de la valeur professionnelle
+            </a>
+          </li>
+          <li>
+            <a href="eval-6.html" class="dropdown-item ">
+              4 - Objectifs professionnels pour l'année à venir (##n##)
+            </a>
+          </li>
+          <li>
+            <a href="eval-7.html" class="dropdown-item ">
+              5 - Évolution professionnelle de l'agent
+            </a>
+          </li>
+          <li>
+            <span class="dropdown-item text-muted">
+              6 - Bilan et recensement des besoins en formation
+            </span>
+            <ul>
+              <li>
+                <a href="eval-8.html" class="dropdown-item ">
+                  Bilan et recensement des actions de formation (##n-1##)
+                </a>
+              </li>
+              <li>
+                <a href="eval-9.html" class="dropdown-item ">
+                  Besoins en formations de professionnalisation (##n##) en lien avec les fonctions occupées par l'agent
+                </a>
+              </li>
+              <li>
+                <a href="eval-10.html" class="dropdown-item ">
+                  Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles cpf)
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="eval-11.html" class="dropdown-item ">
+              7 - Conclusions de l'entretien
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a href="eval-12.html" class="dropdown-item active">
+              Synthèse et validation
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <a href="#" class="clipboard" data-bs-toggle="modal" data-bs-target="#clipboard-modal">
+        <span data-bs-toggle="tooltip" data-bs-placement="left" title="Presse papier">
+          <i data-feather="clipboard"></i>
+        </span>
+      </a> -->
+
+    </div>
+
+
+    <div class="eval-content eval-synthese">
+
+      <section class="eval-section">
+        <h1 class="mb-4">Informations agent et responsable hiérarchique</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+            <h3>Informations agent</h3>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>Nom</th>
+                  <td>SYNA1</td>
+                  <th>Prénom</th>
+                  <td>Pascal</td>
+                </tr>
+                <tr>
+                  <th>Direction</th>
+                  <td>Direction 99</td>
+                  <th>Service</th>
+                  <td>Service 99</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12">
+            <h3>Informations responsable direct</h3>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>Nom</th>
+                  <td>SYNA1</td>
+                  <th>Prénom</th>
+                  <td>Pascal</td>
+                </tr>
+                <tr>
+                  <th>Direction</th>
+                  <td>Direction 99</td>
+                  <th>Service</th>
+                  <td>Service 99</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">Fiche de poste</h1>
+        
+
+        <div class="row mb-4">
+
+          <div class="col-12 col-md-6">
+            L’agent a-t-il eu connaissance de sa fiche de poste ?
+          </div>
+
+          <div class="col-12 col-md-6">
+            <select class="form-select w-25"  readonly >
+              <option value="Oui">Oui</option>
+              <option value="Non" selected="selected">Non</option>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="row mb-4">
+
+          <div class="col-12 col-md-6">
+            Modification de la fiche de poste de l’agent
+          </div>
+
+          <div class="col-12 col-md-6">
+            <select class="form-select w-25"  readonly >
+              <option value=""></option>
+              <option value="Oui" selected="selected">Oui</option>
+              <option value="Non">Non</option>
+            </select>
+          </div>
+
+        </div>
+
+        
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">1 - Bilan de l'année écoulée</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <label for="X3-1" class="form-label">
+              Expression libre de l’agent sur son vécu professionnel au cours de la période écoulée
+            </label>
+
+            <textarea class="form-control" id="X3-1" rows="5"  readonly ></textarea>
+
+            <div class="form-help">
+              <div class="form-text">
+                Faits marquants concernant son activité, principales réalisations, formations suivies...
+              </div>
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <label for="X3-2" class="form-label">
+              Bilan de l’activité par rapport à l’ensemble des tâches du poste au sein du service et par rapport aux objectifs du service
+            </label>
+
+            <textarea class="form-control" id="X3-2" rows="5"  readonly >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+
+            <div class="form-help">
+              <div class="form-text">
+                Dresser avec l’agent un bilan des réalisations et des résultats professionnels obtenus.
+              </div>
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12 col-md-6">
+
+            <label for="X3-10" class="form-label">
+              Expression libre de l’agent sur son vécu professionnel au cours de la période écoulée
+            </label>
+
+            <textarea class="form-control" id="X3-10" rows="5"  readonly ></textarea>
+
+            <div class="form-help">
+              <div class="form-text">
+                Faits marquants concernant son activité, principales réalisations, formations suivies...
+              </div>
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6">
+
+            <label for="X3-20" class="form-label">
+              Bilan de l’activité par rapport à l’ensemble des tâches du poste au sein du service et par rapport aux objectifs du service
+            </label>
+
+            <textarea class="form-control" id="X3-20" rows="5"  readonly >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+
+            <div class="form-help">
+              <div class="form-text">
+                Dresser avec l’agent un bilan des réalisations et des résultats professionnels obtenus.
+              </div>
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">2 - Explications et analyse des écarts (objectifs ##n-1##)</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <p>Explications ou analyse d’éventuels écarts entre les objectifs fixés et leur réalisation :</p>
+
+            <ul>
+              <li>Définir si l’objectif fixé en 2020 est : complètement, partiellement, pas du tout atteint ou pas du tout atteint (pas du fait de l'agent).</li>
+              <li>Analyser l’écart entre les résultats obtenus et les résultats attendus en réfléchissant à ce qui a influencé (positivement ou négativement) les résultats obtenus.</li>
+            </ul>
+
+            
+
+          </div>
+        </div>
+
+        
+          <div class="row mb-4">
+            <div class="col-12 col-md-6">
+
+              <label for="XBB-1" class="form-label">
+                Intitulé de l'objectif
+              </label>
+
+            </div>
+            <div class="col-12 col-md-6">
+
+              <input type="text" id="XBB-1" class="form-control" value="defsc edsq qsd sqdqs" readonly>
+
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12 col-md-6">
+
+              <label for="XBB-2" class="form-label">
+                Type Objectif
+              </label>
+
+            </div>
+            <div class="col-12 col-md-6">
+
+              <select id="XBB-2" class="form-select" readonly>
+                <option selected>individuel</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12 col-md-6">
+
+              <label for="XBB-3" class="form-label">
+                Etat
+              </label>
+
+            </div>
+            <div class="col-12 col-md-6">
+
+              <select id="XBB-3" class="form-select" readonly>
+                <option selected>partiellement atteint</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12">
+
+              <label for="XBB-4" class="form-label">
+                Observations
+              </label>
+
+              <textarea class="form-control" id="XBB-4" rows="5" readonly>sqd d qsd sqd</textarea>
+
+              <div class="form-help">
+                <div class="form-text count-text">
+                  <small>0/12000 signes max</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12">
+
+              <label for="XBB-5" class="form-label">
+                Analyse des écarts
+              </label>
+
+              <textarea class="form-control" id="XBB-5" rows="5" readonly>sqdsqdqs dsqd qsdsq d</textarea>
+
+              <div class="form-help">
+                <div class="form-text count-text">
+                  <small>0/12000 signes max</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12">
+
+              <label for="XBB-6" class="form-label">
+                Indicateurs et échéances : (conditions de réussite, délais de réalisation...)
+              </label>
+
+              <textarea class="form-control" id="XBB-6" rows="5" readonly>sqd sqdsqd sq</textarea>
+
+              <div class="form-help">
+                <div class="form-text count-text">
+                  <small>0/12000 signes max</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-12">
+
+              <label for="XBB-7" class="form-label">
+                Moyens et conditions de mise en œuvre : (moyens humains, matériel, formation …)
+              </label>
+
+              <textarea class="form-control" id="XBB-7" rows="5" readonly>d qsdqsd qsd qsdqsdqs</textarea>
+
+              <div class="form-help">
+                <div class="form-text count-text">
+                  <small>0/12000 signes max</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        
+
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <label for="X3-4" class="form-label">
+              Observations agents
+            </label>
+
+            <textarea class="form-control" id="X3-4" rows="5"  readonly ></textarea>
+
+            <div class="form-help">
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">3 - Appréciation générale de la valeur professionnelle</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <p>A partir du bilan et résultats obtenus, en identifiant les points forts et les marges de progrès au regard de ce qui est requis dans ses fonctions (se référer à l’outil d’évaluation joint au compte-rendu), Il s’agit d’apprécier la valeur professionnelle de l’agent au regard des résultats professionnels obtenus par celui-ci et la réalisation des objectifs, ainsi que les compétences acquises ou à développer par l’agent au jour de l’entretien.</p>
+
+            
+
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <p>Pour chaque critère, l’encadrant doit indiquer le niveau de maîtrise estimé de son collaborateur, en prenant en compte sa réalité professionnelle, ses acquis, ses difficultés et les conditions dans lesquelles il exerce ses fonctions. Cet exercice doit permettre d’échanger avec l’agent au cours de l’entretien. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur. Une fois renseigné et enregistré, le fichier peut être chargé sur la plateforme pour rester ultérieurement accessible par l’évaluateur.</p>
+
+            
+
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <label for="X5-4" class="form-label">
+              Appréciation générale de la valeur professionnelle
+              <a href="#" data-bs-toggle="modal" data-bs-target="#help-modal-ex">
+                <i data-feather="help-circle"></i>
+              </a>
+            </label>
+
+            <textarea class="form-control" id="X5-4" rows="5"  readonly ></textarea>
+
+            <div class="form-help">
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">4 - Objectifs professionnels pour l'année à venir (##n##)</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <label for="X6-1" class="form-label">
+              Objectifs collectifs du service
+            </label>
+
+            <textarea class="form-control" id="X6-1" rows="5"  readonly ></textarea>
+
+            <div class="form-help">
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <h2>
+              Objectifs individuels liés à l’activité et aux compétences
+            </h2>
+
+            <p>Un objectif individuel est une action prioritaire que l’agent va mener pour faire évoluer et progresser son fonctionnement ou celui de son service. Le nombre d’objectifs n’est proposé qu’à titre indicatif, et doit être adapté au cas par cas. Un seul objectif peut être défini pour l’année. Il doit être formulé en termes précis et définir un résultat à atteindre, des moyens et des indicateurs.</p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">5 - Évolution professionnelle de l'agent</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <p class="text-dimed mb-0">
+              <em>TO DO …</em>
+            </p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- <section class="eval-section">
+        <h1>6 - Bilan et recensement des besoins en formation</h1>
+      </section> -->
+
+      <section class="eval-section">
+        <h1 class="mb-4">6.1 - Bilan et recensement des actions de formation (##n-1##)</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <p class="text-dimed mb-0">
+              <em>TO DO …</em>
+            </p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">6.2 - Besoins en formations de professionnalisation (##n##) en lien avec les fonctions occupées par l'agent</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <p class="text-dimed mb-0">
+              <em>TO DO …</em>
+            </p>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">6.3 - Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles cpf)</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <h2>
+              Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
+            </h2>
+
+            <label for="X10-1" class="form-label">
+              Formations à l’initiative de l’agent sans rapport avec les fonctions occupées (éligibles CPF)
+            </label>
+
+            <textarea class="form-control" id="X10-1" rows="5"  readonly ></textarea>
+
+            <div class="form-help">
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="eval-section">
+        <h1 class="mb-4">7 - Conclusions de l'entretien</h1>
+        <div class="row mb-4">
+          <div class="col-12">
+
+            <label for="X11-1" class="form-label">
+              Observations et remarques complémentaires concernant le déroulement de l’entretien de l’agent évaluateur
+            </label>
+
+            <textarea class="form-control" id="X11-1" rows="5"  readonly ></textarea>
+
+            <div class="form-help">
+              <div class="form-text count-text">
+                <small>0/12000 signes max</small>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row mb-4">
+
+          <div class="col-12 col-md-4">
+
+            <label class="form-label" for="X11-2">
+              Date de la convocation à l'entretien
+            </label>
+
+            <input type="date" id="X11-2" class="form-control"  readonly >
+
+          </div>
+
+          <div class="col-12 col-md-4">
+
+            <label class="form-label" for="X11-3">
+              Date d’élaboration du compte-rendu
+            </label>
+
+            <input type="date" id="X11-3" class="form-control"  readonly >
+
+          </div>
+
+          <div class="col-12 col-md-4">
+
+            <label class="form-label" for="X11-4">
+              Durée de l’entretien (En minutes)
+            </label>
+
+            <select class="form-select" id="X11-4"  readonly >
+              <option value=""></option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="25">25</option>
+              <option value="30">30</option>
+              <option value="60" selected="selected">60</option>
+              <option value="90">90</option>
+            </select>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </div>
+</main>
+
+      <footer class="app-footer">
+        <div class="elt-container">
+
+          <span>Powered by <a href="https://synacom.fr/" target="_blank">synacom.fr</a></span>
+
+          <ul class="dev-nav">
+            <li>
+              <a href="login.html">Identification</a>
+            </li>
+            <!-- <li>
+              <a href="/">Accueil</a>
+            </li> -->
+            <li>
+              <a href="eval-1.html">Entretien</a>
+            </li>
+            <!-- <li>
+              <a href="typography.html">Typo</a>
+            </li> -->
+            <!-- <li>
+              <a href="/">index</a>
+            </li> -->
+            <li>
+              <a href="email.html">email</a>
+            </li>
+            <li class="ps-3">
+              <span class="badge bg-danger d-sm-none">XS</span>
+              <span class="badge bg-warning d-none d-sm-inline d-md-none">SM</span>
+              <span class="badge bg-secondary d-none d-md-inline d-lg-none">MD</span>
+              <span class="badge bg-primary d-none d-lg-inline d-xl-none">LG</span>
+              <span class="badge bg-info d-none d-xl-inline d-xxl-none">XL</span>
+              <span class="badge bg-success d-none d-xxl-inline">XXL</span>
+            </li>
+          </ul>
+
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="down-up-btns">
+
+      <a href="#" class="down-btn">
+        <i data-feather="chevron-down"></i>
+      </a>
+
+      <a href="#" class="up-btn">
+        <i data-feather="chevron-up"></i>
+      </a>
+
+    </div>
+
+
+    <div class="modal fade" id="user-modal" tabindex="-1" aria-labelledby="user-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i data-feather="user"></i>
+            <h4 class="modal-title ms-2" id="user-modal-label">
+              Jean-Christophe Stevenson
+            </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <ul class="nav nav-tabs" id="user-tabs" role="tablist">
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="campagnes-tab" data-bs-toggle="tab" data-bs-target="#campagnes" type="button" role="tab" aria-controls="campagnes" aria-selected="true">Campagnes en cous</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="historique-tab" data-bs-toggle="tab" data-bs-target="#historique" type="button" role="tab" aria-controls="historique" aria-selected="false">Historique</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="informations-tab" data-bs-toggle="tab" data-bs-target="#informations" type="button" role="tab" aria-controls="informations" aria-selected="false">Informations</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content border border-top-0 p-3 rounded-bottom" id="user-tabs-contents">
+
+              <div class="tab-pane fade show active" id="campagnes" role="tabpanel" aria-labelledby="campagnes-tab">
+
+                <h3 class="mt-2 mb-0">Entretien Professionnel</h3>
+                <p>
+                  <small class="text-muted"><em>Cap en cours</em></small>
+                </p>
+
+                <h3 class="mt-2 mb-0">Fiche de Poste</h3>
+                <p class="mt-2">
+                  <a href="#" class="btn btn-outline-primary">
+                    <i data-feather="eye" class="float-start"></i>
+                    Voir
+                  </a>
+                  <a href="evalues.html" class="btn btn-outline-primary">
+                    <i data-feather="printer" class="float-start"></i>
+                    Imprimer
+                  </a>
+                </p>
+
+                <h3 class="mt-2 mb-0">Entretien CAP</h3>
+                <p>
+                  <small class="text-muted"><em>Pas commencé</em></small>
+                </p>
+
+              </div>
+
+              <div class="tab-pane fade" id="historique" role="tabpanel" aria-labelledby="historique-tab">
+
+                <h3 class="mt-2 mb-0">Entretiens professionnels</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
+                <h3 class="mt-2 mb-0">Fiche de poste</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
+                <h5 class="mt-3">Entretiens 2020 PATS</h5>
+                <div>
+                  <h6>EVAL-PATS-2019-PATS</h6>
+                  <ul>
+                    <li>
+                      <a href="#">Entretien professionnel (version validée)</a>
+                    </li>
+                    <li>
+                      <a href="#">Entretien CAP (version validée)</a>
+                    </li>
+                    <li>
+                      <a href="#">Entretien CAP (version téléchargée)</a>
+                    </li>
+                  </ul>
+                  <h6>EVAL-PATS-2018-PATS</h6>
+                  <ul>
+                    <li>
+                      <a href="#">Entretien professionnel (version validée)</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="informations" role="tabpanel" aria-labelledby="informations-tab">
+
+                <h3 class="mb-0">Informations ...</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
+              </div>
+
+              <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
+
+                <h3 class="mb-0">Documents ...</h3>
+                <p>
+                  <small class="text-muted"><em>NA</em></small>
+                </p>
+
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="help-modal-1" tabindex="-1" aria-labelledby="help-modal-1-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i data-feather="help-circle"></i>
+            <h4 class="modal-title ms-2" id="help-modal-1-label">Questions fréquentes de l'évalué</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <h5>Doluptatur solupta tquiaes enia cus quidelit ?</h5>
+            <p>Ata adit vendant velention estibus, officias as volorib eaquis soloris eiunto corrore roremperore quias ut plitibusae. Sed quatium ut liquata tempero vitatur? Or renem quostia vel modis reseque voluptaspe doloribus eius que voluptatur? Hendesequam im faccuptate consequ ossime as volupiendis et resedit atibus, comnimodis earum fugit inim voluptatem estrupt aquam, quas am, as elest, nimos eictatur sit aut moluptius, unt que nimpor sumque ium auta consequi debisinvel ipiciae quiat acculpa rcipsa si sectur sustio optatiu sdantur alit aut explici sam doluptat as etur, sit ad es et exceped ulla arum sitistrum labo. Ut omnihitat.</p>
+
+            <h5>Cate nobiti blandebit enda dolumquunt plitaqu untiorp orepudi gentis exerentem lam quo mo coremporio esequiatat ?</h5>
+            <p>Es a que volorest as magnatius moditat.<br>
+            Xerum net od que ium estint quam vernatibus autendero int.<br>
+            Cae pliquas pelicient volorepti iditis aut pos mos dus, corem a dis prae.<br> Nequam exceati ustrum il is sam, que aute verit, nulparumquis ut es apero mint ipsa pos ea consecab ipsaper uptatus delique pa apelessit maiorum inci consed qui blaut pressen istrum versperiorum fugiti sunt.</p>
+
+            <h5>Tem is aperitaest, conem lam sinullut que sequis necati none nisciur ?</h5>
+            <p>Doloriat lam quist, ex expersperrum fuga. Si numquid eum fugia voluptatur, odit ulpa dicimpore eossinctis doluptatio blabori tibusa quam, cusa plibus as est plaut laut ut ea non nis qui berae. Caeriae rcimint velesci cullupidemos et, quis invenda ntotat magnam fuga. Itas eat.</p>
+
+            <h5>Git est ad quis nobis aceaquid que int la velit explatis aut lis atur ?</h5>
+            <p>Cuptatur adiores tiistorentem apis dolenis simaximus in rendis endam cusant. Ibus commost, sequi re dolupta muscit omnihilles quis anducimin pe cus quis discidit que in enimint hiliquas plignimus sitatiis volut et modis as aut quid quisimusae volorpo rumenderrum, corentem aute con reic tecto blacerumet ellaudae eos nobite vit aborrum facid maione volupta teniass itiore volor ressi officit que comniet veliataerae placiur, utatium qui corent perit essimod magnatem endipsus et quam, cones adi delique od moluptat vel is evelessit il inctusam quid quia sum quas aut faciet laciae dolest, ullaborum facest, con plic tent everecab iur aut et ex es unt que re nos adis et dita alis debiscilit quam, sequi omniet quae et atem se sit oditatiunt, sitam, as perum faccatent.</p>
+
+            <h5>Niminullia assum inum faceaqu aepudaecto molorepellut ?</h5>
+            <p>Alis in et aliquatus ut apicabo. Itatus, volorero blabor restia nem fugit, sit ellanim res et ellaborrum ea ipsusam, ius, id molum hiliquidus porenim rem consequis ilibus eatinci isitis consecust odi sint rero cus.</p>
+
+            <h5>Rempore pelit, eiusam qui nustem consequisque maximos ?</h5>
+            <p>Que imus aut endam quam, occus, tem quiantiati debis pelenis ipsamen ditatur rem apicabo repudam hil molo volorum elluptate volum es ate dolorae exceatur?<br>
+            Dame es doluptatis experspit, consequunt, offic tem ut autae rem is quis dolorenis eaquam et offici dolentio veniendi cum facientiat.<br>
+            Ebiscii stiisit lab idescim rate num ulparcipis de pliquia dundell estiis volenes toratis rerite dolorunt, qui cus.</p>
+
+            <h5>Xero dolupti atusam nihilla quid qui doluptum ?</h5>
+            <p>Aute que pratiis ciusapedi ad et, qui venditium aut aut quam restiam ea core, sit ea quatur moluptatius, sum ellautemo eos si ut alicidestes evelis eriscia audici occatiunti ut as eos et dem idus.<br>
+            Dunt eum resequis eatur sinctiistium natiore icabore debitam ustiat rehenis magnam aut lab incimo molorep editiosa ipicil ma dolecabo. Ne vollectem rem es anducimus.</p>
+
+            <h5>Nequidusa dit veritium reprorum eius conse volorumquo ea es rero te nobiteniet, aboratibus etus serro mi ?</h5>
+            <p>Omnihicient, ommo quate ventiam, optati optatiostis reiciduciti doluptiis est eius as ilit labo. Es rem deraturem volorerspedi voluptaquo consedis ut officid quo ditium ape acepro disciduscias esedit, officat harum ratis doluptiat maximoluptas dolorione alicit fuga. Ed mil eum entotatae nis molupta simaximenda quas coremporiam rectin remod expero quodi ommodiorunt rem faccatur? Quibusda volorep udicia cum con pa ipid maiorerrum quassitatur seque pelignatatia si ut officitatem facit re volupta sperferferum est aut as ut.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="help-modal-2" tabindex="-1" aria-labelledby="help-modal-2-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i data-feather="help-circle"></i>
+            <h4 class="modal-title ms-2" id="help-modal-2-label">Questions fréquentes du responsable</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <h5>Doluptatur solupta tquiaes enia cus quidelit ?</h5>
+            <p>Ata adit vendant velention estibus, officias as volorib eaquis soloris eiunto corrore roremperore quias ut plitibusae. Sed quatium ut liquata tempero vitatur? Or renem quostia vel modis reseque voluptaspe doloribus eius que voluptatur? Hendesequam im faccuptate consequ ossime as volupiendis et resedit atibus, comnimodis earum fugit inim voluptatem estrupt aquam, quas am, as elest, nimos eictatur sit aut moluptius, unt que nimpor sumque ium auta consequi debisinvel ipiciae quiat acculpa rcipsa si sectur sustio optatiu sdantur alit aut explici sam doluptat as etur, sit ad es et exceped ulla arum sitistrum labo. Ut omnihitat.</p>
+
+            <h5>Cate nobiti blandebit enda dolumquunt plitaqu untiorp orepudi gentis exerentem lam quo mo coremporio esequiatat ?</h5>
+            <p>Es a que volorest as magnatius moditat.<br>
+            Xerum net od que ium estint quam vernatibus autendero int.<br>
+            Cae pliquas pelicient volorepti iditis aut pos mos dus, corem a dis prae.<br> Nequam exceati ustrum il is sam, que aute verit, nulparumquis ut es apero mint ipsa pos ea consecab ipsaper uptatus delique pa apelessit maiorum inci consed qui blaut pressen istrum versperiorum fugiti sunt.</p>
+
+            <h5>Tem is aperitaest, conem lam sinullut que sequis necati none nisciur ?</h5>
+            <p>Doloriat lam quist, ex expersperrum fuga. Si numquid eum fugia voluptatur, odit ulpa dicimpore eossinctis doluptatio blabori tibusa quam, cusa plibus as est plaut laut ut ea non nis qui berae. Caeriae rcimint velesci cullupidemos et, quis invenda ntotat magnam fuga. Itas eat.</p>
+
+            <h5>Git est ad quis nobis aceaquid que int la velit explatis aut lis atur ?</h5>
+            <p>Cuptatur adiores tiistorentem apis dolenis simaximus in rendis endam cusant. Ibus commost, sequi re dolupta muscit omnihilles quis anducimin pe cus quis discidit que in enimint hiliquas plignimus sitatiis volut et modis as aut quid quisimusae volorpo rumenderrum, corentem aute con reic tecto blacerumet ellaudae eos nobite vit aborrum facid maione volupta teniass itiore volor ressi officit que comniet veliataerae placiur, utatium qui corent perit essimod magnatem endipsus et quam, cones adi delique od moluptat vel is evelessit il inctusam quid quia sum quas aut faciet laciae dolest, ullaborum facest, con plic tent everecab iur aut et ex es unt que re nos adis et dita alis debiscilit quam, sequi omniet quae et atem se sit oditatiunt, sitam, as perum faccatent.</p>
+
+            <h5>Niminullia assum inum faceaqu aepudaecto molorepellut ?</h5>
+            <p>Alis in et aliquatus ut apicabo. Itatus, volorero blabor restia nem fugit, sit ellanim res et ellaborrum ea ipsusam, ius, id molum hiliquidus porenim rem consequis ilibus eatinci isitis consecust odi sint rero cus.</p>
+
+            <h5>Rempore pelit, eiusam qui nustem consequisque maximos ?</h5>
+            <p>Que imus aut endam quam, occus, tem quiantiati debis pelenis ipsamen ditatur rem apicabo repudam hil molo volorum elluptate volum es ate dolorae exceatur?<br>
+            Dame es doluptatis experspit, consequunt, offic tem ut autae rem is quis dolorenis eaquam et offici dolentio veniendi cum facientiat.<br>
+            Ebiscii stiisit lab idescim rate num ulparcipis de pliquia dundell estiis volenes toratis rerite dolorunt, qui cus.</p>
+
+            <h5>Xero dolupti atusam nihilla quid qui doluptum ?</h5>
+            <p>Aute que pratiis ciusapedi ad et, qui venditium aut aut quam restiam ea core, sit ea quatur moluptatius, sum ellautemo eos si ut alicidestes evelis eriscia audici occatiunti ut as eos et dem idus.<br>
+            Dunt eum resequis eatur sinctiistium natiore icabore debitam ustiat rehenis magnam aut lab incimo molorep editiosa ipicil ma dolecabo. Ne vollectem rem es anducimus.</p>
+
+            <h5>Nequidusa dit veritium reprorum eius conse volorumquo ea es rero te nobiteniet, aboratibus etus serro mi ?</h5>
+            <p>Omnihicient, ommo quate ventiam, optati optatiostis reiciduciti doluptiis est eius as ilit labo. Es rem deraturem volorerspedi voluptaquo consedis ut officid quo ditium ape acepro disciduscias esedit, officat harum ratis doluptiat maximoluptas dolorione alicit fuga. Ed mil eum entotatae nis molupta simaximenda quas coremporiam rectin remod expero quodi ommodiorunt rem faccatur? Quibusda volorep udicia cum con pa ipid maiorerrum quassitatur seque pelignatatia si ut officitatem facit re volupta sperferferum est aut as ut.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="search-modal" tabindex="-1" aria-labelledby="search-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i data-feather="search"></i>
+            <h4 class="modal-title ms-2" id="search-modal-label">
+              Rechercher une personne
+            </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            ...
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="password-modal" tabindex="-1" aria-labelledby="password-modal-label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i data-feather="lock"></i>
+            <h4 class="modal-title ms-2" id="password-modal-label">
+              Modifier mot de passe
+            </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="mb-3">
+              <label for="old-password" class="form-label">Ancien mot de passe</label>
+              <input type="password" class="form-control" id="old-password">
+            </div>
+
+            <div class="mb-3">
+              <label for="new-password" class="form-label">Nouveau mot de passe</label>
+              <input type="password" class="form-control" id="new-password">
+            </div>
+
+            <div class="mb-4">
+              <label for="repeat-password" class="form-label">Confirmation du nouveau mot de passe</label>
+              <input type="password" class="form-control" id="repeat-password">
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+            <button type="button" class="btn btn-primary">Enregistrer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="help-modal-ex" tabindex="-1" aria-labelledby="help-modal-ex-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i data-feather="help-circle"></i>
+            <h4 class="modal-title ms-2" id="help-modal-ex-label">Point de vue collaborateur.trice</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Ata adit vendant velention estibus, officias as volorib eaquis soloris eiunto corrore roremperore quias ut plitibusae. Sed quatium ut liquata tempero vitatur? Or renem quostia vel modis reseque voluptaspe doloribus eius que voluptatur? Hendesequam im faccuptate consequ ossime as volupiendis et resedit atibus, comnimodis earum fugit inim voluptatem estrupt aquam, quas am, as elest, nimos eictatur sit aut moluptius, unt que nimpor sumque ium auta consequi debisinvel ipiciae quiat acculpa rcipsa si sectur sustio optatiu sdantur alit aut explici sam doluptat as etur, sit ad es et exceped ulla arum sitistrum labo. Ut omnihitat.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="tester-modal" tabindex="-1" aria-labelledby="tester-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <i data-feather="user"></i>
+            <h4 class="modal-title ms-2" id="tester-modal-label">
+              Utilisateurs de test
+            </h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <table class="table table-sm table-hover mb-4">
+
+              <thead>
+                <tr>
+                  <th>matricule</th>
+                  <th>testeur</th>
+                  <th>responsable</th>
+                  <th></th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr class="align-middle">
+                  <td>SYNACOM1</td>
+                  <td>Pascal SYNA1</td>
+                  <td class="text-muted">SYNACOM1</td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      <i data-feather="log-in" class="float-start"></i>
+                      Se connecter
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="align-middle">
+                  <td>SYNACOM2</td>
+                  <td>Emmanuelle SYNA2</td>
+                  <td class="text-muted">SYNACOM1</td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      <i data-feather="log-in" class="float-start"></i>
+                      Se connecter
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="align-middle">
+                  <td>SYNACOM3</td>
+                  <td>Solène SYNA3</td>
+                  <td class="text-muted">SYNACOM1</td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      <i data-feather="log-in" class="float-start"></i>
+                      Se connecter
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="align-middle">
+                  <td>SYNACOM4</td>
+                  <td>Nessrine SYNA4</td>
+                  <td class="text-muted">SYNACOM2</td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      <i data-feather="log-in" class="float-start"></i>
+                      Se connecter
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="align-middle">
+                  <td>SYNACOM5</td>
+                  <td>David SYNA5</td>
+                  <td class="text-muted">SYNACOM2</td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      <i data-feather="log-in" class="float-start"></i>
+                      Se connecter
+                    </a>
+                  </td>
+                </tr>
+
+                <tr class="align-middle">
+                  <td>SYNACOM6</td>
+                  <td>Laëtita SYNA6</td>
+                  <td class="text-muted">SYNACOM2</td>
+                  <td>
+                    <a href="#" class="btn btn-sm btn-secondary">
+                      <i data-feather="log-in" class="float-start"></i>
+                      Se connecter
+                    </a>
+                  </td>
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="clipboard-modal" tabindex="-1" aria-labelledby="clipboard-modal-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title ms-2" id="clipboard-modal-label">Presse papier</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TEMPLATES -->
+
+    <template id="table-alert-icon">
+      <span data-bs-toggle="tooltip" data-bs-placement="top" title="Action requise">
+        <i data-feather="alert-triangle" width="20" height="20" stroke-width="1.5"></i>
+      </span>
+    </template>
+
+    <template id="table-button-print">
+      <button class="btn btn-sm btn-outline-primary">
+        <i data-feather="printer" class="float-start"></i>
+        Imprimer
+      </button>
+    </template>
+
+    <template id="table-button-see">
+      <a href="eval-1.html" class="btn btn-sm btn-outline-secondary">
+        <i data-feather="eye" class="float-start"></i>
+        Voir
+      </a>
+    </template>
+
+    <template id="table-button-create">
+      <a href="eval-1.html" class="btn btn-sm btn-outline-success">
+        <i data-feather="plus-square" class="float-start"></i>
+        Créer
+      </a>
+    </template>
+
+    <template id="table-button-write">
+      <a href="eval-1.html" class="btn btn-sm btn-outline-primary">
+        <i data-feather="edit" class="float-start"></i>
+        Saisir
+      </a>
+    </template>
+
+    <template id="table-dropdown-other">
+      <div class="dropdown d-inline-block">
+        <button id="simpleUID" class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Autre
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="simpleUID">
+          <li>
+            <a href="#" class="dropdown-item text-danger">
+              <i data-feather="trash"></i>
+              Vider
+            </a>
+          </li>
+        </ul>
+      </div>
+    </template>
+
+    <template id="table-dropdown-actions">
+      <div class="dropdown d-inline-block">
+        <button id="simpleUID" class="btn btn-sm btn-outline-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <i data-feather="settings"></i>
+          Actions
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="simpleUID">
+          <li>
+            <a href="#" class="dropdown-item">
+              <i data-feather="eye"></i>
+              Voir
+            </a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-item">
+              <i data-feather="edit"></i>
+              Saisir
+            </a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-item">
+              <i data-feather="plus-square"></i>
+              Créer
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a href="#" class="dropdown-item">
+              <i data-feather="printer"></i>
+              Imprimer
+            </a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-item">
+              <i data-feather="download"></i>
+              Télécharger .pdf
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a href="#" class="dropdown-item">
+              <i data-feather="corner-up-left"></i>
+              Rouvrir
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a href="#" class="dropdown-item text-danger">
+              <i data-feather="trash"></i>
+              Vider
+            </a>
+          </li>
+        </ul>
+      </div>
+    </template>
+
+
+    <!-- APP SCRIPTS -->
+
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/dropzone.js"></script>
+    <script src="/assets/js/templater.js"></script>
+    <script src="/assets/js/down-up-btns.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/feather-icons.js"></script>
+
+  </body>
+
+</html>
+
