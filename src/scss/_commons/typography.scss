@@ -22,12 +22,12 @@ h1 {
 
   }
 
-  .feather {
+  > .feather {
 
     width: 32px;
     height: 32px;
 
-    margin-top: -.1em;
+    margin-top: -.2em;
 
     stroke-width: 1.5;
 
@@ -49,7 +49,7 @@ h2 {
 
   }
 
-  .feather {
+  > .feather {
 
     width: 28px;
     height: 28px;
@@ -76,7 +76,7 @@ h3 {
 
   }
 
-  .feather {
+  > .feather {
 
     width: 24px;
     height: 24px;
@@ -103,7 +103,7 @@ h4 {
 
   }
 
-  .feather {
+  > .feather {
 
     width: 24px;
     height: 24px;
@@ -130,7 +130,7 @@ h5 {
 
   }
 
-  .feather {
+  > .feather {
 
     width: 24px;
     height: 24px;
@@ -157,7 +157,7 @@ h6 {
 
   }
 
-  .feather {
+  > .feather {
 
     width: 20px;
     height: 20px;
@@ -174,13 +174,19 @@ p {
 
   margin-bottom: 1rem;
 
+  * + & {
+
+    margin-top: 1rem;
+
+  }
+
   &:last-child {
 
     margin-bottom: 0;
 
   }
 
-  .feather {
+  > .feather {
 
     width: 24px;
     height: 24px;

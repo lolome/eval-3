@@ -1,20 +1,16 @@
 @@if ( !synthese ) {
-  <div class="row mb-4">
-    <div class="col-12">
 
-      <p>Le cas échéant, joindre la nouvelle fiche de poste :</p>
+  <label class="form-label">Le cas échéant, joindre la nouvelle fiche de poste :</label>
 
-      @@include('../../--common-partials/alert.html', {
-        "type": "warning",
-        "dismissible": false,
-        "text": "Aucune fiche de poste chargée !"
-      })
+  @@include('../../--common-partials/alert.html', {
+    "type": "warning",
+    "dismissible": false,
+    "text": "Aucune fiche de poste chargée !"
+  })
 
-      @@include('../../--common-partials/dropzone.html', {
-        "id": "dropzone-2",
-        "label": ""
-      })
+  @@include('../../--common-partials/dropzone.html', {
+    "id": "dropzone-2",
+    "label": ""
+  })
 
-    </div>
-  </div>
 }

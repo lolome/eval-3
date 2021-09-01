@@ -1,14 +1,16 @@
-<div class="row mb-4">
+<div class="row">
 
   <div class="col-12 col-md-6">
-    L’agent a-t-il eu connaissance de sa fiche de poste ?
+    <label for="x2-2-1" class="form-label">L’agent a-t-il eu connaissance de sa fiche de poste ?</label>
   </div>
 
   <div class="col-12 col-md-6">
-    <select class="form-select w-25" @@if ( synthese ) { readonly }>
-      <option value="Oui">Oui</option>
-      <option value="Non" selected="selected">Non</option>
-    </select>
+    <p>
+      <select id="x2-2-1" class="form-select w-25" @@if ( synthese ) { readonly }>
+        <option value="Oui">Oui</option>
+        <option value="Non" selected="selected">Non</option>
+      </select>
+    </p>
   </div>
 
 </div>

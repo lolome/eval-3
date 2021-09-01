@@ -220,11 +220,11 @@
     <forn>
 
       <div class="eval-header">
-        <a href="evalues.html" class="btn action-link">
-          <i data-feather="chevron-left"></i>
+        <a href="evalues.html" class="btn btn-outline-primary">
+          <i data-feather="chevron-left" class="float-start"></i>
           Retour évalués
         </a>
-        <small class="text-upper text-dimed">Entretien professionnel 2020</small>
+        <h3>Entretien professionnel 2020</h3>
         <a href="#" data-bs-toggle="modal" data-bs-target="#user-modal">Loraine Albert</a>
       </div>
 
@@ -313,45 +313,37 @@
           </ul>
         </div>
 
-        <!-- <a href="#" class="clipboard" data-bs-toggle="modal" data-bs-target="#clipboard-modal">
-          <span data-bs-toggle="tooltip" data-bs-placement="left" title="Presse papier">
-            <i data-feather="clipboard"></i>
-          </span>
-        </a> -->
-
       </div>
 
 
       <div class="eval-content">
 
         
-          <div class="row mb-4">
-            <div class="col-12">
 
-              <p>Evolution(s) éventuelle (s) du poste</p>
+          <label class="form-label">Evolution(s) éventuelle (s) du poste</label>
 
-              <div class="alert alert-warning  fade show" role="alert">
-                La fiche de poste de l'agent n'est pas disponible
-                
-              </div>
-
-
-            </div>
+          <div class="alert alert-warning  fade show" role="alert">
+            La fiche de poste de l'agent n'est pas disponible
+            
           </div>
+
+
         
 
 
-        <div class="row mb-4">
+        <div class="row">
 
           <div class="col-12 col-md-6">
-            L’agent a-t-il eu connaissance de sa fiche de poste ?
+            <label for="x2-2-1" class="form-label">L’agent a-t-il eu connaissance de sa fiche de poste ?</label>
           </div>
 
           <div class="col-12 col-md-6">
-            <select class="form-select w-25" >
-              <option value="Oui">Oui</option>
-              <option value="Non" selected="selected">Non</option>
-            </select>
+            <p>
+              <select id="x2-2-1" class="form-select w-25" >
+                <option value="Oui">Oui</option>
+                <option value="Non" selected="selected">Non</option>
+              </select>
+            </p>
           </div>
 
         </div>
@@ -360,42 +352,38 @@
         <div class="row mb-4">
 
           <div class="col-12 col-md-6">
-            Modification de la fiche de poste de l’agent
+            <label for="x2-3-1" class="form-label">Modification de la fiche de poste de l’agent</label>
           </div>
 
           <div class="col-12 col-md-6">
-            <select class="form-select w-25" >
-              <option value=""></option>
-              <option value="Oui" selected="selected">Oui</option>
-              <option value="Non">Non</option>
-            </select>
+            <p>
+              <select id="x2-3-1" class="form-select w-25" >
+                <option value=""></option>
+                <option value="Oui" selected="selected">Oui</option>
+                <option value="Non">Non</option>
+              </select>
+            </p>
           </div>
 
         </div>
 
 
         
-          <div class="row mb-4">
-            <div class="col-12">
 
-              <p>Le cas échéant, joindre la nouvelle fiche de poste :</p>
+          <label class="form-label">Le cas échéant, joindre la nouvelle fiche de poste :</label>
 
-              <div class="alert alert-warning  fade show" role="alert">
-                Aucune fiche de poste chargée !
-                
-              </div>
-
-
-              <div class="dropzone-block">
-                <label for="dropzone-2" class="form-label">
-                  
-                </label>
-                <form action="#" class="dropzone" id="dropzone-2"></form>
-              </div>
-
-
-            </div>
+          <div class="alert alert-warning  fade show" role="alert">
+            Aucune fiche de poste chargée !
+            
           </div>
+
+
+          <div class="dropzone-block">
+            
+            <form action="#" class="dropzone" id="dropzone-2"></form>
+          </div>
+
+
         
 
 
@@ -403,27 +391,26 @@
 
       <div class="eval-footer">
 
-        <hr>
-
         
 
-        <div class="row mt-4">
+        <div class="row">
 
           <div class="col">
-            <a href="#" class="btn action-link">
-              <i data-feather="chevron-left"></i>
+            <a href="#" class="btn btn-outline-primary">
+              <i data-feather="chevron-left" class="float-start"></i>
               Étape précédente
             </a>
           </div>
 
           <div class="col eval-pagination">
-            <small class="text-dimed">
+            <small class="text-muted">
               2/12
             </small>
           </div>
 
           <div class="col eval-validation">
             <button type="button" class="btn btn-primary">
+              <i data-feather="save" class="float-start"></i>
               Enregistrer et continuer
             </button>
           </div>
@@ -453,6 +440,9 @@
             <li>
               <a href="eval-1.html">Entretien</a>
             </li>
+            <!-- <li>
+              <a href="eval-1.html">Entretien 2</a>
+            </li> -->
             <!-- <li>
               <a href="typography.html">Typo</a>
             </li> -->
